@@ -14,7 +14,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
             <div class="container px-4">
-                <a class="navbar-brand" href="#page-top">CS 184 ~ Final Project</a>
+                <a class="navbar-brand" href="#page-top">CS 184 Final Project ~ Dispersive Rave Tracing</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
@@ -35,7 +35,8 @@
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h2>About the project</h2>
-                        <p class="lead">In this project I built on the rendering engine which I produced in project 3-1 by making glass, refraction and reflection BSDFs. I also implenented a thin lense camera model which can produce images which simlates camera focus.</p>
+                        <p class="lead">Team Members: Nick Drian, Ruby Werman, Jen Buja and Jake Martin</p>
+                        <p class="lead">In this project, we intend to explore methods of light dispersion. This will likely include developing a new continuous color representation that encapsulates all wavelengths of visible light instead of just discrete red green and blue values. We also plan on exploring new types of lighting such as lasers and cone lights and possibly volumetric effects such as fog. Our project will culminate in a virtual rave animation within the classic Cornell Box where lights, dispersive materials, fog, and CAD models all interact.</p>
                     </div>
                 </div>
             </div>
@@ -46,9 +47,11 @@
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h2>Problem Description</h2>
-                        <p class="lead">describe the problem ... </p>
+                        <p class="lead">Our goal is to implement dispersion effects in our raytracer. Dispersion is the separation of visible light into its rainbow components. This effect is essential to creating realistic renders of crystals, gems, and everyday objects such as glasses and water droplets. Implementing dispersion would also increase the color accuracy of our reflectance models. Dispersion is nontrivial to implement because we have to consider multiple paths of a light source (different wavelengths) rather than a cluster of white light. This adds more complexity to path calculations. Our current ray tracing implementation presumes that all light rays consist of three uniform frequencies. However, it doesn’t account for the different angles of refraction for each respective wavelength. Furthermore, we aim to go above and beyond the naive solution of implementing three unique wavelengths by an arbitrary large amount. The goal of this larger number is to implement a representation of the continuous spectrum. One challenge of implementing dispersion is overcoming aliasing and optimizing runtime. We suggest using importance sampling to select the wavelengths from the light sources. We’ll also use Russian roulette to determine path termination.</p>
 
-                        <p style="text-align:center;"><img src="assets/part1rayDepths.png" alt="Sphereee Main" style="width: 100%;"></p>
+                        <p class="lead">We will do two rendering passes. First, we will run a ray tracing algorithm on the photo as it is working at the moment. After this has filled the pixel buffer with its final image our program will then run a photon mapping algorithm to overwrite the relevant pixels such that it will add dispersive effects while maintaining the other realistic bsdfs/ effects that our current engine is able to render. Our photon mapping scheme will launch rays from the lights instead of from the camera in order to collect dispersive lighting information.</p>
+
+
                     </div>
                 </div>
             </div>
@@ -59,8 +62,13 @@
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h2>Goals and Deliverables</h2>
-                        <p class="lead">State goals and Deliverables</p>
-                        <p style="text-align:center;"><img src="assets/part2Aperture.png" alt="Sphere Main" style="width: 100%;"></p>
+                        <p class="lead">Our goal is to implement a representation of the continuous visible light spectrum to show off the dispersive properties of materials. In order to have a successful project, we first need a working algorithm that divides white light into 3 discrete vectors of red, green, and blue light. Next, we will experiment with finding the correct number of divisions of white light to represent the spectrum of visible light in a physically accurate way. We plan on being able to successfully render a white light entering a prism, and exiting the prism divided into the visible light spectrum. We will quantify the accuracy of the render by comparing it to real photos of white light being divided up by a prism. We will inspect the quality of division of white light into the visible spectrum, and if the dispersion is showing up in the location we expect it to. If we get ahead of schedule, we plan on rendering a disco ball with a light shining on it. We would also like to be able to render a scene with a dispersive object in fog, where the dispersed light bounces off particles in the fog. </p>
+                        <p class="lead">The following images are photographs which exhibit ray dispersion:</p>
+                        <p style="text-align:center;"><img src="assets/diamondPhoto.png" alt="Sphere Main" style="width: 100%;"></p>
+                        <p style="text-align:center;"><img src="assets/elipsePhoto.png" alt="Sphere Main" style="width: 100%;"></p>
+                        <p style="text-align:center;"><img src="assets/trianglePhoto.png" alt="Sphere Main" style="width: 100%;"></p>
+                        <p class="lead">The following image is a render which imitates ray dispersion:</p>
+                        <p style="text-align:center;"><img src="assets/triangleRender.png" alt="Sphere Main" style="width: 100%;"></p>
                     </div>
                 </div>
             </div>
@@ -72,9 +80,11 @@
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h2>Schedule</h2>
-                        <p class="lead">Write about schedule</p>
+                        <p class="lead">Week 1: Implement naive solution with splitting up into 3 rays</p>
+                        <p class="lead">Week 2: Implement photon tracer which can do the problem in reverse and also split up ray into more than three different frequencies to further emulate natural dispersion</p>
+                        <p class="lead">Week 3: Focus on developing good ways to convert a light spectrum sampled at more than 3 wavelengths into 3 colors such that it is optimized for human eyesight.</p>
+                        <p class="lead">Week 4: Focus on producing high quality deliverables which demonstrate the effects which our program will be capable of producing.</p>
 
-                        <p style="text-align:center;"><img src="assets/part1rayDepths.png" alt="Sphereee Main" style="width: 100%;"></p>
                     </div>
                 </div>
             </div>
@@ -86,9 +96,11 @@
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h2>Resources</h2>
-                        <p class="lead">Write about resources being used.</p>
+                        <p class="lead">Paper 1 Link: "https://graphicsinterface.org/wp-content/uploads/gi1999-7.pdf"</p>
+                        <p class="lead">This paper describes a method of rendering called Stratified Wavelength Clustering (SWC) which uses Monte Carlo Rendering. This strategy is useful for rendering spectral caustics and chromatic aberration.</p>
+                        <p class="lead">Paper 2 Link: "https://ceciliavision.github.io/graphics/a6/"</p>
+                        <p class="lead">This paper describes a method of simulating ray dispersion by separating the ray into more than 3 components upon interseting a refractive surface. This is done in an attempt to further emulate ray dispersion in the real world.</p>
 
-                        <p style="text-align:center;"><img src="assets/part1rayDepths.png" alt="Sphereee Main" style="width: 100%;"></p>
                     </div>
                 </div>
             </div>
