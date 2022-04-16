@@ -20,12 +20,9 @@ Vector3D MirrorBSDF::f(const Vector3D wo, const Vector3D wi) {
 
 Vector3D MirrorBSDF::sample_f(const Vector3D wo, Vector3D* wi, double* pdf) {
 
-  // TODO:
+  // TODO Project 3-2: Part 1
   // Implement MirrorBSDF
-
-    *pdf = 1;
-    reflect(wo, wi);
-    return reflectance / abs_cos_theta(*wi);;
+  return Vector3D();
 }
 
 void MirrorBSDF::render_debugger_node()
@@ -44,40 +41,34 @@ double MicrofacetBSDF::G(const Vector3D wo, const Vector3D wi) {
 }
 
 double MicrofacetBSDF::D(const Vector3D h) {
-  // TODO: proj3-2, part 3
+  // TODO Project 3-2: Part 2
   // Compute Beckmann normal distribution function (NDF) here.
   // You will need the roughness alpha.
-  
   return 1.0;
 }
 
 Vector3D MicrofacetBSDF::F(const Vector3D wi) {
-  // TODO: proj3-2, part 3
+  // TODO Project 3-2: Part 2
   // Compute Fresnel term for reflection on dielectric-conductor interface.
   // You will need both eta and etaK, both of which are Vector3D.
 
-  double cosTheta = cos_theta(wi);
-  
   return Vector3D();
 }
 
 Vector3D MicrofacetBSDF::f(const Vector3D wo, const Vector3D wi) {
-  // TODO: proj3-2, part 3
+  // TODO Project 3-2: Part 2
   // Implement microfacet model here.
 
   return Vector3D();
 }
 
 Vector3D MicrofacetBSDF::sample_f(const Vector3D wo, Vector3D* wi, double* pdf) {
-  // TODO: proj3-2, part 3
+  // TODO Project 3-2: Part 2
   // *Importance* sample Beckmann normal distribution function (NDF) here.
   // Note: You should fill in the sampled direction *wi and the corresponding *pdf,
   //       and return the sampled BRDF value.
 
-
-
   *wi = cosineHemisphereSampler.get_sample(pdf);
-
   return MicrofacetBSDF::f(wo, *wi);
 }
 
@@ -99,20 +90,9 @@ Vector3D RefractionBSDF::f(const Vector3D wo, const Vector3D wi) {
 }
 
 Vector3D RefractionBSDF::sample_f(const Vector3D wo, Vector3D* wi, double* pdf) {
-
-  // TODO:
+  // TODO Project 3-2: Part 1
   // Implement RefractionBSDF
-  *pdf = 1.0;
-  if (refract(wo, wi, ior)) {
-      if (wo.z > 0) {
-          return transmittance / abs_cos_theta(*wi) / pow(1 / ior, 2);
-      } else {
-          return transmittance / abs_cos_theta(*wi) / pow(ior, 2);
-      }
-
-  }
-
-return Vector3D();
+  return Vector3D();
 }
 
 void RefractionBSDF::render_debugger_node()
@@ -133,34 +113,12 @@ Vector3D GlassBSDF::f(const Vector3D wo, const Vector3D wi) {
 
 Vector3D GlassBSDF::sample_f(const Vector3D wo, Vector3D* wi, double* pdf) {
 
-  // TODO:
+  // TODO Project 3-2: Part 1
   // Compute Fresnel coefficient and either reflect or refract based on it.
 
   // compute Fresnel coefficient and use it as the probability of reflection
   // - Fundamentals of Computer Graphics page 305
-
-
-    double eta = ior;
-    if (wo.z > 0) {
-        eta = 1 / ior;
-    }
-
-    if (refract(wo, wi, ior)) {
-        double r0 = pow((1 - ior) / (1 + ior) ,2);
-        double r = r0 + (1 - r0) * pow(1 - abs_cos_theta(wo), 5);
-        if (coin_flip(r)) {
-            *pdf = r;
-            reflect(wo, wi);
-            return r * reflectance / abs_cos_theta(*wi);
-        } else {
-            *pdf = 1 - r;
-            return (1 - r) * transmittance / abs_cos_theta(*wi) / pow(eta, 2);
-        }
-    } else {
-        *pdf = 1;
-        reflect(wo, wi);
-        return reflectance / abs_cos_theta(*wi);
-    }
+  return Vector3D();
 }
 
 void GlassBSDF::render_debugger_node()
@@ -176,43 +134,21 @@ void GlassBSDF::render_debugger_node()
 
 void BSDF::reflect(const Vector3D wo, Vector3D* wi) {
 
-  // TODO:
+  // TODO Project 3-2: Part 1
   // Implement reflection of wo about normal (0,0,1) and store result in wi.
-    *wi = Vector3D(-wo.x, -wo.y, wo.z);
 
 
 }
 
 bool BSDF::refract(const Vector3D wo, Vector3D* wi, double ior) {
 
-  // TODO:
+  // TODO Project 3-2: Part 1
   // Use Snell's Law to refract wo surface and store result ray in wi.
   // Return false if refraction does not occur due to total internal reflection
   // and true otherwise. When dot(wo,n) is positive, then wo corresponds to a
   // ray entering the surface through vacuum.
-    double mu;
-    if (wo.z > 0) {
-        mu = 1.0/ior;
-    } else {
-        mu = ior;
-    }
-    double rest = 1 - pow(abs_cos_theta(wo), 2);
-    *wi = Vector3D();
-    if (1 - pow(mu, 2) * rest < 0) {
-        reflect(wo, wi);
-        return false;
-    }
-    wi->x = -1 * mu * wo.x;
-    wi->y = -1 * mu * wo.y;
-    // at this point you know that 1 - pow(mu, 2) * rest > 0
-    if (wo.z > 0) {
-        wi->z = -1 * sqrt(1 - pow(mu, 2) * rest);
-    } else {
-        wi->z = sqrt(1 - pow(mu, 2) * rest);
-    }
 
-
-    return true;
+  return true;
 
 }
 
