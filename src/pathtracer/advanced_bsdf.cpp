@@ -22,8 +22,10 @@ Vector3D MirrorBSDF::sample_f(const Vector3D wo, Vector3D* wi, double* pdf) {
 
   // TODO:
   // Implement MirrorBSDF
-  
-  return Vector3D();
+
+    *pdf = 1;
+    reflect(wo, wi);
+    return reflectance / abs_cos_theta(*wi);;
 }
 
 void MirrorBSDF::render_debugger_node()
@@ -100,9 +102,17 @@ Vector3D RefractionBSDF::sample_f(const Vector3D wo, Vector3D* wi, double* pdf) 
 
   // TODO:
   // Implement RefractionBSDF
-  
-  
-  return Vector3D();
+  *pdf = 1.0;
+  if (refract(wo, wi, ior)) {
+      if (wo.z > 0) {
+          return transmittance / abs_cos_theta(*wi) / pow(1 / ior, 2);
+      } else {
+          return transmittance / abs_cos_theta(*wi) / pow(ior, 2);
+      }
+
+  }
+
+return Vector3D();
 }
 
 void RefractionBSDF::render_debugger_node()
@@ -130,7 +140,27 @@ Vector3D GlassBSDF::sample_f(const Vector3D wo, Vector3D* wi, double* pdf) {
   // - Fundamentals of Computer Graphics page 305
 
 
-  return Vector3D();
+    double eta = ior;
+    if (wo.z > 0) {
+        eta = 1 / ior;
+    }
+
+    if (refract(wo, wi, ior)) {
+        double r0 = pow((1 - ior) / (1 + ior) ,2);
+        double r = r0 + (1 - r0) * pow(1 - abs_cos_theta(wo), 5);
+        if (coin_flip(r)) {
+            *pdf = r;
+            reflect(wo, wi);
+            return r * reflectance / abs_cos_theta(*wi);
+        } else {
+            *pdf = 1 - r;
+            return (1 - r) * transmittance / abs_cos_theta(*wi) / pow(eta, 2);
+        }
+    } else {
+        *pdf = 1;
+        reflect(wo, wi);
+        return reflectance / abs_cos_theta(*wi);
+    }
 }
 
 void GlassBSDF::render_debugger_node()
@@ -148,7 +178,7 @@ void BSDF::reflect(const Vector3D wo, Vector3D* wi) {
 
   // TODO:
   // Implement reflection of wo about normal (0,0,1) and store result in wi.
-  
+    *wi = Vector3D(-wo.x, -wo.y, wo.z);
 
 
 }
@@ -160,11 +190,29 @@ bool BSDF::refract(const Vector3D wo, Vector3D* wi, double ior) {
   // Return false if refraction does not occur due to total internal reflection
   // and true otherwise. When dot(wo,n) is positive, then wo corresponds to a
   // ray entering the surface through vacuum.
+    double mu;
+    if (wo.z > 0) {
+        mu = 1.0/ior;
+    } else {
+        mu = ior;
+    }
+    double rest = 1 - pow(abs_cos_theta(wo), 2);
+    *wi = Vector3D();
+    if (1 - pow(mu, 2) * rest < 0) {
+        reflect(wo, wi);
+        return false;
+    }
+    wi->x = -1 * mu * wo.x;
+    wi->y = -1 * mu * wo.y;
+    // at this point you know that 1 - pow(mu, 2) * rest > 0
+    if (wo.z > 0) {
+        wi->z = -1 * sqrt(1 - pow(mu, 2) * rest);
+    } else {
+        wi->z = sqrt(1 - pow(mu, 2) * rest);
+    }
 
 
-
-
-  return true;
+    return true;
 
 }
 

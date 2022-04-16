@@ -234,13 +234,23 @@ Vector3D PathTracer::est_radiance_global_illumination(const Ray &r) {
   if (!bvh->intersect(r, &isect))
     return envLight ? envLight->sample_dir(r) : L_out;
 
+
+
+
   if (max_ray_depth == 0) {
       L_out = zero_bounce_radiance(r, isect);
+      return L_out;
   } else if (max_ray_depth == 1) {
       L_out = zero_bounce_radiance(r, isect) + one_bounce_radiance(r, isect);
   } else {
-      L_out = zero_bounce_radiance(r, isect) + at_least_one_bounce_radiance(r, isect);
+      L_out = at_least_one_bounce_radiance(r, isect);
+      if (isect.bsdf->is_delta()) {
+          L_out += zero_bounce_radiance(r, isect);
+      } else {
+          L_out += one_bounce_radiance(r, isect);
+      }
   }
+
 
 
 
