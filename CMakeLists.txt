@@ -6,9 +6,6 @@ project(Assignment3)
 #-------------------------------------------------------------------------------
 option(BUILD_DEBUG     "Build with debug settings"    OFF)
 option(BUILD_DOCS      "Build documentation"          OFF)
-option(BUILD_CUSTOM    "Build without reference"      OFF)
-option(GEN_BINARIES    "Generate 3-1 binaries"        OFF)
-
 
 
 set(BUILD_DEBUG ${BUILD_DEBUG} CACHE BOOL "Build debug" FORCE)
@@ -138,15 +135,19 @@ if (WIN32)
     list(APPEND APPLICATION_3_1_SOURCE src/util/win32/getopt.c)
 endif()
 
+if (WIN32 OR APPLE)
+  add_library(pt31 STATIC ${APPLICATION_3_1_SOURCE} ${APPLICATION_HEADERS})
+else()
+  add_library(pt31 SHARED ${APPLICATION_3_1_SOURCE} ${APPLICATION_HEADERS})
+endif()
+
+target_include_directories(pt31 PUBLIC src)
+
 add_executable(pathtracer ${APPLICATION_3_2_SOURCE} ${APPLICATION_HEADERS})
 target_include_directories(pathtracer PUBLIC src)
 
-set(OpenGL_GL_PREFERENCE LEGACY)
-find_package(OpenGL REQUIRED)
-
-target_link_libraries(pathtracer PUBLIC CGL)
-target_link_libraries(pathtracer PUBLIC OpenGL::GL)
-target_link_libraries(pathtracer PUBLIC OpenGL::GLU)
+target_link_libraries(pt31 PUBLIC CGL)
+target_link_libraries(pathtracer PUBLIC pt31)
 
 set(CGL_INCLUDE_DIRS CGL/include CGL/deps/glew/include CGL/deps/glfw/include ./src/imgui ./src/imgui/backends)
 
@@ -154,69 +155,14 @@ set(CGL_INCLUDE_DIRS CGL/include CGL/deps/glew/include CGL/deps/glfw/include ./s
 # Find dependencies
 #-------------------------------------------------------------------------------
 add_subdirectory(CGL)
+target_include_directories(pt31 PUBLIC ${CGL_INCLUDE_DIRS})
 target_include_directories(pathtracer PUBLIC ${CGL_INCLUDE_DIRS})
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CGL_CXX_FLAGS} ${AVX_FLAGS}")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CGL_CXX_FLAGS}")
 
-
-if (GEN_BINARIES OR BUILD_CUSTOM)
-
-  if(NOT GEN_BINARIES)
-    include(CGL/find_avx.cmake)
-    CHECK_FOR_AVX()
-  endif()
-
-  if (WIN32 OR APPLE)
-    add_library(pt31 STATIC ${APPLICATION_3_1_SOURCE} ${APPLICATION_HEADERS})
-  else()
-    add_library(pt31 SHARED ${APPLICATION_3_1_SOURCE} ${APPLICATION_HEADERS})
-  endif()
-
-  target_link_libraries(pt31 PUBLIC CGL)
-  target_link_libraries(pt31 PUBLIC OpenGL::GL)
-  target_link_libraries(pt31 PUBLIC OpenGL::GLU)
-  
-  target_include_directories(pt31 PUBLIC src)
-  target_include_directories(pt31 PUBLIC ${CGL_INCLUDE_DIRS})
-
-  if(GEN_BINARIES)
-    if (WIN32)
-      if(CMAKE_BUILD_TYPE STREQUAL "Debug")
-        message(FATAL_ERROR "You should use Release profile on Windows, if you want to debug, set the configuration type to RelWithDebInfo in CMake settings")
-      else()
-        install(TARGETS pt31 DESTINATION ${CMAKE_SOURCE_DIR}/libs/x64_msvc/release)
-      endif()
-    elseif (APPLE)
-      install(TARGETS pt31 DESTINATION ${CMAKE_SOURCE_DIR}/libs/x64_apple)
-    elseif (CMAKE_SYSTEM_NAME STREQUAL "Linux")
-      install(TARGETS pt31 DESTINATION ${CMAKE_SOURCE_DIR}/libs/x64_linux)
-    else()
-      message(FATAL_ERROR "Unknown system!")
-    endif()
-  endif()
-
-else()
-
-  include(CGL/find_avx.cmake)
-  CHECK_FOR_AVX()
-
-  if (WIN32)
-    if(CMAKE_BUILD_TYPE STREQUAL "Debug")
-      message(FATAL_ERROR "You should use Release profile on Windows, if you want to debug, set the configuration type to RelWithDebInfo in CMake settings")
-    else()
-      target_link_directories(pathtracer PRIVATE libs/x64_msvc/release)
-    endif()
-  elseif (APPLE)
-    target_link_directories(pathtracer PRIVATE libs/x64_apple)
-  elseif (CMAKE_SYSTEM_NAME STREQUAL "Linux")
-    target_link_directories(pathtracer PRIVATE libs/x64_linux)
-  else()
-    message(FATAL_ERROR "Unknown system!")
-  endif()
-
-endif()
-
-target_link_libraries(pathtracer PUBLIC pt31)
-
+set(OpenGL_GL_PREFERENCE LEGACY)
+find_package(OpenGL REQUIRED)
+target_link_libraries(pt31 PUBLIC OpenGL::GL)
+target_link_libraries(pt31 PUBLIC OpenGL::GLU)
 
 #-------------------------------------------------------------------------------
 # Add subdirectories

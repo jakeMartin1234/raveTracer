@@ -56,6 +56,8 @@ public:
    */
   bool intersect(const Ray& r, Intersection* i) const;
 
+  bool isInside(Vector3D point, Vector3D po1, Vector3D po2, Vector3D po3) const;
+
   /**
    * Get BSDF.
    * In the case of a triangle, the surface material BSDF is stored in 
@@ -67,6 +69,8 @@ public:
    * Draw with OpenGL (for visualizer)
    */
   void draw(const Color& c, float alpha) const;
+
+
 
   /**
    * Draw outline with OpenGL (for visualizer)

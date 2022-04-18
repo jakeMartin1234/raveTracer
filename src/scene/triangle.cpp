@@ -28,19 +28,104 @@ bool Triangle::has_intersection(const Ray &r) const {
   // function records the "intersection" while this function only tests whether
   // there is a intersection.
 
+  // first step is to find the normal to the plane.
 
+  Vector3D e1 = p2 - p1;
+  Vector3D e2 = p3 - p1;
+  Vector3D P = cross(r.d, e2);
+  Vector3D rel = r.o - p1;
+  Vector3D b = cross(rel, e1);
+  double determinent = dot(e1, P);
 
+  double alpha = dot(P, rel) / determinent;
+  double beta = dot(b, r.d) / determinent;
+  double t = dot(b, e2) / determinent;
+
+  if (alpha < 0 || alpha > 1) {
+      return false;
+  }
+  if (beta < 0 || beta > 1) {
+      return false;
+  }
+  if (t < r.min_t || t > r.max_t) {
+      return false;
+  }
+
+  r.max_t = t;
   return true;
+
+
+
+
+
+}
+
+bool Triangle::isInside(Vector3D point, Vector3D po1, Vector3D po2, Vector3D po3) const {
+//    float ax, ay, bx, by, cx, cy, apx, apy, bpx, bpy, cpx, cpy;
+//    float cCROSSap, bCROSScp, aCROSSbp;
+//
+//    ax = Cx - Bx;  ay = Cy - By;
+//    bx = Ax - Cx;  by = Ay - Cy;
+//    cx = Bx - Ax;  cy = By - Ay;
+//    apx= Px - Ax;  apy= Py - Ay;
+//    bpx= Px - Bx;  bpy= Py - By;
+//    cpx= Px - Cx;  cpy= Py - Cy;
+//
+//    aCROSSbp = ax*bpy - ay*bpx;
+//    cCROSSap = cx*apy - cy*apx;
+//    bCROSScp = bx*cpy - by*cpx;
+//
+//    return ((aCROSSbp >= 0.0f) && (bCROSScp >= 0.0f) && (cCROSSap >= 0.0f));
+//    Vector3D v1 = po2 - po1;
+//    Vector3D v11 = point - po1;
+//    Vector3D v2 = po3 - po2;
+//    Vector3D v22 = point - po2;
+//    Vector3D v3 = po1 - po3;
+//    Vector3D v33 = point - po3;
+//
+//    if (cross(v1, v11) >= Vector3D(0, 0, 0) && cross(v2, v22) >= Vector3D && cross(v3, v33) >= 0) {
+//        return true;
+//    }
+//    return false;
 }
 
 bool Triangle::intersect(const Ray &r, Intersection *isect) const {
   // Part 1, Task 3:
   // implement ray-triangle intersection. When an intersection takes
   // place, the Intersection data should be updated accordingly
+    Vector3D e1 = p2 - p1;
+    Vector3D e2 = p3 - p1;
+    Vector3D P = cross(r.d, e2);
+    double determinent = dot(e1, P);
+    Vector3D T = r.o - p1;
+    Vector3D Q = cross(T, e1);
 
+    double alpha = dot(T, P) / determinent;
+    double beta = dot(r.d, Q) / determinent;
+    double gamma = 1 - alpha - beta;
+    double t = dot(e2, Q) / determinent;
 
+    if (alpha < 0 || alpha > 1) {
+        return false;
+    }
+    if (beta < 0 || beta > 1) {
+        return false;
+    }
+    if (alpha + beta < 0 || alpha + beta > 1) {
+        return false;
+    }
+    if (t < r.min_t || t > r.max_t || t < 0) {
+        return false;
+    }
+    r.max_t = t;
 
-  return true;
+    isect->t = t;
+    isect->n = gamma * n1 + alpha * n2 + beta * n3;
+    isect->n.normalize();
+    isect->primitive = this;
+    isect->bsdf = this->get_bsdf();
+    return true;
+
 }
 
 void Triangle::draw(const Color &c, float alpha) const {

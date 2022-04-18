@@ -22,7 +22,7 @@
 
 #include <GLFW/glfw3.h>
 
-// #define ENABLE_VISUAL_DEBUGGER
+//#define ENABLE_VISUAL_DEBUGGER
 
 namespace CGL
 {
