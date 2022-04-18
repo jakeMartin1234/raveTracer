@@ -39,8 +39,6 @@ namespace CGL { namespace SceneObjects {
 
 
 
-
-
     if (true)
       std::cout << "Saving out probability_debug image for debug." << std::endl;
     save_probability_debug();
@@ -133,7 +131,6 @@ namespace CGL { namespace SceneObjects {
     *wi = sampler_uniform_sphere.get_sample();
     *distToLight = INF_D;
     *pdf = 1.0 / (4.0 * PI);
-
 
 
 

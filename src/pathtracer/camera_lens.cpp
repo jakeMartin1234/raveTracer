@@ -21,10 +21,9 @@ using Collada::CameraInfo;
 
 Ray Camera::generate_ray_for_thin_lens(double x, double y, double rndR, double rndTheta) const {
 
-  // Part 2, Task 4:
+  // TODO Project 3-2: Part 4
   // compute position and direction of ray from the input sensor sample coordinate.
   // Note: use rndR and rndTheta to uniformly sample a unit disk.
-
   
   return Ray(pos, Vector3D(0, 0, -1));
 }
