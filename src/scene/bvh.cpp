@@ -47,6 +47,44 @@ void BVHAccel::drawOutline(BVHNode *node, const Color &c, float alpha) const {
     drawOutline(node->r, c, alpha);
   }
 }
+void split(const std::vector<Primitive*>::iterator& start,
+           const std::vector<Primitive*>::iterator& end,
+           std::vector<Primitive*>::iterator& middle) {
+    int size = end - start;
+    Vector3D center;
+    for (auto i = start; i != end; i++) {
+        center += (*i)->get_bbox().centroid();
+    }
+    center /= size;
+    int a = 0;
+    int b = 0;
+    int c = 0;
+    for (auto i = start; i != end; i++) {
+        Vector3D v = (*i)->get_bbox().centroid();
+        if (v[0] - center[0] > 0) a++;
+        if (v[1] - center[1] > 0) b++;
+        if (v[2] - center[2] > 0) c++;
+    }
+    int index = rand() % 3;
+    int mid = 0;
+    for (auto i = start; i != end; i++) {
+        Vector3D v = (*i)->get_bbox().centroid();
+        if (v[index] < center[index]) mid++;
+    }
+    middle = start + mid;
+    auto fast = start;
+    auto slow = start;
+    while (fast != end) {
+        if ((*fast)->get_bbox().centroid()[index] < center[index]) {
+            auto t = *slow;
+            *slow = *fast;
+            *fast = t;
+            slow++;
+        }
+        fast++;
+    }
+    if (middle == end || middle == start) middle = start + 1;
+}
 
 BVHNode *BVHAccel::construct_bvh(std::vector<Primitive *>::iterator start,
                                  std::vector<Primitive *>::iterator end,
@@ -57,54 +95,30 @@ BVHNode *BVHAccel::construct_bvh(std::vector<Primitive *>::iterator start,
   // size configuration. The starter code build a BVH aggregate with a
   // single leaf node (which is also the root) that encloses all the
   // primitives.
-
-
-
-  BBox bbox;
-  int primCounter = 0;
-  for (auto p = start; p != end; p++) {
-    BBox bb = (*p)->get_bbox();
-    bbox.expand(bb);
-    primCounter += 1;
-  }
-
-  BVHNode *node = new BVHNode(bbox);
-  node->start = start;
-  node->end = end;
-  if (primCounter > max_leaf_size) {
-      // need to figure out which axis to split
-      // thinking that I will choose for the shortest length of bounding box.
-      std::vector<Primitive *> left = vector<Primitive *>();
-      std::vector<Primitive *> right = vector<Primitive *>();
-      if ((bbox.extent.x > bbox.extent.y) && (bbox.extent.x > bbox.extent.z)) {
-          // x axis
-          sort(start, end, compX);
-      } else if (bbox.extent.y > bbox.extent.z) {
-          // y axis
-          sort(start, end, compY);
-      } else {
-          // z axis
-          sort(start, end, compZ);
-      }
-      double lEnd = floor(primCounter / 2);
-      node->l = construct_bvh(start, start + lEnd, max_leaf_size);
-      node->r = construct_bvh(start + lEnd, end, max_leaf_size);
-  }
-  return node;
-
-
-}
-
-bool BVHAccel::compX(Primitive *p1, Primitive *p2) {
-    return p1->get_bbox().centroid().x < p2->get_bbox().centroid().x;
-}
-
-bool BVHAccel::compY(Primitive *p1, Primitive *p2) {
-    return p1->get_bbox().centroid().y < p2->get_bbox().centroid().y;
-}
-
-bool BVHAccel::compZ(Primitive *p1, Primitive *p2) {
-    return p1->get_bbox().centroid().z < p2->get_bbox().centroid().z;
+    
+    if (end - start <= max_leaf_size) {
+        BBox bbox;
+        for (auto p = start; p != end; p++) {
+            BBox bb = (*p)->get_bbox();
+            bbox.expand(bb);
+        }
+        BVHNode* node = new BVHNode(bbox);
+        node->start = start;
+        node->end = end;
+        return node;
+    }
+    else {
+        std::vector<Primitive*>::iterator middle;
+        split(start, end, middle);
+        BBox bbox;
+        BVHNode* node = new BVHNode(bbox);
+        node->l = construct_bvh(start, middle, max_leaf_size);
+        node->r = construct_bvh(middle, end, max_leaf_size);
+        bbox.expand(node->l->bb);
+        bbox.expand(node->r->bb);
+        node->bb = bbox;
+        return node;
+    }
 }
 
 bool BVHAccel::has_intersection(const Ray &ray, BVHNode *node) const {
@@ -113,55 +127,58 @@ bool BVHAccel::has_intersection(const Ray &ray, BVHNode *node) const {
   // Take note that this function has a short-circuit that the
   // Intersection version cannot, since it returns as soon as it finds
   // a hit, it doesn't actually have to find the closest hit.
-
-
-  if (node->l == nullptr && node->r == nullptr) {
-      for (auto p = node->start; p != node->end; p++) {
-          if ((*p)->has_intersection(ray)){
-              return true;
-          }
-
-      }
-  } else {
-      if (has_intersection(ray, node->r)) {
-          return true;
-      }
-      if (has_intersection(ray, node->l)) {
-          return true;
-      }
-  }
-  return true;
+    double t0;
+    double t1;
+    if (!node->bb.intersect(ray, t0, t1)) return false;
+    if (node->isLeaf()) {
+        for (auto p = node->start; p != node->end; p++) {
+            total_isects++;
+            if ((*p)->has_intersection(ray)) return true;
+        }
+        return false;
+    }
+    else {
+        return has_intersection(ray, node->l)
+            || has_intersection(ray, node->r);
+    }
 
 }
 
 bool BVHAccel::intersect(const Ray &ray, Intersection *i, BVHNode *node) const {
   // TODO (Part 2.3):
   // Fill in the intersect function.
-    bool hit = false;
     double t0;
     double t1;
-    if (node->bb.intersect(ray, t0, t1)) {
-        if (node->isLeaf()) {
-            for (auto p = node->start; p != node->end; p++) {
-                if ((*p)->intersect(ray, i)){
-                    hit = true;
-                }
+    if (!node->bb.intersect(ray, t0, t1) 
+        || t1 < ray.min_t
+        || t0 > ray.max_t) return false;
+    if (node->isLeaf()) {
+        bool hit = false;
+        for (auto p = node->start; p != node->end; p++) {
+            total_isects++;
+            if ((*p)->intersect(ray, i)) hit = true;
+            /*Vector3D min = node->bb.min;
+            Vector3D max = node->bb.max;
+            Vector3D c = (*p)->get_bbox().centroid();
+            if (c[0] < min[0] || c[0] > max[0]) {
+                cout << "a" << endl;
             }
-        } else {
-
-            if (intersect(ray, i, node->l)) {
-                hit = true;
+            if (c[1] < min[1] || c[1] > max[1]) {
+                cout << "b" << endl;
             }
-            double lt = i->t;
-            if (intersect(ray, i, node->r)) {
-                hit = true;
+            if (c[2] < min[2] || c[2] > max[2]) {
+                cout << "c" << endl;
             }
+            cout << 1 << endl;*/
         }
+        //cout << "hit is " << hit << endl;
+        return hit;
     }
-
-    return hit;
-
-
+    else {
+        bool left = intersect(ray, i, node->l);
+        bool right = intersect(ray, i, node->r);
+        return left || right;
+    }
 }
 
 } // namespace SceneObjects

@@ -6,7 +6,7 @@ project(Assignment3)
 #-------------------------------------------------------------------------------
 option(BUILD_DEBUG     "Build with debug settings"    OFF)
 option(BUILD_DOCS      "Build documentation"          OFF)
-option(BUILD_CUSTOM    "Build without reference"      ON)
+option(BUILD_CUSTOM    "Build without reference"      OFF)
 option(GEN_BINARIES    "Generate 3-1 binaries"        OFF)
 
 
@@ -138,7 +138,7 @@ if (WIN32)
     list(APPEND APPLICATION_3_1_SOURCE src/util/win32/getopt.c)
 endif()
 
-add_executable(pathtracer ${APPLICATION_3_2_SOURCE} ${APPLICATION_HEADERS})
+add_executable(pathtracer ${APPLICATION_3_2_SOURCE} ${APPLICATION_HEADERS} "src/pathtracer/bsdf.cpp" "src/pathtracer/camera.cpp" "src/pathtracer/pathtracer.cpp" "src/scene/bbox.cpp" "src/scene/bvh.cpp" "src/scene/light.cpp" "src/scene/sphere.cpp" "src/scene/triangle.cpp")
 target_include_directories(pathtracer PUBLIC src)
 
 set(OpenGL_GL_PREFERENCE LEGACY)
@@ -166,7 +166,7 @@ if (GEN_BINARIES OR BUILD_CUSTOM)
   endif()
 
   if (WIN32 OR APPLE)
-    add_library(pt31 STATIC ${APPLICATION_3_1_SOURCE} ${APPLICATION_HEADERS})
+    add_library(pt31 STATIC ${APPLICATION_3_1_SOURCE} ${APPLICATION_HEADERS} "src/pathtracer/bsdf.cpp" "src/pathtracer/camera.cpp" "src/pathtracer/pathtracer.cpp" "src/scene/bbox.cpp" "src/scene/bvh.cpp" "src/scene/light.cpp" "src/scene/sphere.cpp" "src/scene/triangle.cpp")
   else()
     add_library(pt31 SHARED ${APPLICATION_3_1_SOURCE} ${APPLICATION_HEADERS})
   endif()

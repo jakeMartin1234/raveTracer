@@ -19,12 +19,12 @@ Vector3D MirrorBSDF::f(const Vector3D wo, const Vector3D wi) {
 }
 
 Vector3D MirrorBSDF::sample_f(const Vector3D wo, Vector3D* wi, double* pdf) {
-
   // TODO Project 3-2: Part 1
   // Implement MirrorBSDF
-  *pdf = 1;
-  reflect(wo, wi);
-  return reflectance / abs_cos_theta(*wi);
+    //std::cout << "yoyoyo ? " << std::endl;
+    *pdf = 1;
+    reflect(wo, wi);
+    return 1 / abs_cos_theta(*wi);
 }
 
 void MirrorBSDF::render_debugger_node()
@@ -94,17 +94,10 @@ Vector3D RefractionBSDF::f(const Vector3D wo, const Vector3D wi) {
 Vector3D RefractionBSDF::sample_f(const Vector3D wo, Vector3D* wi, double* pdf) {
   // TODO Project 3-2: Part 1
   // Implement RefractionBSDF
-    *pdf = 1.0;
-    if (refract(wo, wi, ior)) {
-        if (wo.z > 0) {
-            return transmittance / abs_cos_theta(*wi) / pow(1 / ior, 2);
-        } else {
-            return transmittance / abs_cos_theta(*wi) / pow(ior, 2);
-        }
-
-    }
-
-    return Vector3D();
+  if (!refract(wo, wi, ior)) return Vector3D();
+  *pdf = 1;
+  double eta = (wo.z > 0) ? 1.f / ior : ior;
+  return transmittance / abs_cos_theta(*wi) / (eta * eta);
 }
 
 void RefractionBSDF::render_debugger_node()
@@ -127,10 +120,25 @@ Vector3D GlassBSDF::sample_f(const Vector3D wo, Vector3D* wi, double* pdf) {
 
   // TODO Project 3-2: Part 1
   // Compute Fresnel coefficient and either reflect or refract based on it.
-
   // compute Fresnel coefficient and use it as the probability of reflection
   // - Fundamentals of Computer Graphics page 305
-  return Vector3D();
+    if (!refract(wo, wi, ior)) {
+        reflect(wo, wi);
+        *pdf = 1;
+        return reflectance / abs_cos_theta(*wi);
+    }
+    else {
+        double eta = (wo.z > 0) ? 1.f / ior : ior;
+        double rNot = (1 - eta) / (1 + eta);
+        double r = rNot + (1 - rNot) * pow((1 - abs(wo.z)), 5);
+        if (coin_flip(r)) {
+            reflect(wo, wi);
+            *pdf = r;
+            return r * reflectance / abs_cos_theta(*wi);
+        }
+        *pdf = 1 - r;
+        return (1 - r) * transmittance / abs_cos_theta(*wi) / (eta * eta);
+    }
 }
 
 void GlassBSDF::render_debugger_node()
@@ -148,8 +156,7 @@ void BSDF::reflect(const Vector3D wo, Vector3D* wi) {
 
   // TODO Project 3-2: Part 1
   // Implement reflection of wo about normal (0,0,1) and store result in wi.
-  *wi = Vector3D(-wo.x, -wo.y, wo.z);
-
+    *wi = { -wo.x, -wo.y, wo.z };
 }
 
 bool BSDF::refract(const Vector3D wo, Vector3D* wi, double ior) {
@@ -159,31 +166,17 @@ bool BSDF::refract(const Vector3D wo, Vector3D* wi, double ior) {
   // Return false if refraction does not occur due to total internal reflection
   // and true otherwise. When dot(wo,n) is positive, then wo corresponds to a
   // ray entering the surface through vacuum.
-
-    double mu;
-    if (wo.z > 0) {
-        mu = 1.0/ior;
-    } else {
-        mu = ior;
-    }
-    double rest = 1 - pow(abs_cos_theta(wo), 2);
-    *wi = Vector3D();
-    if (1 - pow(mu, 2) * rest < 0) {
-        reflect(wo, wi);
-        return false;
-    }
-    wi->x = -1 * mu * wo.x;
-    wi->y = -1 * mu * wo.y;
-    // at this point you know that 1 - pow(mu, 2) * rest > 0
-    if (wo.z > 0) {
-        wi->z = -1 * sqrt(1 - pow(mu, 2) * rest);
-    } else {
-        wi->z = sqrt(1 - pow(mu, 2) * rest);
-    }
-
-
-    return true;
-
+  double cosIncoming = dot(wo, { 0.f, 0.f, 1.f });
+  double eta = (cosIncoming > 0) ? 1.f / ior : ior;
+  double temp = 1.f - eta * eta * (1.f - wo.z * wo.z);
+  if (temp < 0) return false;
+  *wi =
+  {
+      -eta * wo.x,
+      -eta * wo.y,
+      (cosIncoming > 0) ? -sqrt(temp) : sqrt(temp)
+  };
+  return true;
 }
 
 } // namespace CGL

@@ -4,7 +4,6 @@
 
 #include <algorithm>
 #include <iostream>
-#include "triangle.h"
 
 namespace CGL {
 
@@ -14,50 +13,58 @@ bool BBox::intersect(const Ray& r, double& t0, double& t1) const {
   // Implement ray - bounding box intersection test
   // If the ray intersected the bouding box within the range given by
   // t0, t1, update t0 and t1 with the new intersection times.
-
-
-  // there are 6 faces, just have to call intersect triangle twice on each.
-
-  vector<double> tsMax = vector<double>();
-  vector<double> tsMin = vector<double>();
-  // faces parallel with x axis
-  if (r.d.x != 0) {
-      double tx1 = (min.x - r.o.x) / r.d.x;
-      double tx2 = (max.x - r.o.x) / r.d.x;
-      tsMin.push_back(std::min(tx1, tx2));
-      tsMax.push_back(std::max(tx1, tx2));
-  }
-    if (r.d.y != 0) {
-        double ty1 = (min.y - r.o.y) / r.d.y;
-        double ty2 = (max.y - r.o.y) / r.d.y;
-        tsMin.push_back(std::min(ty1, ty2));
-        tsMax.push_back(std::max(ty1, ty2));
-    }
-    if (r.d.z != 0) {
-        double tz1 = (min.z - r.o.z) / r.d.z;
-        double tz2 = (max.z - r.o.z) / r.d.z;
-        tsMin.push_back(std::min(tz1, tz2));
-        tsMax.push_back(std::max(tz1, tz2));
-    }
-    if (tsMax.size() == 0 || tsMin.size() == 0) {
-        return false;
-    } else {
-        sort(tsMin.begin(), tsMin.end());
-        t0 = tsMin.at(tsMin.size() - 1);
-        sort(tsMax.begin(), tsMax.end());
-        t1 = tsMax.at(0);
-
-    }
-    if (t0 > r.max_t || t1 < r.min_t) {
-        return false;
-    }
-
-    if (t0 > t1) {
-        return false;
-    }
-
-
-
+	float x1,x2,y1, y2,z1,z2;
+	if (r.d[0] == 0) {
+		x1 = std::numeric_limits<float>::min();
+		x2 = std::numeric_limits<float>::max();
+	}
+	else {
+		x1 = (min[0] - r.o[0]) / r.d[0];
+		x2 = (max[0] - r.o[0]) / r.d[0];
+	}
+	if (r.d[1] == 0) {
+		y1 = std::numeric_limits<float>::min();
+		y2 = std::numeric_limits<float>::max();
+	}
+	else {
+		y1 = (min[1] - r.o[1]) / r.d[1];
+		y2 = (max[1] - r.o[1]) / r.d[1];
+	}
+	if (r.d[2] == 0) {
+		z1 = std::numeric_limits<float>::min();
+		z2 = std::numeric_limits<float>::max();
+	}
+	else {
+		z1 = (min[2] - r.o[2]) / r.d[2];
+		z2 = (max[2] - r.o[2]) / r.d[2];
+	}
+	if (r.d[0] < 0) {
+		float temp = x1;
+		x1 = x2;
+		x2 = temp;
+	}
+	if (r.d[1] < 0) {
+		float temp = y1;
+		y1 = y2;
+		y2 = temp;
+	}
+	if (r.d[2] < 0) {
+		float temp = z1;
+		z1 = z2;
+		z2 = temp;
+	}
+	float time0 = std::max(x1, std::max(y1, z1));
+	float time1 = std::min(x2, std::min(y2, z2));
+	if (time0 > time1 || time1 < 0) {
+		return false;
+	}
+	if (time0 < 0) {
+		t0 = 0.f;
+		t1 = time1;
+		return true;
+	}
+	t0 = time0;
+	t1 = time1;
     return true;
 }
 

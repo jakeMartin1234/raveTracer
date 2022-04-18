@@ -7,7 +7,6 @@
 #include <algorithm>
 #include <iostream>
 #include <utility>
-#include <cmath>
 
 
 using std::max;
@@ -54,15 +53,24 @@ Vector3D DiffuseBSDF::f(const Vector3D wo, const Vector3D wi) {
   // TODO (Part 3.1):
   // This function takes in both wo and wi and returns the evaluation of
   // the BSDF for those two directions.
-
-
-  return reflectance/M_PI;
-
+    return fabs(wi.z) * reflectance;
 }
 
 /**
  * Evalutate diffuse lambertian BSDF.
  */
+Vector3D gen_uniform_hem_ray() {
+    while (true) {
+        float x = ((double)rand() / (RAND_MAX)) * 2 - 1;
+        float y = ((double)rand() / (RAND_MAX)) * 2 - 1;
+        float z = ((double)rand() / (RAND_MAX));
+        if (x * x + y * y + z * z > 1) continue;
+        Vector3D res(x, y, z);
+        res.normalize();
+        return res;
+    }
+}
+
 Vector3D DiffuseBSDF::sample_f(const Vector3D wo, Vector3D *wi, double *pdf) {
   // TODO (Part 3.1):
   // This function takes in only wo and provides pointers for wi and pdf,
@@ -70,10 +78,9 @@ Vector3D DiffuseBSDF::sample_f(const Vector3D wo, Vector3D *wi, double *pdf) {
   // After sampling a value for wi, it returns the evaluation of the BSDF
   // at (wo, *wi).
   // You can use the `f` function. The reference solution only takes two lines.
-
-  *wi = sampler.get_sample(pdf);
+  *wi = sampler.get_sample();
+  *pdf = fabs(wi->z);
   return f(wo, *wi);
-
 }
 
 void DiffuseBSDF::render_debugger_node()
@@ -96,7 +103,7 @@ Vector3D EmissionBSDF::f(const Vector3D wo, const Vector3D wi) {
  * Evalutate Emission BSDF (Light Source)
  */
 Vector3D EmissionBSDF::sample_f(const Vector3D wo, Vector3D *wi, double *pdf) {
-  *pdf = 1.0 / PI;
+  *pdf = 1.0 / (2.f * PI);
   *wi = sampler.get_sample(pdf);
   return Vector3D();
 }

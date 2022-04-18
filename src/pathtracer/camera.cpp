@@ -187,25 +187,29 @@ void Camera::load_settings(string filename) {
 /**
  * This function generates a ray from camera perspective, passing through camera / sensor plane (x,y)
  */
+Vector3D rotateAboutZ(const Vector3D& vec, float rads) {
+    return Vector3D(
+        vec.x * cos(rads) - vec.y * sin(rads),
+        vec.x * sin(rads) + vec.y * cos(rads),
+        vec.z);
+}
+
 Ray Camera::generate_ray(double x, double y) const {
-
-  // TODO (Part 1.1):
-  // compute position of the input sensor sample coordinate on the
-  // canonical sensor plane one unit away from the pinhole.
-  // Note: hFov and vFov are in degrees.
-  //
-  Vector3D bottomLeft = Vector3D(-tan(radians(hFov)/2), -tan(radians(vFov)/2), -1);
-  Vector3D topRight = Vector3D(tan(radians(hFov)/2), tan(radians(vFov)/2), -1);
-  double xPos = bottomLeft.x + (topRight.x - bottomLeft.x) * x;
-  double yPos = bottomLeft.y + (topRight.y - bottomLeft.y) * y;
-  Vector3D worldPos = Vector3D(xPos, yPos, -1);
-  worldPos = c2w * worldPos;
-  worldPos.normalize();
-
-  Ray res = Ray(pos, worldPos, fClip);
-  res.depth = 0;
-  return res;
-
+    float vFovRad = vFov * (PI / 180.f);
+    float hFovRad = vFovRad * aspect_ratio();
+    Vector3D forward = targetPos - pos;
+    forward.normalize();
+    Vector3D right = rotateAboutZ(up_dir(), PI / 2.f);
+    double width = 2 * tan(hFovRad / 2.f);
+    double height = 2 * tan(vFovRad / 2.f);
+    Vector3D screenDir = Vector3D(
+        width * (x - 0.5),
+        height * (y - 0.5),
+        -1
+    );
+    Vector3D worldDir = c2w * screenDir;
+    worldDir.normalize();
+    return Ray(pos, worldDir);
 }
 
 } // namespace CGL
