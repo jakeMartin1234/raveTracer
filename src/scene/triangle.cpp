@@ -28,19 +28,77 @@ bool Triangle::has_intersection(const Ray &r) const {
   // function records the "intersection" while this function only tests whether
   // there is a intersection.
 
+  // first step is to find the normal to the plane.
 
+  Vector3D e1 = p2 - p1;
+  Vector3D e2 = p3 - p1;
+  Vector3D P = cross(r.d, e2);
+  Vector3D rel = r.o - p1;
+  Vector3D b = cross(rel, e1);
+  double determinent = dot(e1, P);
 
+  double alpha = dot(P, rel) / determinent;
+  double beta = dot(b, r.d) / determinent;
+  double t = dot(b, e2) / determinent;
+
+  if (alpha < 0 || alpha > 1) {
+      return false;
+  }
+  if (beta < 0 || beta > 1) {
+      return false;
+  }
+  if (t < r.min_t || t > r.max_t) {
+      return false;
+  }
+
+  r.max_t = t;
   return true;
+
+
+
+
+
 }
+
+
 
 bool Triangle::intersect(const Ray &r, Intersection *isect) const {
   // Part 1, Task 3:
   // implement ray-triangle intersection. When an intersection takes
   // place, the Intersection data should be updated accordingly
+    Vector3D e1 = p2 - p1;
+    Vector3D e2 = p3 - p1;
+    Vector3D P = cross(r.d, e2);
+    double determinent = dot(e1, P);
+    Vector3D T = r.o - p1;
+    Vector3D Q = cross(T, e1);
 
+    double alpha = dot(T, P) / determinent;
+    double beta = dot(r.d, Q) / determinent;
+    double gamma = 1 - alpha - beta;
+    double t = dot(e2, Q) / determinent;
 
+    if (alpha < 0 || alpha > 1) {
+        return false;
+    }
+    if (beta < 0 || beta > 1) {
+        return false;
+    }
+    if (alpha + beta < 0 || alpha + beta > 1) {
+        return false;
+    }
+    if (t < r.min_t || t > r.max_t || t < 0) {
+        return false;
+    }
+    r.max_t = t;
 
-  return true;
+    isect->t = t;
+    isect->n = gamma * n1 + alpha * n2 + beta * n3;
+    isect->n.normalize();
+    isect->primitive = this;
+    isect->bsdf = this->get_bsdf();
+    return true;
+
 }
 
 void Triangle::draw(const Color &c, float alpha) const {

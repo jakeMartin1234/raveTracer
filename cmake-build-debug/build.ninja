@@ -84,14 +84,15 @@ build list_install_components: phony
 
 
 #############################################
-# Utility command for edit_cache
+# Utility command for rebuild_cache
 
-build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/jakemartin/Documents/cs184/raveTracer -B/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
   restat = 1
 
-build edit_cache: phony CMakeFiles/edit_cache.util
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Object build statements for EXECUTABLE target pathtracer
@@ -104,7 +105,7 @@ build cmake_object_order_depends_target_pathtracer: phony || cmake_object_order_
 
 build CMakeFiles/pathtracer.dir/src/scene/object.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/object.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/object.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene
@@ -113,7 +114,7 @@ build CMakeFiles/pathtracer.dir/src/scene/object.cpp.o: CXX_COMPILER__pathtracer
 
 build CMakeFiles/pathtracer.dir/src/scene/collada/collada.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/collada/collada.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/collada/collada.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/collada
@@ -122,7 +123,7 @@ build CMakeFiles/pathtracer.dir/src/scene/collada/collada.cpp.o: CXX_COMPILER__p
 
 build CMakeFiles/pathtracer.dir/src/scene/collada/camera_info.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/collada/camera_info.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/collada/camera_info.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/collada
@@ -131,7 +132,7 @@ build CMakeFiles/pathtracer.dir/src/scene/collada/camera_info.cpp.o: CXX_COMPILE
 
 build CMakeFiles/pathtracer.dir/src/scene/collada/light_info.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/collada/light_info.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/collada/light_info.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/collada
@@ -140,7 +141,7 @@ build CMakeFiles/pathtracer.dir/src/scene/collada/light_info.cpp.o: CXX_COMPILER
 
 build CMakeFiles/pathtracer.dir/src/scene/collada/sphere_info.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/collada/sphere_info.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/collada/sphere_info.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/collada
@@ -149,7 +150,7 @@ build CMakeFiles/pathtracer.dir/src/scene/collada/sphere_info.cpp.o: CXX_COMPILE
 
 build CMakeFiles/pathtracer.dir/src/scene/collada/polymesh_info.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/collada/polymesh_info.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/collada/polymesh_info.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/collada
@@ -158,7 +159,7 @@ build CMakeFiles/pathtracer.dir/src/scene/collada/polymesh_info.cpp.o: CXX_COMPI
 
 build CMakeFiles/pathtracer.dir/src/scene/collada/material_info.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/collada/material_info.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/collada/material_info.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/collada
@@ -167,7 +168,7 @@ build CMakeFiles/pathtracer.dir/src/scene/collada/material_info.cpp.o: CXX_COMPI
 
 build CMakeFiles/pathtracer.dir/src/scene/gl_scene/mesh.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/gl_scene/mesh.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/gl_scene/mesh.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/gl_scene
@@ -176,7 +177,7 @@ build CMakeFiles/pathtracer.dir/src/scene/gl_scene/mesh.cpp.o: CXX_COMPILER__pat
 
 build CMakeFiles/pathtracer.dir/src/scene/gl_scene/scene.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/gl_scene/scene.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/gl_scene/scene.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/gl_scene
@@ -185,7 +186,7 @@ build CMakeFiles/pathtracer.dir/src/scene/gl_scene/scene.cpp.o: CXX_COMPILER__pa
 
 build CMakeFiles/pathtracer.dir/src/scene/gl_scene/sphere.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/gl_scene/sphere.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/gl_scene/sphere.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/gl_scene
@@ -194,7 +195,7 @@ build CMakeFiles/pathtracer.dir/src/scene/gl_scene/sphere.cpp.o: CXX_COMPILER__p
 
 build CMakeFiles/pathtracer.dir/src/util/halfEdgeMesh.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/util/halfEdgeMesh.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/util/halfEdgeMesh.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/util
@@ -203,7 +204,7 @@ build CMakeFiles/pathtracer.dir/src/util/halfEdgeMesh.cpp.o: CXX_COMPILER__patht
 
 build CMakeFiles/pathtracer.dir/src/application/meshEdit.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/application/meshEdit.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/application/meshEdit.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/application
@@ -212,7 +213,7 @@ build CMakeFiles/pathtracer.dir/src/application/meshEdit.cpp.o: CXX_COMPILER__pa
 
 build CMakeFiles/pathtracer.dir/src/pathtracer/sampler.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/pathtracer/sampler.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/pathtracer/sampler.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/pathtracer
@@ -221,7 +222,7 @@ build CMakeFiles/pathtracer.dir/src/pathtracer/sampler.cpp.o: CXX_COMPILER__path
 
 build CMakeFiles/pathtracer.dir/src/pathtracer/advanced_bsdf.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/pathtracer/advanced_bsdf.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/pathtracer/advanced_bsdf.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/pathtracer
@@ -230,7 +231,7 @@ build CMakeFiles/pathtracer.dir/src/pathtracer/advanced_bsdf.cpp.o: CXX_COMPILER
 
 build CMakeFiles/pathtracer.dir/src/scene/environment_light.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/environment_light.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/environment_light.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene
@@ -239,7 +240,7 @@ build CMakeFiles/pathtracer.dir/src/scene/environment_light.cpp.o: CXX_COMPILER_
 
 build CMakeFiles/pathtracer.dir/src/pathtracer/camera_lens.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/pathtracer/camera_lens.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/pathtracer/camera_lens.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/pathtracer
@@ -248,7 +249,7 @@ build CMakeFiles/pathtracer.dir/src/pathtracer/camera_lens.cpp.o: CXX_COMPILER__
 
 build CMakeFiles/pathtracer.dir/src/pathtracer/raytraced_renderer.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/pathtracer/raytraced_renderer.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/pathtracer/raytraced_renderer.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/pathtracer
@@ -257,7 +258,7 @@ build CMakeFiles/pathtracer.dir/src/pathtracer/raytraced_renderer.cpp.o: CXX_COM
 
 build CMakeFiles/pathtracer.dir/src/util/sphere_drawing.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/util/sphere_drawing.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/util/sphere_drawing.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/util
@@ -266,7 +267,7 @@ build CMakeFiles/pathtracer.dir/src/util/sphere_drawing.cpp.o: CXX_COMPILER__pat
 
 build CMakeFiles/pathtracer.dir/src/util/lodepng.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/util/lodepng.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/util/lodepng.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/util
@@ -275,7 +276,7 @@ build CMakeFiles/pathtracer.dir/src/util/lodepng.cpp.o: CXX_COMPILER__pathtracer
 
 build CMakeFiles/pathtracer.dir/src/application/application.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/application/application.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/application/application.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/application
@@ -284,7 +285,7 @@ build CMakeFiles/pathtracer.dir/src/application/application.cpp.o: CXX_COMPILER_
 
 build CMakeFiles/pathtracer.dir/src/application/main.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/application/main.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/application/main.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/application
@@ -293,7 +294,7 @@ build CMakeFiles/pathtracer.dir/src/application/main.cpp.o: CXX_COMPILER__pathtr
 
 build CMakeFiles/pathtracer.dir/src/application/visual_debugger.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/application/visual_debugger.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/application/visual_debugger.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/application
@@ -302,7 +303,7 @@ build CMakeFiles/pathtracer.dir/src/application/visual_debugger.cpp.o: CXX_COMPI
 
 build CMakeFiles/pathtracer.dir/src/imgui/imgui.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/imgui/imgui.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/imgui/imgui.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/imgui
@@ -311,7 +312,7 @@ build CMakeFiles/pathtracer.dir/src/imgui/imgui.cpp.o: CXX_COMPILER__pathtracer_
 
 build CMakeFiles/pathtracer.dir/src/imgui/imgui_widgets.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/imgui/imgui_widgets.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/imgui
@@ -320,7 +321,7 @@ build CMakeFiles/pathtracer.dir/src/imgui/imgui_widgets.cpp.o: CXX_COMPILER__pat
 
 build CMakeFiles/pathtracer.dir/src/imgui/imgui_draw.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/imgui/imgui_draw.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/imgui/imgui_draw.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/imgui
@@ -329,7 +330,7 @@ build CMakeFiles/pathtracer.dir/src/imgui/imgui_draw.cpp.o: CXX_COMPILER__pathtr
 
 build CMakeFiles/pathtracer.dir/src/imgui/imgui_tables.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/imgui/imgui_tables.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/imgui/imgui_tables.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/imgui
@@ -338,7 +339,7 @@ build CMakeFiles/pathtracer.dir/src/imgui/imgui_tables.cpp.o: CXX_COMPILER__path
 
 build CMakeFiles/pathtracer.dir/src/imgui/backends/imgui_impl_glfw.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/imgui/backends/imgui_impl_glfw.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/imgui/backends/imgui_impl_glfw.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/imgui/backends
@@ -347,7 +348,7 @@ build CMakeFiles/pathtracer.dir/src/imgui/backends/imgui_impl_glfw.cpp.o: CXX_CO
 
 build CMakeFiles/pathtracer.dir/src/imgui/backends/imgui_impl_opengl2.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/imgui/backends/imgui_impl_opengl2.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/imgui/backends/imgui_impl_opengl2.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/imgui/backends
@@ -362,9 +363,9 @@ build CMakeFiles/pathtracer.dir/src/imgui/backends/imgui_impl_opengl2.cpp.o: CXX
 #############################################
 # Link the executable pathtracer
 
-build pathtracer: CXX_EXECUTABLE_LINKER__pathtracer_Debug CMakeFiles/pathtracer.dir/src/scene/object.cpp.o CMakeFiles/pathtracer.dir/src/scene/collada/collada.cpp.o CMakeFiles/pathtracer.dir/src/scene/collada/camera_info.cpp.o CMakeFiles/pathtracer.dir/src/scene/collada/light_info.cpp.o CMakeFiles/pathtracer.dir/src/scene/collada/sphere_info.cpp.o CMakeFiles/pathtracer.dir/src/scene/collada/polymesh_info.cpp.o CMakeFiles/pathtracer.dir/src/scene/collada/material_info.cpp.o CMakeFiles/pathtracer.dir/src/scene/gl_scene/mesh.cpp.o CMakeFiles/pathtracer.dir/src/scene/gl_scene/scene.cpp.o CMakeFiles/pathtracer.dir/src/scene/gl_scene/sphere.cpp.o CMakeFiles/pathtracer.dir/src/util/halfEdgeMesh.cpp.o CMakeFiles/pathtracer.dir/src/application/meshEdit.cpp.o CMakeFiles/pathtracer.dir/src/pathtracer/sampler.cpp.o CMakeFiles/pathtracer.dir/src/pathtracer/advanced_bsdf.cpp.o CMakeFiles/pathtracer.dir/src/scene/environment_light.cpp.o CMakeFiles/pathtracer.dir/src/pathtracer/camera_lens.cpp.o CMakeFiles/pathtracer.dir/src/pathtracer/raytraced_renderer.cpp.o CMakeFiles/pathtracer.dir/src/util/sphere_drawing.cpp.o CMakeFiles/pathtracer.dir/src/util/lodepng.cpp.o CMakeFiles/pathtracer.dir/src/application/application.cpp.o CMakeFiles/pathtracer.dir/src/application/main.cpp.o CMakeFiles/pathtracer.dir/src/application/visual_debugger.cpp.o CMakeFiles/pathtracer.dir/src/imgui/imgui.cpp.o CMakeFiles/pathtracer.dir/src/imgui/imgui_widgets.cpp.o CMakeFiles/pathtracer.dir/src/imgui/imgui_draw.cpp.o CMakeFiles/pathtracer.dir/src/imgui/imgui_tables.cpp.o CMakeFiles/pathtracer.dir/src/imgui/backends/imgui_impl_glfw.cpp.o CMakeFiles/pathtracer.dir/src/imgui/backends/imgui_impl_opengl2.cpp.o | libpt31.a CGL/libCGL.a /opt/homebrew/lib/libfreetype.dylib CGL/deps/glew/libglew.a CGL/deps/glfw/src/libglfw3.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd || CGL/deps/glew/libglew.a CGL/deps/glfw/src/libglfw3.a CGL/libCGL.a libpt31.a
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
-  LINK_LIBRARIES = libpt31.a  CGL/libCGL.a  /opt/homebrew/lib/libfreetype.dylib  CGL/deps/glew/libglew.a  CGL/deps/glfw/src/libglfw3.a  -framework Cocoa  -framework IOKit  -framework CoreFoundation  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd
+build pathtracer: CXX_EXECUTABLE_LINKER__pathtracer_Debug CMakeFiles/pathtracer.dir/src/scene/object.cpp.o CMakeFiles/pathtracer.dir/src/scene/collada/collada.cpp.o CMakeFiles/pathtracer.dir/src/scene/collada/camera_info.cpp.o CMakeFiles/pathtracer.dir/src/scene/collada/light_info.cpp.o CMakeFiles/pathtracer.dir/src/scene/collada/sphere_info.cpp.o CMakeFiles/pathtracer.dir/src/scene/collada/polymesh_info.cpp.o CMakeFiles/pathtracer.dir/src/scene/collada/material_info.cpp.o CMakeFiles/pathtracer.dir/src/scene/gl_scene/mesh.cpp.o CMakeFiles/pathtracer.dir/src/scene/gl_scene/scene.cpp.o CMakeFiles/pathtracer.dir/src/scene/gl_scene/sphere.cpp.o CMakeFiles/pathtracer.dir/src/util/halfEdgeMesh.cpp.o CMakeFiles/pathtracer.dir/src/application/meshEdit.cpp.o CMakeFiles/pathtracer.dir/src/pathtracer/sampler.cpp.o CMakeFiles/pathtracer.dir/src/pathtracer/advanced_bsdf.cpp.o CMakeFiles/pathtracer.dir/src/scene/environment_light.cpp.o CMakeFiles/pathtracer.dir/src/pathtracer/camera_lens.cpp.o CMakeFiles/pathtracer.dir/src/pathtracer/raytraced_renderer.cpp.o CMakeFiles/pathtracer.dir/src/util/sphere_drawing.cpp.o CMakeFiles/pathtracer.dir/src/util/lodepng.cpp.o CMakeFiles/pathtracer.dir/src/application/application.cpp.o CMakeFiles/pathtracer.dir/src/application/main.cpp.o CMakeFiles/pathtracer.dir/src/application/visual_debugger.cpp.o CMakeFiles/pathtracer.dir/src/imgui/imgui.cpp.o CMakeFiles/pathtracer.dir/src/imgui/imgui_widgets.cpp.o CMakeFiles/pathtracer.dir/src/imgui/imgui_draw.cpp.o CMakeFiles/pathtracer.dir/src/imgui/imgui_tables.cpp.o CMakeFiles/pathtracer.dir/src/imgui/backends/imgui_impl_glfw.cpp.o CMakeFiles/pathtracer.dir/src/imgui/backends/imgui_impl_opengl2.cpp.o | CGL/libCGL.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd libpt31.a CGL/libCGL.a /opt/homebrew/lib/libfreetype.dylib CGL/deps/glew/libglew.a CGL/deps/glfw/src/libglfw3.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd || CGL/deps/glew/libglew.a CGL/deps/glfw/src/libglfw3.a CGL/libCGL.a libpt31.a
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  LINK_LIBRARIES = CGL/libCGL.a  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd  libpt31.a  CGL/libCGL.a  /opt/homebrew/lib/libfreetype.dylib  CGL/deps/glew/libglew.a  CGL/deps/glfw/src/libglfw3.a  -framework Cocoa  -framework IOKit  -framework CoreFoundation  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -374,15 +375,14 @@ build pathtracer: CXX_EXECUTABLE_LINKER__pathtracer_Debug CMakeFiles/pathtracer.
 
 
 #############################################
-# Utility command for rebuild_cache
+# Utility command for edit_cache
 
-build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/jakemartin/Documents/cs184/raveTracer -B/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug
-  DESC = Running CMake to regenerate build system...
-  pool = console
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
   restat = 1
 
-build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target pt31
@@ -395,7 +395,7 @@ build cmake_object_order_depends_target_pt31: phony || cmake_object_order_depend
 
 build CMakeFiles/pt31.dir/src/scene/sphere.cpp.o: CXX_COMPILER__pt31_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/sphere.cpp || cmake_object_order_depends_target_pt31
   DEP_FILE = CMakeFiles/pt31.dir/src/scene/sphere.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pt31.dir
   OBJECT_FILE_DIR = CMakeFiles/pt31.dir/src/scene
@@ -404,7 +404,7 @@ build CMakeFiles/pt31.dir/src/scene/sphere.cpp.o: CXX_COMPILER__pt31_Debug /User
 
 build CMakeFiles/pt31.dir/src/scene/triangle.cpp.o: CXX_COMPILER__pt31_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/triangle.cpp || cmake_object_order_depends_target_pt31
   DEP_FILE = CMakeFiles/pt31.dir/src/scene/triangle.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pt31.dir
   OBJECT_FILE_DIR = CMakeFiles/pt31.dir/src/scene
@@ -413,7 +413,7 @@ build CMakeFiles/pt31.dir/src/scene/triangle.cpp.o: CXX_COMPILER__pt31_Debug /Us
 
 build CMakeFiles/pt31.dir/src/scene/light.cpp.o: CXX_COMPILER__pt31_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/light.cpp || cmake_object_order_depends_target_pt31
   DEP_FILE = CMakeFiles/pt31.dir/src/scene/light.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pt31.dir
   OBJECT_FILE_DIR = CMakeFiles/pt31.dir/src/scene
@@ -422,7 +422,7 @@ build CMakeFiles/pt31.dir/src/scene/light.cpp.o: CXX_COMPILER__pt31_Debug /Users
 
 build CMakeFiles/pt31.dir/src/scene/bvh.cpp.o: CXX_COMPILER__pt31_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/bvh.cpp || cmake_object_order_depends_target_pt31
   DEP_FILE = CMakeFiles/pt31.dir/src/scene/bvh.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pt31.dir
   OBJECT_FILE_DIR = CMakeFiles/pt31.dir/src/scene
@@ -431,7 +431,7 @@ build CMakeFiles/pt31.dir/src/scene/bvh.cpp.o: CXX_COMPILER__pt31_Debug /Users/j
 
 build CMakeFiles/pt31.dir/src/scene/bbox.cpp.o: CXX_COMPILER__pt31_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/bbox.cpp || cmake_object_order_depends_target_pt31
   DEP_FILE = CMakeFiles/pt31.dir/src/scene/bbox.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pt31.dir
   OBJECT_FILE_DIR = CMakeFiles/pt31.dir/src/scene
@@ -440,7 +440,7 @@ build CMakeFiles/pt31.dir/src/scene/bbox.cpp.o: CXX_COMPILER__pt31_Debug /Users/
 
 build CMakeFiles/pt31.dir/src/pathtracer/camera.cpp.o: CXX_COMPILER__pt31_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/pathtracer/camera.cpp || cmake_object_order_depends_target_pt31
   DEP_FILE = CMakeFiles/pt31.dir/src/pathtracer/camera.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pt31.dir
   OBJECT_FILE_DIR = CMakeFiles/pt31.dir/src/pathtracer
@@ -449,7 +449,7 @@ build CMakeFiles/pt31.dir/src/pathtracer/camera.cpp.o: CXX_COMPILER__pt31_Debug 
 
 build CMakeFiles/pt31.dir/src/pathtracer/bsdf.cpp.o: CXX_COMPILER__pt31_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/pathtracer/bsdf.cpp || cmake_object_order_depends_target_pt31
   DEP_FILE = CMakeFiles/pt31.dir/src/pathtracer/bsdf.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pt31.dir
   OBJECT_FILE_DIR = CMakeFiles/pt31.dir/src/pathtracer
@@ -458,7 +458,7 @@ build CMakeFiles/pt31.dir/src/pathtracer/bsdf.cpp.o: CXX_COMPILER__pt31_Debug /U
 
 build CMakeFiles/pt31.dir/src/pathtracer/pathtracer.cpp.o: CXX_COMPILER__pt31_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/pathtracer/pathtracer.cpp || cmake_object_order_depends_target_pt31
   DEP_FILE = CMakeFiles/pt31.dir/src/pathtracer/pathtracer.cpp.o.d
-  FLAGS = -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
+  FLAGS = -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pt31.dir
   OBJECT_FILE_DIR = CMakeFiles/pt31.dir/src/pathtracer
@@ -475,7 +475,7 @@ build CMakeFiles/pt31.dir/src/pathtracer/pathtracer.cpp.o: CXX_COMPILER__pt31_De
 
 build libpt31.a: CXX_STATIC_LIBRARY_LINKER__pt31_Debug CMakeFiles/pt31.dir/src/scene/sphere.cpp.o CMakeFiles/pt31.dir/src/scene/triangle.cpp.o CMakeFiles/pt31.dir/src/scene/light.cpp.o CMakeFiles/pt31.dir/src/scene/bvh.cpp.o CMakeFiles/pt31.dir/src/scene/bbox.cpp.o CMakeFiles/pt31.dir/src/pathtracer/camera.cpp.o CMakeFiles/pt31.dir/src/pathtracer/bsdf.cpp.o CMakeFiles/pt31.dir/src/pathtracer/pathtracer.cpp.o || CGL/deps/glew/libglew.a CGL/deps/glfw/src/libglfw3.a CGL/libCGL.a
   ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
-  LANGUAGE_COMPILE_FLAGS = -std=c++11 -m64 -fPIC -O3  -g
+  LANGUAGE_COMPILE_FLAGS = -std=c++11 -m64 -fPIC -O3   -g
   OBJECT_DIR = CMakeFiles/pt31.dir
   POST_BUILD = :
   PRE_LINK = :

@@ -22,7 +22,9 @@ Vector3D MirrorBSDF::sample_f(const Vector3D wo, Vector3D* wi, double* pdf) {
 
   // TODO Project 3-2: Part 1
   // Implement MirrorBSDF
-  return Vector3D();
+  *pdf = 1;
+  reflect(wo, wi);
+  return reflectance / abs_cos_theta(*wi);
 }
 
 void MirrorBSDF::render_debugger_node()
@@ -92,7 +94,17 @@ Vector3D RefractionBSDF::f(const Vector3D wo, const Vector3D wi) {
 Vector3D RefractionBSDF::sample_f(const Vector3D wo, Vector3D* wi, double* pdf) {
   // TODO Project 3-2: Part 1
   // Implement RefractionBSDF
-  return Vector3D();
+    *pdf = 1.0;
+    if (refract(wo, wi, ior)) {
+        if (wo.z > 0) {
+            return transmittance / abs_cos_theta(*wi) / pow(1 / ior, 2);
+        } else {
+            return transmittance / abs_cos_theta(*wi) / pow(ior, 2);
+        }
+
+    }
+
+    return Vector3D();
 }
 
 void RefractionBSDF::render_debugger_node()
@@ -136,7 +148,7 @@ void BSDF::reflect(const Vector3D wo, Vector3D* wi) {
 
   // TODO Project 3-2: Part 1
   // Implement reflection of wo about normal (0,0,1) and store result in wi.
-
+  *wi = Vector3D(-wo.x, -wo.y, wo.z);
 
 }
 
@@ -148,7 +160,29 @@ bool BSDF::refract(const Vector3D wo, Vector3D* wi, double ior) {
   // and true otherwise. When dot(wo,n) is positive, then wo corresponds to a
   // ray entering the surface through vacuum.
 
-  return true;
+    double mu;
+    if (wo.z > 0) {
+        mu = 1.0/ior;
+    } else {
+        mu = ior;
+    }
+    double rest = 1 - pow(abs_cos_theta(wo), 2);
+    *wi = Vector3D();
+    if (1 - pow(mu, 2) * rest < 0) {
+        reflect(wo, wi);
+        return false;
+    }
+    wi->x = -1 * mu * wo.x;
+    wi->y = -1 * mu * wo.y;
+    // at this point you know that 1 - pow(mu, 2) * rest > 0
+    if (wo.z > 0) {
+        wi->z = -1 * sqrt(1 - pow(mu, 2) * rest);
+    } else {
+        wi->z = sqrt(1 - pow(mu, 2) * rest);
+    }
+
+
+    return true;
 
 }
 

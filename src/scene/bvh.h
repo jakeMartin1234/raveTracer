@@ -139,6 +139,9 @@ private:
   std::vector<Primitive*> primitives;
   BVHNode* root; ///< root node of the BVH
   BVHNode *construct_bvh(std::vector<Primitive*>::iterator start, std::vector<Primitive*>::iterator end, size_t max_leaf_size);
+  bool static compX(Primitive *p1, Primitive *p2);
+  bool static compY(Primitive *p1, Primitive *p2);
+  bool static compZ(Primitive *p1, Primitive *p2);
 };
 
 } // namespace SceneObjects

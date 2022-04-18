@@ -1135,6 +1135,14 @@
 			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageMessage.cmake"
 		},
 		{
+			"path" : "CGL/find_avx.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckCXXSourceRuns.cmake"
+		},
+		{
 			"path" : "CGL/CMakeLists.txt"
 		},
 		{

@@ -26,25 +26,43 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 146,
+				"line" : 141,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 150,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
 				"line" : 147,
 				"parent" : 0
 			},
 			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 149,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 218,
+				"parent" : 0
+			},
+			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 159,
+				"line" : 142,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 157,
 				"parent" : 0
 			}
 		]
@@ -55,33 +73,33 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -std=c++11 -m64 -fPIC -O3  -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk"
+					"fragment" : " -std=c++11 -m64 -fPIC -O3   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 6,
 					"path" : "/Users/jakemartin/Documents/cs184/raveTracer/src"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 7,
 					"path" : "/Users/jakemartin/Documents/cs184/raveTracer/CGL/include"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 7,
 					"path" : "/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 7,
 					"path" : "/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 7,
 					"path" : "/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 7,
 					"path" : "/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends"
 				},
 				{
@@ -131,7 +149,7 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 2,
+			"backtrace" : 5,
 			"id" : "pt31::@6890427a1f51a3e7e1df"
 		},
 		{
@@ -153,7 +171,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-std=c++11 -m64 -fPIC -O3  -g",
+				"fragment" : "-std=c++11 -m64 -fPIC -O3   -g",
 				"role" : "flags"
 			},
 			{
@@ -162,10 +180,26 @@
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "CGL/libCGL.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
 				"fragment" : "libpt31.a",
 				"role" : "libraries"
 			},
 			{
+				"backtrace" : 2,
 				"fragment" : "CGL/libCGL.a",
 				"role" : "libraries"
 			},
@@ -194,14 +228,12 @@
 				"role" : "libraries"
 			},
 			{
+				"backtrace" : 4,
 				"fragment" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd",
-				"role" : "libraries"
-			},
-			{
+				"backtrace" : 3,
 				"fragment" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL.tbd",
 				"role" : "libraries"
 			}

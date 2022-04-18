@@ -38,6 +38,18 @@
 			"value" : "/Users/jakemartin/Documents/cs184/raveTracer"
 		},
 		{
+			"name" : "BUILD_CUSTOM",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Build without reference"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "ON"
+		},
+		{
 			"name" : "BUILD_DEBUG",
 			"properties" : 
 			[
@@ -1712,6 +1724,18 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/opt/homebrew/lib/libfreetype.dylib"
+		},
+		{
+			"name" : "GEN_BINARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Generate 3-1 binaries"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
 		},
 		{
 			"name" : "GLFW_BINARY_DIR",

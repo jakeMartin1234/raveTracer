@@ -11,6 +11,7 @@
 -- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
+-- Found OpenGL: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework   
 -- Performing Test HAVE_AVX_EXTENSIONS
 -- Performing Test HAVE_AVX_EXTENSIONS - Failed
 -- Performing Test HAVE_AVX2_EXTENSIONS
@@ -20,7 +21,6 @@
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
 -- Found Threads: TRUE  
--- Found OpenGL: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework   
 -- Found Freetype: /opt/homebrew/lib/libfreetype.dylib (found version "2.11.1") 
 -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
 -- Using Cocoa for window creation

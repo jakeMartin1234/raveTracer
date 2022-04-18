@@ -7,6 +7,7 @@
 #include <algorithm>
 #include <iostream>
 #include <utility>
+#include <cmath>
 
 
 using std::max;
@@ -54,7 +55,8 @@ Vector3D DiffuseBSDF::f(const Vector3D wo, const Vector3D wi) {
   // This function takes in both wo and wi and returns the evaluation of
   // the BSDF for those two directions.
 
-  return Vector3D(1.0);
+
+  return reflectance/M_PI;
 
 }
 
@@ -69,7 +71,9 @@ Vector3D DiffuseBSDF::sample_f(const Vector3D wo, Vector3D *wi, double *pdf) {
   // at (wo, *wi).
   // You can use the `f` function. The reference solution only takes two lines.
 
-  return Vector3D(1.0);
+  *wi = sampler.get_sample(pdf);
+  return f(wo, *wi);
+
 }
 
 void DiffuseBSDF::render_debugger_node()
