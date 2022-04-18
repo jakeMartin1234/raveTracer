@@ -160,7 +160,7 @@ bool BSDF::refract(const Vector3D wo, Vector3D* wi, double ior) {
   // Return false if refraction does not occur due to total internal reflection
   // and true otherwise. When dot(wo,n) is positive, then wo corresponds to a
   // ray entering the surface through vacuum.
-
+  *wi = Vector3D(-wo.x, -wo.y, wo.z);
 
 
 

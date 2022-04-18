@@ -23,9 +23,9 @@ clang: error: linker command failed with exit code 1 (use -v to see invocation)
 Performing C++ SOURCE FILE Test HAVE_AVX_EXTENSIONS failed with the following compile output:
 Change Dir: /Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_1b6e4 && [1/2] Building CXX object CMakeFiles/cmTC_1b6e4.dir/src.cxx.o
-FAILED: CMakeFiles/cmTC_1b6e4.dir/src.cxx.o 
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_AVX_EXTENSIONS  -mavx -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_1b6e4.dir/src.cxx.o -MF CMakeFiles/cmTC_1b6e4.dir/src.cxx.o.d -o CMakeFiles/cmTC_1b6e4.dir/src.cxx.o -c /Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_e659e && [1/2] Building CXX object CMakeFiles/cmTC_e659e.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_e659e.dir/src.cxx.o 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_AVX_EXTENSIONS  -mavx -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_e659e.dir/src.cxx.o -MF CMakeFiles/cmTC_e659e.dir/src.cxx.o.d -o CMakeFiles/cmTC_e659e.dir/src.cxx.o -c /Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
 clang: warning: argument unused during compilation: '-mavx' [-Wunused-command-line-argument]
 In file included from /Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx:2:
 In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/immintrin.h:13:
@@ -129,9 +129,9 @@ Source file was:
 Performing C++ SOURCE FILE Test HAVE_AVX2_EXTENSIONS failed with the following compile output:
 Change Dir: /Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_87381 && [1/2] Building CXX object CMakeFiles/cmTC_87381.dir/src.cxx.o
-FAILED: CMakeFiles/cmTC_87381.dir/src.cxx.o 
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_AVX2_EXTENSIONS  -mavx2 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_87381.dir/src.cxx.o -MF CMakeFiles/cmTC_87381.dir/src.cxx.o.d -o CMakeFiles/cmTC_87381.dir/src.cxx.o -c /Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_8ca62 && [1/2] Building CXX object CMakeFiles/cmTC_8ca62.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_8ca62.dir/src.cxx.o 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_AVX2_EXTENSIONS  -mavx2 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_8ca62.dir/src.cxx.o -MF CMakeFiles/cmTC_8ca62.dir/src.cxx.o.d -o CMakeFiles/cmTC_8ca62.dir/src.cxx.o -c /Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
 clang: warning: argument unused during compilation: '-mavx2' [-Wunused-command-line-argument]
 In file included from /Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx:2:
 In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/immintrin.h:13:

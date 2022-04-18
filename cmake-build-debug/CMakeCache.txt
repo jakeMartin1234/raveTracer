@@ -363,15 +363,6 @@ OPENGL_gl_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/
 //GLU library for OS X (usually same as OpenGL library)
 OPENGL_glu_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework
 
-//Value Computed by CMake
-Rave_BINARY_DIR:STATIC=/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug
-
-//Value Computed by CMake
-Rave_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-Rave_SOURCE_DIR:STATIC=/Users/jakemartin/Documents/cs184/raveTracer
-
 //Dependencies for the target
 glfw_LIB_DEPENDS:STATIC=general;-framework Cocoa;general;-framework IOKit;general;-framework CoreFoundation;
 

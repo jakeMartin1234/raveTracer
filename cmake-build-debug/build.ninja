@@ -108,6 +108,8 @@ build CMakeFiles/pathtracer.dir/src/scene/object.cpp.o: CXX_COMPILER__pathtracer
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/scene/collada/collada.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/collada/collada.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/collada/collada.cpp.o.d
@@ -115,6 +117,8 @@ build CMakeFiles/pathtracer.dir/src/scene/collada/collada.cpp.o: CXX_COMPILER__p
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/collada
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/scene/collada/camera_info.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/collada/camera_info.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/collada/camera_info.cpp.o.d
@@ -122,6 +126,8 @@ build CMakeFiles/pathtracer.dir/src/scene/collada/camera_info.cpp.o: CXX_COMPILE
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/collada
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/scene/collada/light_info.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/collada/light_info.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/collada/light_info.cpp.o.d
@@ -129,6 +135,8 @@ build CMakeFiles/pathtracer.dir/src/scene/collada/light_info.cpp.o: CXX_COMPILER
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/collada
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/scene/collada/sphere_info.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/collada/sphere_info.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/collada/sphere_info.cpp.o.d
@@ -136,6 +144,8 @@ build CMakeFiles/pathtracer.dir/src/scene/collada/sphere_info.cpp.o: CXX_COMPILE
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/collada
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/scene/collada/polymesh_info.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/collada/polymesh_info.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/collada/polymesh_info.cpp.o.d
@@ -143,6 +153,8 @@ build CMakeFiles/pathtracer.dir/src/scene/collada/polymesh_info.cpp.o: CXX_COMPI
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/collada
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/scene/collada/material_info.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/collada/material_info.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/collada/material_info.cpp.o.d
@@ -150,6 +162,8 @@ build CMakeFiles/pathtracer.dir/src/scene/collada/material_info.cpp.o: CXX_COMPI
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/collada
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/scene/gl_scene/mesh.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/gl_scene/mesh.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/gl_scene/mesh.cpp.o.d
@@ -157,6 +171,8 @@ build CMakeFiles/pathtracer.dir/src/scene/gl_scene/mesh.cpp.o: CXX_COMPILER__pat
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/gl_scene
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/scene/gl_scene/scene.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/gl_scene/scene.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/gl_scene/scene.cpp.o.d
@@ -164,6 +180,8 @@ build CMakeFiles/pathtracer.dir/src/scene/gl_scene/scene.cpp.o: CXX_COMPILER__pa
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/gl_scene
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/scene/gl_scene/sphere.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/gl_scene/sphere.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/gl_scene/sphere.cpp.o.d
@@ -171,6 +189,8 @@ build CMakeFiles/pathtracer.dir/src/scene/gl_scene/sphere.cpp.o: CXX_COMPILER__p
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene/gl_scene
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/util/halfEdgeMesh.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/util/halfEdgeMesh.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/util/halfEdgeMesh.cpp.o.d
@@ -178,6 +198,8 @@ build CMakeFiles/pathtracer.dir/src/util/halfEdgeMesh.cpp.o: CXX_COMPILER__patht
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/util
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/application/meshEdit.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/application/meshEdit.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/application/meshEdit.cpp.o.d
@@ -185,6 +207,8 @@ build CMakeFiles/pathtracer.dir/src/application/meshEdit.cpp.o: CXX_COMPILER__pa
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/application
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/pathtracer/sampler.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/pathtracer/sampler.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/pathtracer/sampler.cpp.o.d
@@ -192,6 +216,8 @@ build CMakeFiles/pathtracer.dir/src/pathtracer/sampler.cpp.o: CXX_COMPILER__path
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/pathtracer
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/pathtracer/advanced_bsdf.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/pathtracer/advanced_bsdf.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/pathtracer/advanced_bsdf.cpp.o.d
@@ -199,6 +225,8 @@ build CMakeFiles/pathtracer.dir/src/pathtracer/advanced_bsdf.cpp.o: CXX_COMPILER
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/pathtracer
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/scene/environment_light.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/environment_light.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/scene/environment_light.cpp.o.d
@@ -206,6 +234,8 @@ build CMakeFiles/pathtracer.dir/src/scene/environment_light.cpp.o: CXX_COMPILER_
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/scene
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/pathtracer/camera_lens.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/pathtracer/camera_lens.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/pathtracer/camera_lens.cpp.o.d
@@ -213,6 +243,8 @@ build CMakeFiles/pathtracer.dir/src/pathtracer/camera_lens.cpp.o: CXX_COMPILER__
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/pathtracer
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/pathtracer/raytraced_renderer.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/pathtracer/raytraced_renderer.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/pathtracer/raytraced_renderer.cpp.o.d
@@ -220,6 +252,8 @@ build CMakeFiles/pathtracer.dir/src/pathtracer/raytraced_renderer.cpp.o: CXX_COM
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/pathtracer
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/util/sphere_drawing.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/util/sphere_drawing.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/util/sphere_drawing.cpp.o.d
@@ -227,6 +261,8 @@ build CMakeFiles/pathtracer.dir/src/util/sphere_drawing.cpp.o: CXX_COMPILER__pat
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/util
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/util/lodepng.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/util/lodepng.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/util/lodepng.cpp.o.d
@@ -234,6 +270,8 @@ build CMakeFiles/pathtracer.dir/src/util/lodepng.cpp.o: CXX_COMPILER__pathtracer
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/util
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/application/application.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/application/application.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/application/application.cpp.o.d
@@ -241,6 +279,8 @@ build CMakeFiles/pathtracer.dir/src/application/application.cpp.o: CXX_COMPILER_
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/application
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/application/main.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/application/main.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/application/main.cpp.o.d
@@ -248,6 +288,8 @@ build CMakeFiles/pathtracer.dir/src/application/main.cpp.o: CXX_COMPILER__pathtr
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/application
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/application/visual_debugger.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/application/visual_debugger.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/application/visual_debugger.cpp.o.d
@@ -255,6 +297,8 @@ build CMakeFiles/pathtracer.dir/src/application/visual_debugger.cpp.o: CXX_COMPI
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/application
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/imgui/imgui.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/imgui/imgui.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/imgui/imgui.cpp.o.d
@@ -262,6 +306,8 @@ build CMakeFiles/pathtracer.dir/src/imgui/imgui.cpp.o: CXX_COMPILER__pathtracer_
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/imgui
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/imgui/imgui_widgets.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/imgui/imgui_widgets.cpp.o.d
@@ -269,6 +315,8 @@ build CMakeFiles/pathtracer.dir/src/imgui/imgui_widgets.cpp.o: CXX_COMPILER__pat
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/imgui
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/imgui/imgui_draw.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/imgui/imgui_draw.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/imgui/imgui_draw.cpp.o.d
@@ -276,6 +324,8 @@ build CMakeFiles/pathtracer.dir/src/imgui/imgui_draw.cpp.o: CXX_COMPILER__pathtr
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/imgui
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/imgui/imgui_tables.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/imgui/imgui_tables.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/imgui/imgui_tables.cpp.o.d
@@ -283,6 +333,8 @@ build CMakeFiles/pathtracer.dir/src/imgui/imgui_tables.cpp.o: CXX_COMPILER__path
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/imgui
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/imgui/backends/imgui_impl_glfw.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/imgui/backends/imgui_impl_glfw.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/imgui/backends/imgui_impl_glfw.cpp.o.d
@@ -290,6 +342,8 @@ build CMakeFiles/pathtracer.dir/src/imgui/backends/imgui_impl_glfw.cpp.o: CXX_CO
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/imgui/backends
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 build CMakeFiles/pathtracer.dir/src/imgui/backends/imgui_impl_opengl2.cpp.o: CXX_COMPILER__pathtracer_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/imgui/backends/imgui_impl_opengl2.cpp || cmake_object_order_depends_target_pathtracer
   DEP_FILE = CMakeFiles/pathtracer.dir/src/imgui/backends/imgui_impl_opengl2.cpp.o.d
@@ -297,6 +351,8 @@ build CMakeFiles/pathtracer.dir/src/imgui/backends/imgui_impl_opengl2.cpp.o: CXX
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   OBJECT_FILE_DIR = CMakeFiles/pathtracer.dir/src/imgui/backends
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
+  TARGET_PDB = pathtracer.pdb
 
 
 # =============================================================================
@@ -312,8 +368,9 @@ build pathtracer: CXX_EXECUTABLE_LINKER__pathtracer_Debug CMakeFiles/pathtracer.
   OBJECT_DIR = CMakeFiles/pathtracer.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/pathtracer.dir/
   TARGET_FILE = pathtracer
-  TARGET_PDB = pathtracer.dbg
+  TARGET_PDB = pathtracer.pdb
 
 
 #############################################
@@ -342,6 +399,8 @@ build CMakeFiles/pt31.dir/src/scene/sphere.cpp.o: CXX_COMPILER__pt31_Debug /User
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pt31.dir
   OBJECT_FILE_DIR = CMakeFiles/pt31.dir/src/scene
+  TARGET_COMPILE_PDB = CMakeFiles/pt31.dir/pt31.pdb
+  TARGET_PDB = libpt31.pdb
 
 build CMakeFiles/pt31.dir/src/scene/triangle.cpp.o: CXX_COMPILER__pt31_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/triangle.cpp || cmake_object_order_depends_target_pt31
   DEP_FILE = CMakeFiles/pt31.dir/src/scene/triangle.cpp.o.d
@@ -349,6 +408,8 @@ build CMakeFiles/pt31.dir/src/scene/triangle.cpp.o: CXX_COMPILER__pt31_Debug /Us
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pt31.dir
   OBJECT_FILE_DIR = CMakeFiles/pt31.dir/src/scene
+  TARGET_COMPILE_PDB = CMakeFiles/pt31.dir/pt31.pdb
+  TARGET_PDB = libpt31.pdb
 
 build CMakeFiles/pt31.dir/src/scene/light.cpp.o: CXX_COMPILER__pt31_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/light.cpp || cmake_object_order_depends_target_pt31
   DEP_FILE = CMakeFiles/pt31.dir/src/scene/light.cpp.o.d
@@ -356,6 +417,8 @@ build CMakeFiles/pt31.dir/src/scene/light.cpp.o: CXX_COMPILER__pt31_Debug /Users
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pt31.dir
   OBJECT_FILE_DIR = CMakeFiles/pt31.dir/src/scene
+  TARGET_COMPILE_PDB = CMakeFiles/pt31.dir/pt31.pdb
+  TARGET_PDB = libpt31.pdb
 
 build CMakeFiles/pt31.dir/src/scene/bvh.cpp.o: CXX_COMPILER__pt31_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/bvh.cpp || cmake_object_order_depends_target_pt31
   DEP_FILE = CMakeFiles/pt31.dir/src/scene/bvh.cpp.o.d
@@ -363,6 +426,8 @@ build CMakeFiles/pt31.dir/src/scene/bvh.cpp.o: CXX_COMPILER__pt31_Debug /Users/j
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pt31.dir
   OBJECT_FILE_DIR = CMakeFiles/pt31.dir/src/scene
+  TARGET_COMPILE_PDB = CMakeFiles/pt31.dir/pt31.pdb
+  TARGET_PDB = libpt31.pdb
 
 build CMakeFiles/pt31.dir/src/scene/bbox.cpp.o: CXX_COMPILER__pt31_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/scene/bbox.cpp || cmake_object_order_depends_target_pt31
   DEP_FILE = CMakeFiles/pt31.dir/src/scene/bbox.cpp.o.d
@@ -370,6 +435,8 @@ build CMakeFiles/pt31.dir/src/scene/bbox.cpp.o: CXX_COMPILER__pt31_Debug /Users/
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pt31.dir
   OBJECT_FILE_DIR = CMakeFiles/pt31.dir/src/scene
+  TARGET_COMPILE_PDB = CMakeFiles/pt31.dir/pt31.pdb
+  TARGET_PDB = libpt31.pdb
 
 build CMakeFiles/pt31.dir/src/pathtracer/camera.cpp.o: CXX_COMPILER__pt31_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/pathtracer/camera.cpp || cmake_object_order_depends_target_pt31
   DEP_FILE = CMakeFiles/pt31.dir/src/pathtracer/camera.cpp.o.d
@@ -377,6 +444,8 @@ build CMakeFiles/pt31.dir/src/pathtracer/camera.cpp.o: CXX_COMPILER__pt31_Debug 
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pt31.dir
   OBJECT_FILE_DIR = CMakeFiles/pt31.dir/src/pathtracer
+  TARGET_COMPILE_PDB = CMakeFiles/pt31.dir/pt31.pdb
+  TARGET_PDB = libpt31.pdb
 
 build CMakeFiles/pt31.dir/src/pathtracer/bsdf.cpp.o: CXX_COMPILER__pt31_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/pathtracer/bsdf.cpp || cmake_object_order_depends_target_pt31
   DEP_FILE = CMakeFiles/pt31.dir/src/pathtracer/bsdf.cpp.o.d
@@ -384,6 +453,8 @@ build CMakeFiles/pt31.dir/src/pathtracer/bsdf.cpp.o: CXX_COMPILER__pt31_Debug /U
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pt31.dir
   OBJECT_FILE_DIR = CMakeFiles/pt31.dir/src/pathtracer
+  TARGET_COMPILE_PDB = CMakeFiles/pt31.dir/pt31.pdb
+  TARGET_PDB = libpt31.pdb
 
 build CMakeFiles/pt31.dir/src/pathtracer/pathtracer.cpp.o: CXX_COMPILER__pt31_Debug /Users/jakemartin/Documents/cs184/raveTracer/src/pathtracer/pathtracer.cpp || cmake_object_order_depends_target_pt31
   DEP_FILE = CMakeFiles/pt31.dir/src/pathtracer/pathtracer.cpp.o.d
@@ -391,6 +462,8 @@ build CMakeFiles/pt31.dir/src/pathtracer/pathtracer.cpp.o: CXX_COMPILER__pt31_De
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/src -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui -I/Users/jakemartin/Documents/cs184/raveTracer/./src/imgui/backends -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CMakeFiles/pt31.dir
   OBJECT_FILE_DIR = CMakeFiles/pt31.dir/src/pathtracer
+  TARGET_COMPILE_PDB = CMakeFiles/pt31.dir/pt31.pdb
+  TARGET_PDB = libpt31.pdb
 
 
 # =============================================================================
@@ -406,8 +479,9 @@ build libpt31.a: CXX_STATIC_LIBRARY_LINKER__pt31_Debug CMakeFiles/pt31.dir/src/s
   OBJECT_DIR = CMakeFiles/pt31.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/pt31.dir/pt31.pdb
   TARGET_FILE = libpt31.a
-  TARGET_PDB = pt31.a.dbg
+  TARGET_PDB = libpt31.pdb
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -495,6 +569,8 @@ build CGL/CMakeFiles/CGL.dir/src/vector2D.cpp.o: CXX_COMPILER__CGL_Debug /Users/
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -I/opt/homebrew/include/freetype2 -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CGL/CMakeFiles/CGL.dir
   OBJECT_FILE_DIR = CGL/CMakeFiles/CGL.dir/src
+  TARGET_COMPILE_PDB = CGL/CMakeFiles/CGL.dir/CGL.pdb
+  TARGET_PDB = CGL/libCGL.pdb
 
 build CGL/CMakeFiles/CGL.dir/src/vector3D.cpp.o: CXX_COMPILER__CGL_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/src/vector3D.cpp || cmake_object_order_depends_target_CGL
   DEFINES = -DGLEW_STATIC
@@ -503,6 +579,8 @@ build CGL/CMakeFiles/CGL.dir/src/vector3D.cpp.o: CXX_COMPILER__CGL_Debug /Users/
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -I/opt/homebrew/include/freetype2 -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CGL/CMakeFiles/CGL.dir
   OBJECT_FILE_DIR = CGL/CMakeFiles/CGL.dir/src
+  TARGET_COMPILE_PDB = CGL/CMakeFiles/CGL.dir/CGL.pdb
+  TARGET_PDB = CGL/libCGL.pdb
 
 build CGL/CMakeFiles/CGL.dir/src/vector4D.cpp.o: CXX_COMPILER__CGL_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/src/vector4D.cpp || cmake_object_order_depends_target_CGL
   DEFINES = -DGLEW_STATIC
@@ -511,6 +589,8 @@ build CGL/CMakeFiles/CGL.dir/src/vector4D.cpp.o: CXX_COMPILER__CGL_Debug /Users/
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -I/opt/homebrew/include/freetype2 -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CGL/CMakeFiles/CGL.dir
   OBJECT_FILE_DIR = CGL/CMakeFiles/CGL.dir/src
+  TARGET_COMPILE_PDB = CGL/CMakeFiles/CGL.dir/CGL.pdb
+  TARGET_PDB = CGL/libCGL.pdb
 
 build CGL/CMakeFiles/CGL.dir/src/matrix3x3.cpp.o: CXX_COMPILER__CGL_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/src/matrix3x3.cpp || cmake_object_order_depends_target_CGL
   DEFINES = -DGLEW_STATIC
@@ -519,6 +599,8 @@ build CGL/CMakeFiles/CGL.dir/src/matrix3x3.cpp.o: CXX_COMPILER__CGL_Debug /Users
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -I/opt/homebrew/include/freetype2 -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CGL/CMakeFiles/CGL.dir
   OBJECT_FILE_DIR = CGL/CMakeFiles/CGL.dir/src
+  TARGET_COMPILE_PDB = CGL/CMakeFiles/CGL.dir/CGL.pdb
+  TARGET_PDB = CGL/libCGL.pdb
 
 build CGL/CMakeFiles/CGL.dir/src/matrix4x4.cpp.o: CXX_COMPILER__CGL_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/src/matrix4x4.cpp || cmake_object_order_depends_target_CGL
   DEFINES = -DGLEW_STATIC
@@ -527,6 +609,8 @@ build CGL/CMakeFiles/CGL.dir/src/matrix4x4.cpp.o: CXX_COMPILER__CGL_Debug /Users
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -I/opt/homebrew/include/freetype2 -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CGL/CMakeFiles/CGL.dir
   OBJECT_FILE_DIR = CGL/CMakeFiles/CGL.dir/src
+  TARGET_COMPILE_PDB = CGL/CMakeFiles/CGL.dir/CGL.pdb
+  TARGET_PDB = CGL/libCGL.pdb
 
 build CGL/CMakeFiles/CGL.dir/src/quaternion.cpp.o: CXX_COMPILER__CGL_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/src/quaternion.cpp || cmake_object_order_depends_target_CGL
   DEFINES = -DGLEW_STATIC
@@ -535,6 +619,8 @@ build CGL/CMakeFiles/CGL.dir/src/quaternion.cpp.o: CXX_COMPILER__CGL_Debug /User
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -I/opt/homebrew/include/freetype2 -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CGL/CMakeFiles/CGL.dir
   OBJECT_FILE_DIR = CGL/CMakeFiles/CGL.dir/src
+  TARGET_COMPILE_PDB = CGL/CMakeFiles/CGL.dir/CGL.pdb
+  TARGET_PDB = CGL/libCGL.pdb
 
 build CGL/CMakeFiles/CGL.dir/src/complex.cpp.o: CXX_COMPILER__CGL_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/src/complex.cpp || cmake_object_order_depends_target_CGL
   DEFINES = -DGLEW_STATIC
@@ -543,6 +629,8 @@ build CGL/CMakeFiles/CGL.dir/src/complex.cpp.o: CXX_COMPILER__CGL_Debug /Users/j
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -I/opt/homebrew/include/freetype2 -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CGL/CMakeFiles/CGL.dir
   OBJECT_FILE_DIR = CGL/CMakeFiles/CGL.dir/src
+  TARGET_COMPILE_PDB = CGL/CMakeFiles/CGL.dir/CGL.pdb
+  TARGET_PDB = CGL/libCGL.pdb
 
 build CGL/CMakeFiles/CGL.dir/src/color.cpp.o: CXX_COMPILER__CGL_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/src/color.cpp || cmake_object_order_depends_target_CGL
   DEFINES = -DGLEW_STATIC
@@ -551,6 +639,8 @@ build CGL/CMakeFiles/CGL.dir/src/color.cpp.o: CXX_COMPILER__CGL_Debug /Users/jak
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -I/opt/homebrew/include/freetype2 -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CGL/CMakeFiles/CGL.dir
   OBJECT_FILE_DIR = CGL/CMakeFiles/CGL.dir/src
+  TARGET_COMPILE_PDB = CGL/CMakeFiles/CGL.dir/CGL.pdb
+  TARGET_PDB = CGL/libCGL.pdb
 
 build CGL/CMakeFiles/CGL.dir/src/osdtext.cpp.o: CXX_COMPILER__CGL_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/src/osdtext.cpp || cmake_object_order_depends_target_CGL
   DEFINES = -DGLEW_STATIC
@@ -559,6 +649,8 @@ build CGL/CMakeFiles/CGL.dir/src/osdtext.cpp.o: CXX_COMPILER__CGL_Debug /Users/j
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -I/opt/homebrew/include/freetype2 -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CGL/CMakeFiles/CGL.dir
   OBJECT_FILE_DIR = CGL/CMakeFiles/CGL.dir/src
+  TARGET_COMPILE_PDB = CGL/CMakeFiles/CGL.dir/CGL.pdb
+  TARGET_PDB = CGL/libCGL.pdb
 
 build CGL/CMakeFiles/CGL.dir/src/osdfont.cpp.o: CXX_COMPILER__CGL_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/src/osdfont.cpp || cmake_object_order_depends_target_CGL
   DEFINES = -DGLEW_STATIC
@@ -567,6 +659,8 @@ build CGL/CMakeFiles/CGL.dir/src/osdfont.cpp.o: CXX_COMPILER__CGL_Debug /Users/j
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -I/opt/homebrew/include/freetype2 -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CGL/CMakeFiles/CGL.dir
   OBJECT_FILE_DIR = CGL/CMakeFiles/CGL.dir/src
+  TARGET_COMPILE_PDB = CGL/CMakeFiles/CGL.dir/CGL.pdb
+  TARGET_PDB = CGL/libCGL.pdb
 
 build CGL/CMakeFiles/CGL.dir/src/viewer.cpp.o: CXX_COMPILER__CGL_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/src/viewer.cpp || cmake_object_order_depends_target_CGL
   DEFINES = -DGLEW_STATIC
@@ -575,6 +669,8 @@ build CGL/CMakeFiles/CGL.dir/src/viewer.cpp.o: CXX_COMPILER__CGL_Debug /Users/ja
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -I/opt/homebrew/include/freetype2 -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CGL/CMakeFiles/CGL.dir
   OBJECT_FILE_DIR = CGL/CMakeFiles/CGL.dir/src
+  TARGET_COMPILE_PDB = CGL/CMakeFiles/CGL.dir/CGL.pdb
+  TARGET_PDB = CGL/libCGL.pdb
 
 build CGL/CMakeFiles/CGL.dir/src/base64.cpp.o: CXX_COMPILER__CGL_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/src/base64.cpp || cmake_object_order_depends_target_CGL
   DEFINES = -DGLEW_STATIC
@@ -583,6 +679,8 @@ build CGL/CMakeFiles/CGL.dir/src/base64.cpp.o: CXX_COMPILER__CGL_Debug /Users/ja
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -I/opt/homebrew/include/freetype2 -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CGL/CMakeFiles/CGL.dir
   OBJECT_FILE_DIR = CGL/CMakeFiles/CGL.dir/src
+  TARGET_COMPILE_PDB = CGL/CMakeFiles/CGL.dir/CGL.pdb
+  TARGET_PDB = CGL/libCGL.pdb
 
 build CGL/CMakeFiles/CGL.dir/src/lodepng.cpp.o: CXX_COMPILER__CGL_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/src/lodepng.cpp || cmake_object_order_depends_target_CGL
   DEFINES = -DGLEW_STATIC
@@ -591,6 +689,8 @@ build CGL/CMakeFiles/CGL.dir/src/lodepng.cpp.o: CXX_COMPILER__CGL_Debug /Users/j
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -I/opt/homebrew/include/freetype2 -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CGL/CMakeFiles/CGL.dir
   OBJECT_FILE_DIR = CGL/CMakeFiles/CGL.dir/src
+  TARGET_COMPILE_PDB = CGL/CMakeFiles/CGL.dir/CGL.pdb
+  TARGET_PDB = CGL/libCGL.pdb
 
 build CGL/CMakeFiles/CGL.dir/src/tinyxml2.cpp.o: CXX_COMPILER__CGL_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/src/tinyxml2.cpp || cmake_object_order_depends_target_CGL
   DEFINES = -DGLEW_STATIC
@@ -599,6 +699,8 @@ build CGL/CMakeFiles/CGL.dir/src/tinyxml2.cpp.o: CXX_COMPILER__CGL_Debug /Users/
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -I/opt/homebrew/include/freetype2 -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CGL/CMakeFiles/CGL.dir
   OBJECT_FILE_DIR = CGL/CMakeFiles/CGL.dir/src
+  TARGET_COMPILE_PDB = CGL/CMakeFiles/CGL.dir/CGL.pdb
+  TARGET_PDB = CGL/libCGL.pdb
 
 build CGL/CMakeFiles/CGL.dir/src/path.cpp.o: CXX_COMPILER__CGL_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/src/path.cpp || cmake_object_order_depends_target_CGL
   DEFINES = -DGLEW_STATIC
@@ -607,6 +709,8 @@ build CGL/CMakeFiles/CGL.dir/src/path.cpp.o: CXX_COMPILER__CGL_Debug /Users/jake
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/include/CGL -I/opt/homebrew/include/freetype2 -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks
   OBJECT_DIR = CGL/CMakeFiles/CGL.dir
   OBJECT_FILE_DIR = CGL/CMakeFiles/CGL.dir/src
+  TARGET_COMPILE_PDB = CGL/CMakeFiles/CGL.dir/CGL.pdb
+  TARGET_PDB = CGL/libCGL.pdb
 
 
 # =============================================================================
@@ -622,8 +726,9 @@ build CGL/libCGL.a: CXX_STATIC_LIBRARY_LINKER__CGL_Debug CGL/CMakeFiles/CGL.dir/
   OBJECT_DIR = CGL/CMakeFiles/CGL.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CGL/CMakeFiles/CGL.dir/CGL.pdb
   TARGET_FILE = CGL/libCGL.a
-  TARGET_PDB = CGL.a.dbg
+  TARGET_PDB = CGL/libCGL.pdb
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -711,6 +816,8 @@ build CGL/deps/glew/CMakeFiles/glew.dir/src/glew.c.o: C_COMPILER__glew_Debug /Us
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include
   OBJECT_DIR = CGL/deps/glew/CMakeFiles/glew.dir
   OBJECT_FILE_DIR = CGL/deps/glew/CMakeFiles/glew.dir/src
+  TARGET_COMPILE_PDB = CGL/deps/glew/CMakeFiles/glew.dir/glew.pdb
+  TARGET_PDB = CGL/deps/glew/libglew.pdb
 
 build CGL/deps/glew/CMakeFiles/glew.dir/src/glewinfo.c.o: C_COMPILER__glew_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/src/glewinfo.c || cmake_object_order_depends_target_glew
   DEFINES = -DGLEW_STATIC
@@ -719,6 +826,8 @@ build CGL/deps/glew/CMakeFiles/glew.dir/src/glewinfo.c.o: C_COMPILER__glew_Debug
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include
   OBJECT_DIR = CGL/deps/glew/CMakeFiles/glew.dir
   OBJECT_FILE_DIR = CGL/deps/glew/CMakeFiles/glew.dir/src
+  TARGET_COMPILE_PDB = CGL/deps/glew/CMakeFiles/glew.dir/glew.pdb
+  TARGET_PDB = CGL/deps/glew/libglew.pdb
 
 build CGL/deps/glew/CMakeFiles/glew.dir/src/visualinfo.c.o: C_COMPILER__glew_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/src/visualinfo.c || cmake_object_order_depends_target_glew
   DEFINES = -DGLEW_STATIC
@@ -727,6 +836,8 @@ build CGL/deps/glew/CMakeFiles/glew.dir/src/visualinfo.c.o: C_COMPILER__glew_Deb
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glew/include
   OBJECT_DIR = CGL/deps/glew/CMakeFiles/glew.dir
   OBJECT_FILE_DIR = CGL/deps/glew/CMakeFiles/glew.dir/src
+  TARGET_COMPILE_PDB = CGL/deps/glew/CMakeFiles/glew.dir/glew.pdb
+  TARGET_PDB = CGL/deps/glew/libglew.pdb
 
 
 # =============================================================================
@@ -742,8 +853,9 @@ build CGL/deps/glew/libglew.a: C_STATIC_LIBRARY_LINKER__glew_Debug CGL/deps/glew
   OBJECT_DIR = CGL/deps/glew/CMakeFiles/glew.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CGL/deps/glew/CMakeFiles/glew.dir/glew.pdb
   TARGET_FILE = CGL/deps/glew/libglew.a
-  TARGET_PDB = glew.a.dbg
+  TARGET_PDB = CGL/deps/glew/libglew.pdb
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -914,6 +1026,8 @@ build CGL/deps/glfw/src/CMakeFiles/glfw.dir/context.c.o: C_COMPILER__glfw_Debug 
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src -I/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CGL/deps/glfw/src
   OBJECT_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = CGL/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = CGL/deps/glfw/src/libglfw3.pdb
 
 build CGL/deps/glfw/src/CMakeFiles/glfw.dir/init.c.o: C_COMPILER__glfw_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src/init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DGLEW_STATIC -D_GLFW_USE_CONFIG_H
@@ -922,6 +1036,8 @@ build CGL/deps/glfw/src/CMakeFiles/glfw.dir/init.c.o: C_COMPILER__glfw_Debug /Us
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src -I/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CGL/deps/glfw/src
   OBJECT_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = CGL/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = CGL/deps/glfw/src/libglfw3.pdb
 
 build CGL/deps/glfw/src/CMakeFiles/glfw.dir/input.c.o: C_COMPILER__glfw_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src/input.c || cmake_object_order_depends_target_glfw
   DEFINES = -DGLEW_STATIC -D_GLFW_USE_CONFIG_H
@@ -930,6 +1046,8 @@ build CGL/deps/glfw/src/CMakeFiles/glfw.dir/input.c.o: C_COMPILER__glfw_Debug /U
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src -I/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CGL/deps/glfw/src
   OBJECT_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = CGL/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = CGL/deps/glfw/src/libglfw3.pdb
 
 build CGL/deps/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: C_COMPILER__glfw_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DGLEW_STATIC -D_GLFW_USE_CONFIG_H
@@ -938,6 +1056,8 @@ build CGL/deps/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: C_COMPILER__glfw_Debug 
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src -I/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CGL/deps/glfw/src
   OBJECT_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = CGL/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = CGL/deps/glfw/src/libglfw3.pdb
 
 build CGL/deps/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: C_COMPILER__glfw_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -DGLEW_STATIC -D_GLFW_USE_CONFIG_H
@@ -946,6 +1066,8 @@ build CGL/deps/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: C_COMPILER__glfw_Debug /
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src -I/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CGL/deps/glfw/src
   OBJECT_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = CGL/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = CGL/deps/glfw/src/libglfw3.pdb
 
 build CGL/deps/glfw/src/CMakeFiles/glfw.dir/window.c.o: C_COMPILER__glfw_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src/window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DGLEW_STATIC -D_GLFW_USE_CONFIG_H
@@ -954,6 +1076,8 @@ build CGL/deps/glfw/src/CMakeFiles/glfw.dir/window.c.o: C_COMPILER__glfw_Debug /
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src -I/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CGL/deps/glfw/src
   OBJECT_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = CGL/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = CGL/deps/glfw/src/libglfw3.pdb
 
 build CGL/deps/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o: C_COMPILER__glfw_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src/cocoa_init.m || cmake_object_order_depends_target_glfw
   DEFINES = -DGLEW_STATIC -D_GLFW_USE_CONFIG_H
@@ -962,6 +1086,8 @@ build CGL/deps/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o: C_COMPILER__glfw_Deb
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src -I/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CGL/deps/glfw/src
   OBJECT_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = CGL/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = CGL/deps/glfw/src/libglfw3.pdb
 
 build CGL/deps/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o: C_COMPILER__glfw_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src/cocoa_joystick.m || cmake_object_order_depends_target_glfw
   DEFINES = -DGLEW_STATIC -D_GLFW_USE_CONFIG_H
@@ -970,6 +1096,8 @@ build CGL/deps/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o: C_COMPILER__glfw
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src -I/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CGL/deps/glfw/src
   OBJECT_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = CGL/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = CGL/deps/glfw/src/libglfw3.pdb
 
 build CGL/deps/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o: C_COMPILER__glfw_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src/cocoa_monitor.m || cmake_object_order_depends_target_glfw
   DEFINES = -DGLEW_STATIC -D_GLFW_USE_CONFIG_H
@@ -978,6 +1106,8 @@ build CGL/deps/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o: C_COMPILER__glfw_
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src -I/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CGL/deps/glfw/src
   OBJECT_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = CGL/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = CGL/deps/glfw/src/libglfw3.pdb
 
 build CGL/deps/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o: C_COMPILER__glfw_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src/cocoa_window.m || cmake_object_order_depends_target_glfw
   DEFINES = -DGLEW_STATIC -D_GLFW_USE_CONFIG_H
@@ -986,6 +1116,8 @@ build CGL/deps/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o: C_COMPILER__glfw_D
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src -I/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CGL/deps/glfw/src
   OBJECT_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = CGL/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = CGL/deps/glfw/src/libglfw3.pdb
 
 build CGL/deps/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o: C_COMPILER__glfw_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src/cocoa_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -DGLEW_STATIC -D_GLFW_USE_CONFIG_H
@@ -994,6 +1126,8 @@ build CGL/deps/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o: C_COMPILER__glfw_Deb
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src -I/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CGL/deps/glfw/src
   OBJECT_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = CGL/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = CGL/deps/glfw/src/libglfw3.pdb
 
 build CGL/deps/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: C_COMPILER__glfw_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src/posix_thread.c || cmake_object_order_depends_target_glfw
   DEFINES = -DGLEW_STATIC -D_GLFW_USE_CONFIG_H
@@ -1002,6 +1136,8 @@ build CGL/deps/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: C_COMPILER__glfw_D
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src -I/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CGL/deps/glfw/src
   OBJECT_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = CGL/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = CGL/deps/glfw/src/libglfw3.pdb
 
 build CGL/deps/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o: C_COMPILER__glfw_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src/nsgl_context.m || cmake_object_order_depends_target_glfw
   DEFINES = -DGLEW_STATIC -D_GLFW_USE_CONFIG_H
@@ -1010,6 +1146,8 @@ build CGL/deps/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o: C_COMPILER__glfw_D
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src -I/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CGL/deps/glfw/src
   OBJECT_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = CGL/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = CGL/deps/glfw/src/libglfw3.pdb
 
 build CGL/deps/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: C_COMPILER__glfw_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DGLEW_STATIC -D_GLFW_USE_CONFIG_H
@@ -1018,6 +1156,8 @@ build CGL/deps/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: C_COMPILER__glfw_De
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src -I/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CGL/deps/glfw/src
   OBJECT_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = CGL/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = CGL/deps/glfw/src/libglfw3.pdb
 
 build CGL/deps/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: C_COMPILER__glfw_Debug /Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DGLEW_STATIC -D_GLFW_USE_CONFIG_H
@@ -1026,6 +1166,8 @@ build CGL/deps/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: C_COMPILER__glfw
   INCLUDES = -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/include -I/Users/jakemartin/Documents/cs184/raveTracer/CGL/deps/glfw/src -I/Users/jakemartin/Documents/cs184/raveTracer/cmake-build-debug/CGL/deps/glfw/src
   OBJECT_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = CGL/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = CGL/deps/glfw/src/libglfw3.pdb
 
 
 # =============================================================================
@@ -1041,8 +1183,9 @@ build CGL/deps/glfw/src/libglfw3.a: C_STATIC_LIBRARY_LINKER__glfw_Debug CGL/deps
   OBJECT_DIR = CGL/deps/glfw/src/CMakeFiles/glfw.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CGL/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
   TARGET_FILE = CGL/deps/glfw/src/libglfw3.a
-  TARGET_PDB = glfw3.a.dbg
+  TARGET_PDB = CGL/deps/glfw/src/libglfw3.pdb
 
 # =============================================================================
 # Target aliases.
@@ -1108,14 +1251,14 @@ build CGL/deps/glfw/src/all: phony CGL/deps/glfw/src/libglfw3.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CGL/CMakeLists.txt ../CGL/deps/glew/CMakeLists.txt ../CGL/deps/glfw/CMake/cmake_uninstall.cmake.in ../CGL/deps/glfw/CMake/glfw3.pc.in ../CGL/deps/glfw/CMake/glfw3Config.cmake.in ../CGL/deps/glfw/CMakeLists.txt ../CGL/deps/glfw/src/CMakeLists.txt ../CGL/deps/glfw/src/glfw_config.h.in ../CGL/find_avx.cmake ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckCXXSourceRuns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindDoxygen.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindFreetype.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindOpenGL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Internal/CheckSourceRuns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/SelectLibraryConfigurations.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CGL/CMakeLists.txt ../CGL/deps/glew/CMakeLists.txt ../CGL/deps/glfw/CMake/cmake_uninstall.cmake.in ../CGL/deps/glfw/CMake/glfw3.pc.in ../CGL/deps/glfw/CMake/glfw3Config.cmake.in ../CGL/deps/glfw/CMakeLists.txt ../CGL/deps/glfw/src/CMakeLists.txt ../CGL/deps/glfw/src/glfw_config.h.in ../CGL/find_avx.cmake ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckCXXSourceRuns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckIncludeFile.c.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/ROCMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindDoxygen.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindFreetype.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindOpenGL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Internal/CheckSourceRuns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/SelectLibraryConfigurations.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CGL/CMakeLists.txt ../CGL/deps/glew/CMakeLists.txt ../CGL/deps/glfw/CMake/cmake_uninstall.cmake.in ../CGL/deps/glfw/CMake/glfw3.pc.in ../CGL/deps/glfw/CMake/glfw3Config.cmake.in ../CGL/deps/glfw/CMakeLists.txt ../CGL/deps/glfw/src/CMakeLists.txt ../CGL/deps/glfw/src/glfw_config.h.in ../CGL/find_avx.cmake ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckCXXSourceRuns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindDoxygen.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindFreetype.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindOpenGL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Internal/CheckSourceRuns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/SelectLibraryConfigurations.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
+build ../CGL/CMakeLists.txt ../CGL/deps/glew/CMakeLists.txt ../CGL/deps/glfw/CMake/cmake_uninstall.cmake.in ../CGL/deps/glfw/CMake/glfw3.pc.in ../CGL/deps/glfw/CMake/glfw3Config.cmake.in ../CGL/deps/glfw/CMakeLists.txt ../CGL/deps/glfw/src/CMakeLists.txt ../CGL/deps/glfw/src/glfw_config.h.in ../CGL/find_avx.cmake ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckCXXSourceRuns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckIncludeFile.c.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/ROCMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindDoxygen.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindFreetype.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindOpenGL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Internal/CheckSourceRuns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/SelectLibraryConfigurations.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
 
 
 #############################################
