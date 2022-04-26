@@ -1,0 +1,3 @@
+/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles/monte-carlo-ray-tracer.dir
+/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles/edit_cache.dir
+/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles/rebuild_cache.dir
