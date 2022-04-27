@@ -1,0 +1,126 @@
+{
+  "num_render_threads": -1,
+  "ior": 1.0,   
+
+  "cameras": [
+    {
+      "focal_length": 46,
+      "sensor_width": 35,
+      "eye": [ 0, 0.015, 0.42 ],
+      "look_at": [ 0, 0.048, 0 ],
+      "image":  { "width": 1104, "height": 400, "exposure_compensation": -2.0, "gain_compensation": 0.0, "tonemapper": "ACES" },
+      "sqrtspp": 4,
+      "savename": "shell"
+    }
+  ],
+
+  "bvh": {
+    "type": "octree",
+    "bins_per_axis": 8
+  },
+
+  "vertices": {
+    "light0": [
+      [-0.359309, 0.449693, -0.010809],
+      [-0.196537, 0.449693, 0.338256],
+      [-0.196537, 0.000849009, 0.338256],
+      [-0.359309, 0.000848979, -0.010809]
+    ],
+    "light1": [
+      [0.320673, 0.027337, 0.228975],
+      [0.320673, 0.476182, 0.228975], 
+      [0.325221, 0.476182, -0.136419],
+      [0.325221, 0.027337, -0.136419]
+    ],
+    "light2": [
+      [ 0.230128, 0.50385, 0.267372],
+      [-0.230128, 0.50385, 0.267372],
+      [-0.230128, 0.50385, -0.192885],
+      [0.230128, 0.50385, -0.192885]
+    ]
+  },
+
+  "materials": {
+    "default": {
+      "reflectance": [0,1,0]
+    },
+    "brass": {
+      "ior": "data/spectral-distributions/brass.csv",
+      "specular_roughness": 0.2,
+      "specular_reflectance": 0.5
+    },
+    "glass": {
+      "ior": 1.5,
+      "transparency": 1.0,
+      "specular_roughness": 0.15
+    },
+    "floor": {
+      "reflectance": 0.5,
+      "ior": 1.5,
+      "specular_roughness": 0.01
+    },
+    "light0": {
+      "emittance": { "temperature": 3000, "scale": 100000 }
+    },
+    "light1": {
+      "emittance": { "temperature": 10000, "scale": 100000 }
+    },
+    "light2": {
+      "emittance": { "scale": 10000 }
+    }
+  },
+
+  "surfaces": [
+    {
+      "type": "object",
+      "smooth": true,
+      "file": "data/shell/shell.obj",
+      "rotation": [-184.26, 185.79, 11.01],
+      "scale": 0.001,
+      "position": [-0.0592, 0.03848, 0],
+      "material": "glass"
+    },
+    {
+      "type": "object",
+      "smooth": true,
+      "file": "data/shell/shell.obj",
+      "rotation": [-175.74, 185.79, 168.99],
+      "scale": [0.001, -0.001, 0.001],
+      "position": [0.059, 0.03848, 0],
+      "material": "brass"
+    },
+    {
+      "type": "object",
+      "smooth":  true,
+      "file": "data/shell/Floor.obj",
+      "material": "floor"
+    },
+    {
+      "type": "object",
+      "vertex_set": "light0",
+      "material": "light0",
+      "triangles": [
+        [0, 1, 2],
+        [0, 2, 3]
+      ]
+    },
+    {
+      "type": "object",
+      "vertex_set": "light1",
+      "material": "light1",
+      "triangles": [
+        [0, 1, 2],
+        [0, 2, 3]
+      ]
+    },
+    {
+      "type": "object",
+      "vertex_set": "light2",
+      "material": "light2",
+      "triangles": [
+        [0, 1, 2],
+        [0, 2, 3]
+      ]
+    }
+  ]
+}

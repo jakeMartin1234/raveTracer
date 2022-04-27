@@ -1,0 +1,170 @@
+{
+  "num_render_threads": -1,
+  "ior": 1.0,   
+
+  "cameras": [
+    {
+      "focal_length": 50,
+      "sensor_width": 35,
+      "eye": [ -3.1, 0.7, 3.5 ],
+      "look_at": [ -0.4722, 0.7, 0.4449 ],
+      "image":  { "width": 1280, "height": 720, "exposure_compensation": -3.9, "gain_compensation": 0.0, "tonemapper": "ACES" },
+      "sqrtspp": 4,
+      "savename": "spaceship"
+    }
+  ],
+
+  "bvh": {
+    "type": "quaternary_sah",
+    "bins_per_axis": 8
+  },
+
+  "materials": {
+    "default": {
+      "reflectance": 0.8
+    },
+    "aluminium": {
+      "ior": "data/spectral-distributions/aluminium.csv",
+      "specular_reflectance": 0.2941,
+      "specular_roughness": 0.1
+    },
+    "black": {
+      "reflectance": 0,
+      "ior": 1.5,
+      "specular_roughness": 0.2
+    },
+    "dark-red-leather": {
+      "reflectance": "#341612",
+      "ior": 1.5,
+      "specular_roughness": 0.3
+    },
+    "floor": {
+      "reflectance": 0.1
+    },
+    "front-light": {
+      "emittance": { "temperature": 5000, "scale": 2 }
+    },
+    "glass": {
+      "transparency": 1.0,
+      "ior": 1.5
+    },
+    "gray-leather": {
+      "reflectance": 0.025,
+      "ior": 1.5,
+      "specular_reflectance": 0.1,
+      "specular_roughness": 0.4
+    },
+    "lights": {
+      "emittance": { "illuminant": "D65", "scale": 300 }
+    },
+    "pink-leather": {
+      "reflectance": "#E4748C",
+      "ior": 1.5,
+      "specular_roughness": 0.3
+    },
+    "red": {
+      "reflectance": "#703136",
+      "specular_roughness": 0.3,
+      "ior": 1.5
+    },
+    "red-leather": {
+      "reflectance": "#8B1E15",
+      "ior": 1.5,
+      "specular_roughness": 0.3
+    },
+    "red-screen": {
+      "reflectance": [1, 0, 0]
+    },
+    "steel": {
+      "ior": { "real": 2, "imaginary": 0 },
+      "specular_roughness": 0.1,
+      "specular_reflectance": 0.25
+    }
+  },
+
+  "surfaces": [
+    {
+      "type": "object",
+      "smooth":  true,
+      "file": "data/spaceship/aluminium.obj",
+      "material": "aluminium"
+    },
+    {
+      "type": "object",
+      "smooth":  true,
+      "file": "data/spaceship/black.obj",
+      "material": "black"
+    },
+    {
+      "type": "object",
+      "smooth":  true,
+      "file": "data/spaceship/dark-red-leather.obj",
+      "material": "dark-red-leather"
+    },
+    {
+      "type": "object",
+      "smooth":  false,
+      "file": "data/spaceship/floor.obj",
+      "material": "floor"
+    },
+    {
+      "type": "object",
+      "smooth":  true,
+      "file": "data/spaceship/front-light.obj",
+      "material": "front-light"
+    },
+    {
+      "type": "object",
+      "smooth":  true,
+      "file": "data/spaceship/glass.obj",
+      "material": "glass"
+    },
+    {
+      "type": "object",
+      "smooth":  true,
+      "file": "data/spaceship/gray-leather.obj",
+      "material": "gray-leather"
+    },
+    {
+      "type": "object",
+      "smooth":  false,
+      "file": "data/spaceship/lights.obj",
+      "material": "lights"
+    },
+    {
+      "type": "object",
+      "smooth":  true,
+      "file": "data/spaceship/pink-leather.obj",
+      "material": "pink-leather"
+    },
+    {
+      "type": "object",
+      "smooth":  true,
+      "file": "data/spaceship/red.obj",
+      "material": "red"
+    },
+    {
+      "type": "object",
+      "smooth":  true,
+      "file": "data/spaceship/red-leather.obj",
+      "material": "red-leather"
+    },
+    {
+      "type": "object",
+      "smooth":  true,
+      "file": "data/spaceship/red-screen.obj",
+      "material": "red-screen"
+    },
+    {
+      "type": "object",
+      "smooth":  true,
+      "file": "data/spaceship/steel.obj",
+      "material": "steel"
+    },
+    {
+      "type": "object",
+      "material": "floor",
+      "file": "data/spaceship/backdrop.obj"
+    }
+  ]
+}
