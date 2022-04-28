@@ -252,6 +252,7 @@ void PhotonMapper::emitPhoton(Ray ray, glm::dvec3 flux, size_t thread)
                 global_vecs[thread].emplace_back(flux / non_caustic_reject, interaction.position, -ray.direction);
             }
         }
+        
 
         if (!interaction.sampleBSDF(bsdf_absIdotN, bsdf_pdf, ray, true))
         {
@@ -387,4 +388,22 @@ glm::dvec3 PhotonMapper::estimateCausticRadiance(const Interaction& interaction)
         }
     }
     return 3.0 * radiance * inv_max_squared_radius * C::INV_PI;
+}
+
+glm::dvec3 frequencyToRGB(double freq) {
+    //TODO fill in function
+
+    return dvec3();
+}
+
+double sampleFrequency(double flux) {
+    //TODO: fill in function
+
+    return 0.0;
+}
+
+double getFrequencyIOR(double freq, double ior) {
+    //TODO: fill in function
+
+    return 0.0;
 }

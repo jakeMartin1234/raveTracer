@@ -36,4 +36,8 @@ private:
 
     uint16_t max_node_data;
     size_t k_nearest_photons;
+
+    glm::dvec3 frequencyToRGB(double freq);
+    double sampleFrequency(double flux);
+    double getFrequencyIOR(double freq, double ior);
 };

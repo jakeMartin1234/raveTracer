@@ -1,0 +1,4 @@
+Cannot generate into /Users/jakemartin/Documents/cs184/raveTracer
+It is already used for project /Users/jakemartin/documents/monte-carlo-ray-tracer
+
+Please either delete it manually or select another generation directory

@@ -39,7 +39,7 @@
     },
     "water": {
       "transparency": 1.0,
-      "ior": 1.8
+      "ior": 0
     },
     "light": {
       "reflectance": 1,
