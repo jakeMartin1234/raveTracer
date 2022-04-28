@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.22.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jakemartin/documents/monte-carlo-ray-tracer
+CMAKE_SOURCE_DIR = /Users/jakemartin/documents/cs184/raveTracer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jakemartin/documents/monte-carlo-ray-tracer
+CMAKE_BINARY_DIR = /Users/jakemartin/documents/cs184/raveTracer
 
 # Include any dependencies generated for this target.
 include CMakeFiles/monte-carlo-ray-tracer.dir/depend.make
@@ -72,352 +72,352 @@ include CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.o: source/bvh/bvh.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/bvh/bvh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/bvh/bvh.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/bvh/bvh.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/bvh/bvh.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/bvh/bvh.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/bvh/bvh.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.o: source/camera/camera.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/camera/camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/camera/camera.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/camera/camera.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/camera/camera.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/camera/camera.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/camera/camera.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.o: source/camera/image.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/camera/image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/camera/image.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/camera/image.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/camera/image.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/camera/image.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/camera/image.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.o: source/camera/pixel-operators.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/camera/pixel-operators.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/camera/pixel-operators.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/camera/pixel-operators.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/camera/pixel-operators.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/camera/pixel-operators.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/camera/pixel-operators.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.o: source/common/bounding-box.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/bounding-box.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/common/bounding-box.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/bounding-box.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/common/bounding-box.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/bounding-box.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/common/bounding-box.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.o: source/common/coordinate-system.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/coordinate-system.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/common/coordinate-system.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/coordinate-system.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/common/coordinate-system.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/coordinate-system.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/common/coordinate-system.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.o: source/common/format.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/format.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/common/format.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/format.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/common/format.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/format.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/common/format.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.o: source/common/histogram.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/histogram.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/common/histogram.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/histogram.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/common/histogram.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/histogram.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/common/histogram.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.o: source/common/option.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/option.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/common/option.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/option.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/common/option.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/option.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/common/option.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.o: source/common/util.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/common/util.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/util.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/common/util.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/util.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/common/util.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.o: source/integrator/integrator.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/integrator/integrator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/integrator/integrator.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/integrator/integrator.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/integrator/integrator.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/integrator/integrator.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/integrator/integrator.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.o: source/integrator/path-tracer/path-tracer.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/integrator/path-tracer/path-tracer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/integrator/path-tracer/path-tracer.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/integrator/path-tracer/path-tracer.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/integrator/path-tracer/path-tracer.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/integrator/path-tracer/path-tracer.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/integrator/path-tracer/path-tracer.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.o: source/integrator/photon-mapper/photon-mapper.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/integrator/photon-mapper/photon-mapper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/integrator/photon-mapper/photon-mapper.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/integrator/photon-mapper/photon-mapper.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/integrator/photon-mapper/photon-mapper.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/integrator/photon-mapper/photon-mapper.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/integrator/photon-mapper/photon-mapper.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.o: source/main.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/main.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/main.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/main.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/main.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/main.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.o: source/material/fresnel.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/material/fresnel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/material/fresnel.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/material/fresnel.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/material/fresnel.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/material/fresnel.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/material/fresnel.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.o: source/material/ggx.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/material/ggx.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/material/ggx.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/material/ggx.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/material/ggx.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/material/ggx.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/material/ggx.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.o: source/material/material.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/material/material.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/material/material.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/material/material.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/material/material.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/material/material.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/material/material.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.o: source/octree/linear-octree.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/octree/linear-octree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/octree/linear-octree.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/octree/linear-octree.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/octree/linear-octree.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/octree/linear-octree.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/octree/linear-octree.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/linear-octree.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.o: source/octree/octree.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/octree/octree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/octree/octree.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/octree/octree.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/octree/octree.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/octree/octree.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/octree/octree.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/octree/octree.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.o: source/ray/interaction.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/ray/interaction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/ray/interaction.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/ray/interaction.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/ray/interaction.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/ray/interaction.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/ray/interaction.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o: source/ray/ray.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/ray/ray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/ray/ray.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/ray/ray.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/ray/ray.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/ray/ray.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/ray/ray.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.o: source/scene/scene.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/scene/scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/scene/scene.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/scene/scene.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/scene/scene.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/scene/scene.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/scene/scene.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.o: source/surface/quadric.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/surface/quadric.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/surface/quadric.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/surface/quadric.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/surface/quadric.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/surface/quadric.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/surface/quadric.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.o: source/surface/sphere.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/surface/sphere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/surface/sphere.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/surface/sphere.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/surface/sphere.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/surface/sphere.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/surface/sphere.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.s
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/flags.make
 CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.o: source/surface/triangle.cpp
 CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.o: CMakeFiles/monte-carlo-ray-tracer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.o -c /Users/jakemartin/documents/monte-carlo-ray-tracer/source/surface/triangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.o -MF CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.o.d -o CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.o -c /Users/jakemartin/documents/cs184/raveTracer/source/surface/triangle.cpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/monte-carlo-ray-tracer/source/surface/triangle.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jakemartin/documents/cs184/raveTracer/source/surface/triangle.cpp > CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.i
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/monte-carlo-ray-tracer/source/surface/triangle.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jakemartin/documents/cs184/raveTracer/source/surface/triangle.cpp -o CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.s
 
 # Object files for target monte-carlo-ray-tracer
 monte__carlo__ray__tracer_OBJECTS = \
@@ -477,7 +477,7 @@ monte-carlo-ray-tracer: CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sph
 monte-carlo-ray-tracer: CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.o
 monte-carlo-ray-tracer: CMakeFiles/monte-carlo-ray-tracer.dir/build.make
 monte-carlo-ray-tracer: CMakeFiles/monte-carlo-ray-tracer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable monte-carlo-ray-tracer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable monte-carlo-ray-tracer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/monte-carlo-ray-tracer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -489,6 +489,6 @@ CMakeFiles/monte-carlo-ray-tracer.dir/clean:
 .PHONY : CMakeFiles/monte-carlo-ray-tracer.dir/clean
 
 CMakeFiles/monte-carlo-ray-tracer.dir/depend:
-	cd /Users/jakemartin/documents/monte-carlo-ray-tracer && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jakemartin/documents/monte-carlo-ray-tracer /Users/jakemartin/documents/monte-carlo-ray-tracer /Users/jakemartin/documents/monte-carlo-ray-tracer /Users/jakemartin/documents/monte-carlo-ray-tracer /Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles/monte-carlo-ray-tracer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/jakemartin/documents/cs184/raveTracer && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jakemartin/documents/cs184/raveTracer /Users/jakemartin/documents/cs184/raveTracer /Users/jakemartin/documents/cs184/raveTracer /Users/jakemartin/documents/cs184/raveTracer /Users/jakemartin/documents/cs184/raveTracer/CMakeFiles/monte-carlo-ray-tracer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/monte-carlo-ray-tracer.dir/depend
 

@@ -62,6 +62,14 @@ Ray::Ray(const Interaction &ia) :
             start += ia.normal * C::EPSILON;
             break;
         }
+        case Interaction::DIFRACT:
+        {
+            //TODO fill this in with needed qualities
+            // more stuff to add in this...
+            double freq = sampleFrequency();
+            medium_ior = getFrequencyIOR(freq, ia.n1);
+
+        }
     }
 }
 

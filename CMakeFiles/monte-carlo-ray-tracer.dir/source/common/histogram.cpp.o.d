@@ -1,6 +1,6 @@
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.o: \
-  /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/histogram.cpp \
-  /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/histogram.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/source/common/histogram.cpp \
+  /Users/jakemartin/documents/cs184/raveTracer/source/common/histogram.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/pthread.h \

@@ -1,6 +1,6 @@
 CMakeFiles/monte-carlo-ray-tracer.dir/source/common/format.cpp.o: \
-  /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/format.cpp \
-  /Users/jakemartin/documents/monte-carlo-ray-tracer/source/common/format.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/source/common/format.cpp \
+  /Users/jakemartin/documents/cs184/raveTracer/source/common/format.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/chrono \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/pthread.h \

@@ -52,7 +52,8 @@
       "type": "object",
       "material": "water",
       "smooth": true,
-      "file": "data/water_caustics/water.obj"
+      "file": "data/water_caustics/water.obj",
+      "isDifractive": true
     },
     {
       "type": "object",

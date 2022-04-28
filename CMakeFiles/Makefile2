@@ -54,10 +54,10 @@ RM = /opt/homebrew/Cellar/cmake/3.22.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jakemartin/documents/monte-carlo-ray-tracer
+CMAKE_SOURCE_DIR = /Users/jakemartin/documents/cs184/raveTracer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jakemartin/documents/monte-carlo-ray-tracer
+CMAKE_BINARY_DIR = /Users/jakemartin/documents/cs184/raveTracer
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/monte-carlo-ray-tracer.dir/clean
 CMakeFiles/monte-carlo-ray-tracer.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target monte-carlo-ray-tracer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jakemartin/documents/cs184/raveTracer/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target monte-carlo-ray-tracer"
 .PHONY : CMakeFiles/monte-carlo-ray-tracer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/monte-carlo-ray-tracer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakemartin/documents/cs184/raveTracer/CMakeFiles 26
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/monte-carlo-ray-tracer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakemartin/documents/cs184/raveTracer/CMakeFiles 0
 .PHONY : CMakeFiles/monte-carlo-ray-tracer.dir/rule
 
 # Convenience name for target.

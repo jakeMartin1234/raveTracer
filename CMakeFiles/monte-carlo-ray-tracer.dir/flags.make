@@ -4,7 +4,7 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/jakemartin/documents/monte-carlo-ray-tracer/lib/glm -I/Users/jakemartin/documents/monte-carlo-ray-tracer/lib/nlohmann
+CXX_INCLUDES = -I/Users/jakemartin/documents/cs184/raveTracer/lib/glm -I/Users/jakemartin/documents/cs184/raveTracer/lib/nlohmann
 
 CXX_FLAGSarm64 = -O3 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -std=gnu++17
 

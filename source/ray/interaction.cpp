@@ -155,7 +155,11 @@ glm::dvec3 Interaction::BSDF(const glm::dvec3& wo, const glm::dvec3& wi, double 
 // Selects the interaction type of the next ray spawned by interaction.
 void Interaction::selectType()
 {
-    if (material->perfect_mirror || material->complex_ior)
+    if (material->isDifractive)
+    {
+        type = DIFRACT;
+    }
+    else if (material->perfect_mirror || material->complex_ior)
     {
         type = REFLECT;
     }

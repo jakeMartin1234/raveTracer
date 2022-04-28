@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.22.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jakemartin/documents/monte-carlo-ray-tracer
+CMAKE_SOURCE_DIR = /Users/jakemartin/documents/cs184/raveTracer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jakemartin/documents/monte-carlo-ray-tracer
+CMAKE_BINARY_DIR = /Users/jakemartin/documents/cs184/raveTracer
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles /Users/jakemartin/documents/monte-carlo-ray-tracer//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakemartin/documents/cs184/raveTracer/CMakeFiles /Users/jakemartin/documents/cs184/raveTracer//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakemartin/documents/monte-carlo-ray-tracer/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jakemartin/documents/cs184/raveTracer/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

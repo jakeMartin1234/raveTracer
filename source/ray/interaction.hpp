@@ -18,7 +18,8 @@ struct Interaction
     {
         REFLECT,
         REFRACT,
-        DIFFUSE
+        DIFFUSE,
+        DIFRACT
     };
 
     Type type;

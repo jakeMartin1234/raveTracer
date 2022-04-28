@@ -18,6 +18,7 @@ int main(int argc, char* argv[])
         }
         Scene::path = std::filesystem::current_path() / command_path;
     }
+    std::cout << "lets gooooo" << std::endl;
     std::cout << "Scene directory:" << std::endl << Scene::path.string() << std::endl << std::endl;
 
     std::vector<Option> options;
@@ -36,6 +37,7 @@ int main(int argc, char* argv[])
         std::cout << "No scenes found." << std::endl;
         return -1;
     }
+
 
     Option scene_option = getOption(options);
 

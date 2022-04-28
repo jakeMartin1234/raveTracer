@@ -238,7 +238,18 @@ void PhotonMapper::emitPhoton(Ray ray, glm::dvec3 flux, size_t thread)
             return;
         }
 
+        // vvv alot happens in this function, good function to call new dispersion functions in vvv
         Interaction interaction(intersection, ray, refraction_history.externalIOR(ray));
+
+
+
+//        if (interaction.material->isDifractive) {
+//            std::cout << "Intersection Difractive: true \n";
+//        } else {
+//            std::cout << "Intersection Difractive: false \n";
+//        }
+
+
 
         // Only spawn photons at locations that can produce non-dirac delta interactions.
         if (!interaction.material->dirac_delta)
@@ -393,7 +404,7 @@ glm::dvec3 PhotonMapper::estimateCausticRadiance(const Interaction& interaction)
 glm::dvec3 frequencyToRGB(double freq) {
     //TODO fill in function
 
-    return dvec3();
+    return glm::dvec3();
 }
 
 double sampleFrequency(double flux) {
