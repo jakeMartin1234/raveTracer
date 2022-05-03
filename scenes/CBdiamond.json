@@ -1,0 +1,84 @@
+{
+  "num_render_threads": -1,
+  "ior": 1.0,
+
+  "cameras": [
+    {
+      "focal_length": 102.25,
+      "sensor_width": 35,
+      "eye": [ 0, 1, -6.83879 ],
+      "look_at": [ 0, 1, 0 ],
+      "image":  { "width": 1000, "height": 1000, "exposure_compensation": -1.0, "gain_compensation": -0.5, "tonemapper": "Hable" },
+      "sqrtspp": 4,
+      "savename": "CBdiamond"
+    }
+  ],
+
+  "photon_map": {
+    "emissions": 2000000,
+    "caustic_factor": 10.0,
+    "k_nearest_photons": 50,
+    "max_photons_per_octree_leaf": 200,
+    "direct_visualization": false
+  },
+
+  "bvh": {
+    "type": "octree",
+    "bins_per_axis": 16
+  },
+
+  "materials": {
+    "default": {
+      "reflectance": 0.8
+    },
+    "leftwall": {
+      "reflectance": "#a2bf82"
+    },
+    "rightwall": {
+      "reflectance": "#8caabf"
+    },
+    "diamond": {
+      "transparency": 1.0,
+      "ior": 2.5
+    },
+    "light": {
+      "reflectance": 1,
+      "emittance": { "illuminant": "F9", "scale": 25 }
+    }
+  },
+
+  "surfaces": [
+    {
+      "type": "object",
+      "material": "leftwall",
+      "file": "rubyFiles/leftwall.obj"
+    },
+    {
+      "type": "object",
+      "material": "rightwall",
+      "file": "rubyFiles/rightwall.obj"
+    },
+    {
+      "type": "object",
+      "file": "rubyFiles/back_wall.obj"
+    },
+    {
+      "type": "object",
+      "file": "rubyFiles/ceiling.obj"
+    },
+    {
+      "type": "object",
+      "file": "rubyFiles/floor.obj"
+    },
+    {
+      "type": "object",
+      "material": "light",
+      "file": "data/water_caustics/light.obj"
+    },
+    {
+      "type": "object",
+      "material": "diamond",
+      "file": "rubyFiles/diamond.obj"
+    }
+  ]
+}
