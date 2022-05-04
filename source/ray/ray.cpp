@@ -74,8 +74,8 @@ Ray::Ray(const Interaction &ia) :
             {
                 /* SPECULAR REFRACTION */
                 direction = inv_eta * ia.ray.direction - (inv_eta * cos_theta + std::sqrt(k)) * specular_normal;
-                double lambda = sampleWavelength();
-                medium_ior = getFrequencyIOR(lambda, ia.n2, ia.material->diffractivity);
+                waveLength = sampleWavelength();
+                medium_ior = getFrequencyIOR(waveLength, ia.n2, ia.material->diffractivity);
                 start -= ia.normal * C::EPSILON;
                 ia.inside ? refraction_level-- : refraction_level++;
                 refraction_scale *= pow2(1.0 / inv_eta);

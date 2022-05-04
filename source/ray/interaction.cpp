@@ -132,7 +132,8 @@ glm::dvec3 Interaction::BSDF(const glm::dvec3& wo, const glm::dvec3& wi, double 
     {
 
         if (type == DIFRACT) {
-            btdf = material->specularTransmissionCustom(wi, wo, n1, n2, pdf_t, inside, flux, );
+            glm::dvec3 newTransmittance = waveLengthToRGB();
+            btdf = material->specularTransmissionCustom(wi, wo, n1, n2, pdf_t, inside, flux, newTransmittance);
         } else {
             btdf = material->specularTransmission(wi, wo, n1, n2, pdf_t, inside, flux);
         }
@@ -204,4 +205,9 @@ glm::dvec3 Interaction::specularNormal() const
         return shading_cs.from(material->visibleMicrofacet(u[0], u[1], shading_cs.to(out)));
     }
     return shading_cs.normal;
+}
+
+glm::dvec3 Interaction::waveLengthToRGB() const
+{
+    return glm::dvec3(1.0, 0, 0);
 }

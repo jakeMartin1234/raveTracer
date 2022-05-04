@@ -21,6 +21,7 @@ public:
 
     glm::dvec3 start, direction;
     double medium_ior;
+    double waveLength;
     double refraction_scale = 1.0;
     bool dirac_delta = false, refraction = false;
     uint16_t depth = 0, diffuse_depth = 0;

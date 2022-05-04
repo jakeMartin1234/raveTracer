@@ -33,7 +33,7 @@ public:
                                     double n2, double& PDF, bool inside, bool flux) const;
 
     glm::dvec3 specularTransmissionCustom(const glm::dvec3& wi, const glm::dvec3& wo, double n1,
-                                    double n2, double& PDF, bool inside, bool flux, double iorCustom,
+                                    double n2, double& PDF, bool inside, bool flux,
                                     glm::dvec3& transmittanceCustom) const;
 
     glm::dvec3 specularReflectionCustonIOR(const glm::dvec3& wi, const glm::dvec3& wo, double& PDF, double iorCustom) const;

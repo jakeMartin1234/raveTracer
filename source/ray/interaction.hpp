@@ -28,6 +28,7 @@ struct Interaction
     bool BSDF(glm::dvec3& bsdf_absIdotN, const glm::dvec3& world_wi, double& pdf) const;
 
     glm::dvec3 specularNormal() const;
+    glm::dvec3 waveLengthToRGB() const;
     
     // n1 and n2 are correctly ordered.
     double t, n1, n2, T, R;
