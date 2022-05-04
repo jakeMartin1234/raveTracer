@@ -396,4 +396,5 @@ CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/bitset \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/clocale \
   /Users/jakemartin/documents/cs184/raveTracer/source/ray/interaction.hpp \
-  /Users/jakemartin/documents/cs184/raveTracer/source/ray/intersection.hpp
+  /Users/jakemartin/documents/cs184/raveTracer/source/ray/intersection.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream

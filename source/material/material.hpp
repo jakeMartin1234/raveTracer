@@ -16,7 +16,7 @@ public:
         ior = -1.0;
         complex_ior = nullptr;
         transparency = 0.0;
-        diffractivity = 0.0;
+        difractivity = 0.0;
         perfect_mirror = false;
         isDifractive = false;
         reflectance = glm::dvec3(1.0);
@@ -43,7 +43,7 @@ public:
     void computeProperties();
 
     glm::dvec3 reflectance, specular_reflectance, transmittance, emittance;
-    double roughness, specular_roughness, ior, transparency, diffractivity;
+    double roughness, specular_roughness, ior, transparency, difractivity;
     std::shared_ptr<ComplexIOR> complex_ior;
 
     bool rough, rough_specular, opaque, emissive, dirac_delta, isDifractive;

@@ -169,7 +169,7 @@ void from_json(const nlohmann::json &j, Material &m)
     getToOptional(j, "transparency", m.transparency);
     getToOptional(j, "perfect_mirror", m.perfect_mirror);
     getToOptional(j, "isDifractive", m.isDifractive);
-    getToOptional(j, "diffractivity", m.diffractivity);
+    getToOptional(j, "difractivity", m.difractivity);
     getReflectance("reflectance", m.reflectance);
     getReflectance("specular_reflectance", m.specular_reflectance);
     getReflectance("transmittance", m.transmittance);

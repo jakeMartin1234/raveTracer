@@ -7973,6 +7973,7 @@ CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.o
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/deque
  /Users/jakemartin/documents/cs184/raveTracer/source/common/constexpr-math.hpp
  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/matrix.hpp
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o
  /Users/jakemartin/documents/cs184/raveTracer/source/ray/ray.cpp
@@ -8373,6 +8374,7 @@ CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/clocale
  /Users/jakemartin/documents/cs184/raveTracer/source/ray/interaction.hpp
  /Users/jakemartin/documents/cs184/raveTracer/source/ray/intersection.hpp
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.o
  /Users/jakemartin/documents/cs184/raveTracer/source/scene/scene.cpp

@@ -8,12 +8,14 @@
 #include "../common/coordinate-system.hpp"
 #include "../surface/surface.hpp"
 #include "../common/constexpr-math.hpp"
+#include <iostream>
 
 Interaction::Interaction(const Intersection &isect, const Ray &ray, double external_ior) :
     t(isect.t), ray(ray), out(-ray.direction), n1(ray.medium_ior),
     material(isect.surface->material), surface(isect.surface),
     position(ray(t)), normal(isect.surface->normal(position))
 {
+    waveLength = sampleWavelength();
     double cos_theta = glm::dot(ray.direction, normal);
 
     inside = cos_theta > 0.0;
@@ -142,7 +144,7 @@ glm::dvec3 Interaction::BSDF(const glm::dvec3& wo, const glm::dvec3& wi, double 
     if (wi_dirac_delta)
     {
         // wi guaranteed to be direction of ray spawned by interaction
-        if (type == REFLECT || type == DIFRACT)
+        if (type == REFLECT)
         {
             pdf = R;
             return brdf_s * F;
@@ -166,11 +168,7 @@ glm::dvec3 Interaction::BSDF(const glm::dvec3& wo, const glm::dvec3& wi, double 
 // Selects the interaction type of the next ray spawned by interaction.
 void Interaction::selectType()
 {
-    if (material->isDifractive)
-    {
-        type = DIFRACT;
-    }
-    else if (material->perfect_mirror || material->complex_ior)
+    if (material->perfect_mirror || material->complex_ior)
     {
         type = REFLECT;
     }
@@ -188,7 +186,11 @@ void Interaction::selectType()
         }
         else if (R + (1.0 - R) * T > p)
         {
-            type = REFRACT;
+            if (material->isDifractive) {
+                type = DIFRACT;
+            } else {
+                type = REFRACT;
+            }
         }
         else // R + (1 - R) * T + (1 - R) * (1 - T) = 1 > p
         {
@@ -207,7 +209,20 @@ glm::dvec3 Interaction::specularNormal() const
     return shading_cs.normal;
 }
 
+double Interaction::sampleWavelength() {
+    //TODO: fill in function
+
+    return 380 + (700 - 380) * ((double) rand() / (RAND_MAX));
+}
+
 glm::dvec3 Interaction::waveLengthToRGB() const
 {
-    return glm::dvec3(1.0, 0, 0);
+    //std::cout << "    waveLengthRGB:::" + std::to_string(waveLength);
+    if (waveLength > 670) {
+        return glm::dvec3(1.0, 0, 0);
+    } else if (waveLength > 480) {
+        return glm::dvec3(0, 1.0, 0);
+    } else {
+        return glm::dvec3(0, 0, 1.0);
+    }
 }

@@ -29,6 +29,7 @@ struct Interaction
 
     glm::dvec3 specularNormal() const;
     glm::dvec3 waveLengthToRGB() const;
+    double sampleWavelength();
     
     // n1 and n2 are correctly ordered.
     double t, n1, n2, T, R;
@@ -38,6 +39,7 @@ struct Interaction
     CoordinateSystem shading_cs;
     bool inside, dirac_delta;
     Ray ray;
+    double waveLength;
 
 private:
     glm::dvec3 BSDF(const glm::dvec3& wo, const glm::dvec3& wi, double& pdf, bool flux, bool wi_dirac_delta) const;

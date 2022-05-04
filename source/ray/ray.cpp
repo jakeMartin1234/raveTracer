@@ -6,6 +6,7 @@
 #include "../common/constants.hpp"
 #include "../material/material.hpp"
 #include "interaction.hpp"
+#include <iostream>
 
 Ray::Ray(const glm::dvec3& start, const glm::dvec3& end)
     : start(start), direction(glm::normalize(end - start)), medium_ior(1.0) { }
@@ -13,7 +14,7 @@ Ray::Ray(const glm::dvec3& start, const glm::dvec3& end)
 Ray::Ray(const glm::dvec3& start, const glm::dvec3& direction, double medium_ior)
     : start(start), direction(direction), medium_ior(medium_ior) { }
 
-Ray::Ray(const Interaction &ia) : 
+Ray::Ray(const Interaction &ia) :
     depth(ia.ray.depth + 1), diffuse_depth(ia.ray.diffuse_depth),
     refraction_scale(ia.ray.refraction_scale), start(ia.position),
     refraction_level(ia.ray.refraction_level), dirac_delta(ia.dirac_delta)
@@ -74,8 +75,10 @@ Ray::Ray(const Interaction &ia) :
             {
                 /* SPECULAR REFRACTION */
                 direction = inv_eta * ia.ray.direction - (inv_eta * cos_theta + std::sqrt(k)) * specular_normal;
-                waveLength = sampleWavelength();
-                medium_ior = getFrequencyIOR(waveLength, ia.n2, ia.material->diffractivity);
+                double diff = getFrequencyIOR(ia.n2, ia.material->difractivity) * ((ia.waveLength - 380) / 320);
+//                std::cout << "   diff::" + std::to_string(diff) + "  waveLength:" + std::to_string(waveLength);
+                double newIOR = ia.n2 - diff;
+                medium_ior = newIOR;
                 start -= ia.normal * C::EPSILON;
                 ia.inside ? refraction_level-- : refraction_level++;
                 refraction_scale *= pow2(1.0 / inv_eta);
@@ -125,13 +128,8 @@ double RefractionHistory::externalIOR(const Ray& ray) const
     return iors[std::clamp(ray.refraction_level - 1, 0, (int)iors.size() - 1)];
 }
 
-double Ray::sampleWavelength() {
-    //TODO: fill in function
 
-    return 380 + (700 - 380) * ((double) rand() / (RAND_MAX));
-}
-
-double Ray::getFrequencyIOR(double freq, double ior, double diffractivity) {
+double Ray::getFrequencyIOR(double ior, double difractivity) {
     //TODO: fill in function
-    return (diffractivity * (ior - 1) - ior) / 0.76;
+    return (difractivity * (ior - 1) - ior) / 0.76 ;
 }

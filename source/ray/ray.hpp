@@ -14,14 +14,12 @@ public:
     Ray(const glm::dvec3& start, const glm::dvec3& end);
     Ray(const glm::dvec3& start, const glm::dvec3& direction, double medium_ior);
 
-    double sampleWavelength();
-    double getFrequencyIOR(double freq, double ior, double diffractivity);
+    double getFrequencyIOR(double ior, double diffractivity);
 
     glm::dvec3 operator()(double t) const;
 
     glm::dvec3 start, direction;
     double medium_ior;
-    double waveLength;
     double refraction_scale = 1.0;
     bool dirac_delta = false, refraction = false;
     uint16_t depth = 0, diffuse_depth = 0;

@@ -7952,7 +7952,8 @@ CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.o: source/ray/i
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/queue \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/deque \
   source/common/constexpr-math.hpp \
-  lib/glm/glm/matrix.hpp
+  lib/glm/glm/matrix.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o: source/ray/ray.cpp \
   source/ray/ray.hpp \
@@ -8351,7 +8352,8 @@ CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o: source/ray/ray.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/bitset \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/clocale \
   source/ray/interaction.hpp \
-  source/ray/intersection.hpp
+  source/ray/intersection.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.o: source/scene/scene.cpp \
   source/scene/scene.hpp \

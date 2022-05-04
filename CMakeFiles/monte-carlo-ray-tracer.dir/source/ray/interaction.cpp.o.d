@@ -405,4 +405,5 @@ CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/queue \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/deque \
   /Users/jakemartin/documents/cs184/raveTracer/source/ray/../common/constexpr-math.hpp \
-  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/matrix.hpp
+  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/matrix.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream
