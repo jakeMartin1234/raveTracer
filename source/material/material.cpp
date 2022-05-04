@@ -44,6 +44,25 @@ glm::dvec3 Material::specularReflection(const glm::dvec3& wi, const glm::dvec3& 
     }        
 }
 
+glm::dvec3 Material::specularReflectionCustom(const glm::dvec3& wi, const glm::dvec3& wo, double& PDF,
+                                              glm::dvec3& specReflectance) const
+{
+    if (wi.z < 0.0)
+    {
+        PDF = 0.0;
+        return glm::dvec3(0.0);
+    }
+    if (rough_specular)
+    {
+        return specReflectance * GGX::reflection(wi, wo, a, PDF);
+    }
+    else
+    {
+        PDF = 1.0;
+        return specReflectance / std::abs(wi.z);
+    }
+}
+
 glm::dvec3 Material::specularTransmission(const glm::dvec3& wi, const glm::dvec3& wo, double n1, 
                                           double n2, double& PDF, bool inside, bool flux) const
 {

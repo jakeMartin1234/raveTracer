@@ -29,6 +29,7 @@ public:
 
     glm::dvec3 diffuseReflection(const glm::dvec3& i, const glm::dvec3& o, double& PDF) const;
     glm::dvec3 specularReflection(const glm::dvec3& wi, const glm::dvec3& wo, double& PDF) const;
+    glm::dvec3 specularReflectionCustom(const glm::dvec3& wi, const glm::dvec3& wo, double& PDF, glm::dvec3& specReflectance) const;
     glm::dvec3 specularTransmission(const glm::dvec3& wi, const glm::dvec3& wo, double n1, 
                                     double n2, double& PDF, bool inside, bool flux) const;
 

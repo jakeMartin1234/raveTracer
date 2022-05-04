@@ -122,7 +122,8 @@ glm::dvec3 Interaction::BSDF(const glm::dvec3& wo, const glm::dvec3& wi, double 
     double pdf_s, pdf_d;
     glm::dvec3 brdf_s;
     if (type == DIFRACT) {
-        brdf_s = material->specularReflection(wi, wo, pdf_s);
+        glm::dvec3 newReflectance = waveLengthToRGB();
+        brdf_s = material->specularReflectionCustom(wi, wo, pdf_s, newReflectance);
     } else {
         brdf_s = material->specularReflection(wi, wo, pdf_s);
     }
@@ -191,6 +192,7 @@ void Interaction::selectType()
             } else {
                 type = REFRACT;
             }
+
         }
         else // R + (1 - R) * T + (1 - R) * (1 - T) = 1 > p
         {
