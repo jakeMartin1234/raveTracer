@@ -1,234 +1,41 @@
-cmake_minimum_required(VERSION 3.8)
-project(Assignment3)
+cmake_minimum_required(VERSION 3.10)
 
-#-------------------------------------------------------------------------------
-# Build options
-#-------------------------------------------------------------------------------
-option(BUILD_DEBUG     "Build with debug settings"    OFF)
-option(BUILD_DOCS      "Build documentation"          OFF)
-option(BUILD_CUSTOM    "Build without reference"      OFF)
-option(GEN_BINARIES    "Generate 3-1 binaries"        OFF)
+project(monte-carlo-ray-tracer)
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
 
-set(BUILD_DEBUG ${BUILD_DEBUG} CACHE BOOL "Build debug" FORCE)
-
-if (BUILD_DEBUG)
-  set(CMAKE_BUILD_TYPE Debug)
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Release)
 endif()
 
-#-------------------------------------------------------------------------------
-# Set target
-#-------------------------------------------------------------------------------
-set(APPLICATION_3_1_SOURCE
+include(CheckCXXCompilerFlag)
 
-    # Scene Object & Structure
-    src/scene/sphere.cpp
-    src/scene/triangle.cpp
-    src/scene/light.cpp
-    src/scene/bvh.cpp
-    src/scene/bbox.cpp
-
-    # Pathtracer
-    src/pathtracer/camera.cpp
-    src/pathtracer/bsdf.cpp
-    src/pathtracer/pathtracer.cpp
-)
-
-set(APPLICATION_3_2_SOURCE
-    src/scene/object.cpp
-
-    # Collada Parser
-    src/scene/collada/collada.cpp
-    src/scene/collada/camera_info.cpp
-    src/scene/collada/light_info.cpp
-    src/scene/collada/sphere_info.cpp
-    src/scene/collada/polymesh_info.cpp
-    src/scene/collada/material_info.cpp
-
-    # Dynamic Scene
-    src/scene/gl_scene/mesh.cpp
-    src/scene/gl_scene/scene.cpp
-    src/scene/gl_scene/sphere.cpp
-
-    # MeshEdit
-    src/util/halfEdgeMesh.cpp
-    src/application/meshEdit.cpp
-
-    src/pathtracer/sampler.cpp
-    src/pathtracer/advanced_bsdf.cpp
-    src/scene/environment_light.cpp
-    src/pathtracer/camera_lens.cpp
-    src/pathtracer/raytraced_renderer.cpp
-
-    # misc
-    src/util/sphere_drawing.cpp
-    src/util/lodepng.cpp
-
-    # Application
-    src/application/application.cpp
-    src/application/main.cpp
-    src/application/visual_debugger.cpp
-
-    src/imgui/imgui.cpp
-    src/imgui/imgui_widgets.cpp
-    src/imgui/imgui_draw.cpp
-    src/imgui/imgui_tables.cpp
-    src/imgui/backends/imgui_impl_glfw.cpp
-    src/imgui/backends/imgui_impl_opengl2.cpp
-)
-
-set(APPLICATION_HEADERS
-    # Collada Parser
-    src/scene/collada/camera_info.h
-    src/scene/collada/collada_info.h
-    src/scene/collada/collada.h
-    src/scene/collada/light_info.h
-    src/scene/collada/material_info.h
-    src/scene/collada/polymesh_info.h
-    src/scene/collada/sphere_info.h
-    # Dynamic Scene
-    src/scene/gl_scene/ambient_light.h
-    src/scene/gl_scene/area_light.h
-    src/scene/gl_scene/directional_light.h
-    src/scene/gl_scene/draw_style.h
-    src/scene/gl_scene/environment_light.h
-    src/scene/gl_scene/material.h
-    src/scene/gl_scene/mesh_view.h
-    src/scene/gl_scene/mesh.h
-    src/scene/gl_scene/point_light.h
-    src/scene/gl_scene/scene.h
-    src/scene/gl_scene/sphere.h
-    src/scene/gl_scene/spot_light.h
-    # Scene Object & Structure
-    src/scene/aggregate.h
-    src/scene/bbox.h
-    src/scene/bvh.h
-    src/scene/environment_light.h
-    src/scene/light.h
-    src/scene/object.h
-    src/scene/primitive.h
-    src/scene/scene.h
-    src/scene/sphere.h
-    src/scene/triangle.h
-    # MeshEdit
-    src/util/halfEdgeMesh.h
-    src/util/image.h
-    src/util/mutablePriorityQueue.h
-    src/util/random_util.h
-    src/util/work_queue.h
-    # Pathtracer
-    src/pathtracer/bsdf.h
-    src/pathtracer/camera.h
-    src/pathtracer/intersection.h
-    src/pathtracer/pathtracer.h
-    src/pathtracer/ray.h
-    src/pathtracer/raytraced_renderer.h
-    src/pathtracer/sampler.h
-    # misc
-    src/util/sphere_drawing.h
-    src/util/lodepng.h
-    # Application
-    src/application/application.h
-    src/application/meshEdit.h
-    src/application/renderer.h
-)
-
-if (WIN32)
-    list(APPEND APPLICATION_3_1_SOURCE src/util/win32/getopt.c)
+CHECK_CXX_COMPILER_FLAG(-O3 COMPILER_SUPPORTS_O3)
+if(COMPILER_SUPPORTS_O3)
+  set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 endif()
 
-add_executable(pathtracer ${APPLICATION_3_2_SOURCE} ${APPLICATION_HEADERS} "src/pathtracer/bsdf.cpp" "src/pathtracer/camera.cpp" "src/pathtracer/pathtracer.cpp" "src/scene/bbox.cpp" "src/scene/bvh.cpp" "src/scene/light.cpp" "src/scene/sphere.cpp" "src/scene/triangle.cpp")
-target_include_directories(pathtracer PUBLIC src)
-
-set(OpenGL_GL_PREFERENCE LEGACY)
-find_package(OpenGL REQUIRED)
-
-target_link_libraries(pathtracer PUBLIC CGL)
-target_link_libraries(pathtracer PUBLIC OpenGL::GL)
-target_link_libraries(pathtracer PUBLIC OpenGL::GLU)
-
-set(CGL_INCLUDE_DIRS CGL/include CGL/deps/glew/include CGL/deps/glfw/include ./src/imgui ./src/imgui/backends)
-
-#-------------------------------------------------------------------------------
-# Find dependencies
-#-------------------------------------------------------------------------------
-add_subdirectory(CGL)
-target_include_directories(pathtracer PUBLIC ${CGL_INCLUDE_DIRS})
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CGL_CXX_FLAGS} ${AVX_FLAGS}")
-
-
-if (GEN_BINARIES OR BUILD_CUSTOM)
-
-  if(NOT GEN_BINARIES)
-    include(CGL/find_avx.cmake)
-    CHECK_FOR_AVX()
-  endif()
-
-  if (WIN32 OR APPLE)
-    add_library(pt31 STATIC ${APPLICATION_3_1_SOURCE} ${APPLICATION_HEADERS} "src/pathtracer/bsdf.cpp" "src/pathtracer/camera.cpp" "src/pathtracer/pathtracer.cpp" "src/scene/bbox.cpp" "src/scene/bvh.cpp" "src/scene/light.cpp" "src/scene/sphere.cpp" "src/scene/triangle.cpp")
-  else()
-    add_library(pt31 SHARED ${APPLICATION_3_1_SOURCE} ${APPLICATION_HEADERS})
-  endif()
-
-  target_link_libraries(pt31 PUBLIC CGL)
-  target_link_libraries(pt31 PUBLIC OpenGL::GL)
-  target_link_libraries(pt31 PUBLIC OpenGL::GLU)
-  
-  target_include_directories(pt31 PUBLIC src)
-  target_include_directories(pt31 PUBLIC ${CGL_INCLUDE_DIRS})
-
-  if(GEN_BINARIES)
-    if (WIN32)
-      if(CMAKE_BUILD_TYPE STREQUAL "Debug")
-        message(FATAL_ERROR "You should use Release profile on Windows, if you want to debug, set the configuration type to RelWithDebInfo in CMake settings")
-      else()
-        install(TARGETS pt31 DESTINATION ${CMAKE_SOURCE_DIR}/libs/x64_msvc/release)
-      endif()
-    elseif (APPLE)
-      install(TARGETS pt31 DESTINATION ${CMAKE_SOURCE_DIR}/libs/x64_apple)
-    elseif (CMAKE_SYSTEM_NAME STREQUAL "Linux")
-      install(TARGETS pt31 DESTINATION ${CMAKE_SOURCE_DIR}/libs/x64_linux)
-    else()
-      message(FATAL_ERROR "Unknown system!")
-    endif()
-  endif()
-
-else()
-
-  include(CGL/find_avx.cmake)
-  CHECK_FOR_AVX()
-
-  if (WIN32)
-    if(CMAKE_BUILD_TYPE STREQUAL "Debug")
-      message(FATAL_ERROR "You should use Release profile on Windows, if you want to debug, set the configuration type to RelWithDebInfo in CMake settings")
-    else()
-      target_link_directories(pathtracer PRIVATE libs/x64_msvc/release)
-    endif()
-  elseif (APPLE)
-    target_link_directories(pathtracer PRIVATE libs/x64_apple)
-  elseif (CMAKE_SYSTEM_NAME STREQUAL "Linux")
-    target_link_directories(pathtracer PRIVATE libs/x64_linux)
-  else()
-    message(FATAL_ERROR "Unknown system!")
-  endif()
-
+CHECK_CXX_COMPILER_FLAG(-g COMPILER_SUPPORTS_G)
+if(COMPILER_SUPPORTS_G)
+  set(CMAKE_CXX_FLAGS_DEBUG "-g")
 endif()
 
-target_link_libraries(pathtracer PUBLIC pt31)
+include_directories(${PROJECT_SOURCE_DIR}/lib/glm/)
+include_directories(${PROJECT_SOURCE_DIR}/lib/nlohmann/)
 
+file(GLOB_RECURSE _source_list ${PROJECT_SOURCE_DIR}/source/*.cpp ${PROJECT_SOURCE_DIR}/source/*.hpp ${PROJECT_SOURCE_DIR}/scenes/*.json)
 
-#-------------------------------------------------------------------------------
-# Add subdirectories
-#-------------------------------------------------------------------------------
+foreach(_source IN ITEMS ${_source_list})
+    get_filename_component(_source_path "${_source}" PATH)
+    string(REPLACE "${CMAKE_SOURCE_DIR}" "" _group_path "${_source_path}")
+    string(REPLACE "/" "\\" _group_path "${_group_path}")
+    source_group("${_group_path}" FILES "${_source}")
+endforeach()
 
-# build documentation
-if(BUILD_DOCS)
-  find_package(DOXYGEN)
-  if(DOXYGEN_FOUND AND BUILD_DOCS)
-    add_subdirectory(docs)
-  endif()
-endif()
+add_executable(${PROJECT_NAME} ${_source_list})
 
-# Install settings
-set(CMAKE_INSTALL_PREFIX "${Assignment1_SOURCE_DIR}/")
+target_link_libraries(${PROJECT_NAME} Threads::Threads)
