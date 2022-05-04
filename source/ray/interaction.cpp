@@ -9,6 +9,8 @@
 #include "../surface/surface.hpp"
 #include "../common/constexpr-math.hpp"
 
+#include "../integrator/photon-mapper/photon-mapper.hpp"
+
 Interaction::Interaction(const Intersection &isect, const Ray &ray, double external_ior) :
     t(isect.t), ray(ray), out(-ray.direction), n1(ray.medium_ior),
     material(isect.surface->material), surface(isect.surface),
@@ -20,6 +22,7 @@ Interaction::Interaction(const Intersection &isect, const Ray &ray, double exter
     n2 = (inside && !material->opaque) ? external_ior : material->ior;
 
     glm::dvec3 shading_normal = normal;
+
     if (isect.interpolate)
     {
         shading_normal = isect.surface->interpolatedNormal(isect.uv);
@@ -117,7 +120,15 @@ glm::dvec3 Interaction::BSDF(const glm::dvec3& wo, const glm::dvec3& wi, double 
 
     double F = Fresnel::dielectric(n1, n2, cos_theta);
 
+    double waveLength = PhotonMapper::getRandWavelength();
+    
     double pdf_s, pdf_d;
+    if (type == DIFRACT) {
+        // need to change specular reflectance to correct color Maybe 1/ correct color?
+        glm::dvec3 brdf_s = material->specularReflection(wi, wo, pdf_s);
+    } else {
+        glm::dvec3 brdf_s = material->specularReflection(wi, wo, pdf_s);
+    }
     glm::dvec3 brdf_s = material->specularReflection(wi, wo, pdf_s);
     glm::dvec3 brdf_d = material->diffuseReflection(wi, wo, pdf_d);
 
@@ -125,7 +136,12 @@ glm::dvec3 Interaction::BSDF(const glm::dvec3& wo, const glm::dvec3& wi, double 
     glm::dvec3 btdf = brdf_s;
     if (F < 1.0)
     {
-        btdf = material->specularTransmission(wi, wo, n1, n2, pdf_t, inside, flux);
+        if (type == DIFRACT) {
+            // change transmittance to goal color
+            btdf = material->specularTransmission(wi, wo, n1, n2, pdf_t, inside, flux);
+        } else {
+            btdf = material->specularTransmission(wi, wo, n1, n2, pdf_t, inside, flux);
+        }
     }
     
     if (wi_dirac_delta)
@@ -155,7 +171,7 @@ glm::dvec3 Interaction::BSDF(const glm::dvec3& wo, const glm::dvec3& wi, double 
 // Selects the interaction type of the next ray spawned by interaction.
 void Interaction::selectType()
 {
-    if (material->isDifractive)
+    if (material->isDifractive && !ray.dispersed)
     {
         type = DIFRACT;
     }

@@ -7952,7 +7952,39 @@ CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.o: source/ray/i
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/queue \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/deque \
   source/common/constexpr-math.hpp \
-  lib/glm/glm/matrix.hpp
+  lib/glm/glm/matrix.hpp \
+  source/integrator/photon-mapper/photon-mapper.hpp \
+  source/integrator/photon-mapper/photon.hpp \
+  lib/glm/glm/glm.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cfloat \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/float.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/float.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/float.h \
+  lib/glm/glm/fwd.hpp \
+  lib/glm/glm/trigonometric.hpp \
+  lib/glm/glm/detail/func_trigonometric.inl \
+  lib/glm/glm/exponential.hpp \
+  lib/glm/glm/common.hpp \
+  lib/glm/glm/packing.hpp \
+  lib/glm/glm/detail/func_packing.inl \
+  lib/glm/glm/detail/type_half.hpp \
+  lib/glm/glm/detail/type_half.inl \
+  lib/glm/glm/geometric.hpp \
+  lib/glm/glm/vector_relational.hpp \
+  lib/glm/glm/integer.hpp \
+  lib/glm/glm/detail/func_integer.inl \
+  source/integrator/integrator.hpp \
+  source/scene/scene.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/filesystem \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stack \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iomanip \
+  source/ray/ray.hpp \
+  source/ray/intersection.hpp \
+  source/common/bounding-box.hpp \
+  source/octree/linear-octree.hpp \
+  source/octree/octree.hpp \
+  source/common/bounding-box.hpp \
+  source/common/util.hpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o: source/ray/ray.cpp \
   source/ray/ray.hpp \
@@ -8351,7 +8383,42 @@ CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o: source/ray/ray.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/bitset \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/clocale \
   source/ray/interaction.hpp \
-  source/ray/intersection.hpp
+  source/ray/intersection.hpp \
+  source/integrator/photon-mapper/photon-mapper.hpp \
+  source/integrator/photon-mapper/photon.hpp \
+  lib/glm/glm/glm.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cfloat \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/float.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/float.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/float.h \
+  lib/glm/glm/fwd.hpp \
+  lib/glm/glm/trigonometric.hpp \
+  lib/glm/glm/detail/func_trigonometric.inl \
+  lib/glm/glm/exponential.hpp \
+  lib/glm/glm/common.hpp \
+  lib/glm/glm/packing.hpp \
+  lib/glm/glm/detail/func_packing.inl \
+  lib/glm/glm/detail/type_half.hpp \
+  lib/glm/glm/detail/type_half.inl \
+  lib/glm/glm/geometric.hpp \
+  lib/glm/glm/vector_relational.hpp \
+  lib/glm/glm/integer.hpp \
+  lib/glm/glm/detail/func_integer.inl \
+  source/integrator/integrator.hpp \
+  source/scene/scene.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/filesystem \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stack \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/deque \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iomanip \
+  source/ray/ray.hpp \
+  source/ray/intersection.hpp \
+  source/common/bounding-box.hpp \
+  source/ray/ray.hpp \
+  source/octree/linear-octree.hpp \
+  source/octree/octree.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/queue \
+  source/common/bounding-box.hpp \
+  source/common/util.hpp
 
 CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.o: source/scene/scene.cpp \
   source/scene/scene.hpp \

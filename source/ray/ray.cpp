@@ -7,6 +7,8 @@
 #include "../material/material.hpp"
 #include "interaction.hpp"
 
+#include "../integrator/photon-mapper/photon-mapper.hpp"
+
 Ray::Ray(const glm::dvec3& start, const glm::dvec3& end)
     : start(start), direction(glm::normalize(end - start)), medium_ior(1.0) { }
 
@@ -66,9 +68,31 @@ Ray::Ray(const Interaction &ia) :
         {
             //TODO fill this in with needed qualities
             // more stuff to add in this...
-            double freq = sampleFrequency();
-            medium_ior = getFrequencyIOR(freq, ia.n1);
 
+            glm::dvec3 specular_normal = ia.specularNormal();
+            double inv_eta = ia.n1 / ia.n2;
+            double cos_theta = glm::dot(specular_normal, ia.ray.direction);
+            double k = 1.0 - pow2(inv_eta) * (1.0 - pow2(cos_theta)); // 1 - (n1/n2 * sin(theta))^2
+            if (k >= 0.0)
+            {
+                /* SPECULAR REFRACTION */
+                /// need to change how direction is calculated
+                direction = inv_eta * ia.ray.direction - (inv_eta * cos_theta + std::sqrt(k)) * specular_normal;
+                double freq = PhotonMapper::getRandWavelength();
+                medium_ior = (ia.material->difractivity * (ia.n2 - 1) - ia.n2) / 0.76;
+                start -= ia.normal * C::EPSILON;
+                ia.inside ? refraction_level-- : refraction_level++;
+                refraction_scale *= pow2(1.0 / inv_eta);
+                refraction = true;
+            }
+            else
+            {
+                /* CRITICAL ANGLE, SPECULAR REFLECTION */
+                direction = ia.ray.direction - specular_normal * cos_theta * 2.0;
+                medium_ior = ia.n1;
+                start += ia.normal * C::EPSILON;
+            }
+            break;
         }
     }
 }

@@ -239,8 +239,10 @@ void PhotonMapper::emitPhoton(Ray ray, glm::dvec3 flux, size_t thread)
         }
 
         // vvv alot happens in this function, good function to call new dispersion functions in vvv
-        Interaction interaction(intersection, ray, refraction_history.externalIOR(ray));
 
+        // If difraction happens at intersection, flux of the ray should be changed
+        //
+        Interaction interaction(intersection, ray, refraction_history.externalIOR(ray));
 
 
 //        if (interaction.material->isDifractive) {
@@ -406,15 +408,19 @@ glm::dvec3 frequencyToRGB(double freq) {
 
     return glm::dvec3();
 }
-
-double sampleFrequency(double flux) {
-    //TODO: fill in function
-
-    return 0.0;
+double PhotonMapper::getRandWavelength() {
+    return 380 + (700 - 380) * ((double) rand() / (RAND_MAX));
 }
 
-double getFrequencyIOR(double freq, double ior) {
-    //TODO: fill in function
 
-    return 0.0;
+
+double getFrequencyIOR(double freq, double n2, double difractivity) {
+    //TODO: fill in function
+    // at the moment it calculate freq as wavelength
+
+    return (difractivity * (n2 - 1) - n2) / 0.76;
 }
+
+
+
+

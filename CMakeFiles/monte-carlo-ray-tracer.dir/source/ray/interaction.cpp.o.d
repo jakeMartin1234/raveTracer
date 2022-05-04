@@ -405,4 +405,36 @@ CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/queue \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/deque \
   /Users/jakemartin/documents/cs184/raveTracer/source/ray/../common/constexpr-math.hpp \
-  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/matrix.hpp
+  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/matrix.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/source/ray/../integrator/photon-mapper/photon-mapper.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/source/ray/../integrator/photon-mapper/photon.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/glm.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cfloat \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/float.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/float.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/float.h \
+  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/fwd.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/trigonometric.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/detail/func_trigonometric.inl \
+  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/exponential.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/common.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/packing.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/detail/func_packing.inl \
+  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/./ext/../detail/type_half.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/./ext/../detail/type_half.inl \
+  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/geometric.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/vector_relational.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/integer.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/lib/glm/glm/detail/func_integer.inl \
+  /Users/jakemartin/documents/cs184/raveTracer/source/ray/../integrator/photon-mapper/../integrator.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/source/ray/../integrator/photon-mapper/../../scene/scene.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/filesystem \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stack \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iomanip \
+  /Users/jakemartin/documents/cs184/raveTracer/source/ray/../integrator/photon-mapper/../../scene/../ray/ray.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/source/ray/../integrator/photon-mapper/../../scene/../ray/intersection.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/source/ray/../integrator/photon-mapper/../../scene/../common/bounding-box.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/source/ray/../integrator/photon-mapper/../../octree/linear-octree.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/source/ray/../integrator/photon-mapper/../../octree/octree.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/source/ray/../integrator/photon-mapper/../../octree/../common/bounding-box.hpp \
+  /Users/jakemartin/documents/cs184/raveTracer/source/ray/../integrator/photon-mapper/../../octree/../common/util.hpp

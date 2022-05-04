@@ -44,6 +44,7 @@ glm::dvec3 Material::specularReflection(const glm::dvec3& wi, const glm::dvec3& 
     }        
 }
 
+
 glm::dvec3 Material::specularTransmission(const glm::dvec3& wi, const glm::dvec3& wo, double n1, 
                                           double n2, double& PDF, bool inside, bool flux) const
 {
@@ -144,6 +145,7 @@ void from_json(const nlohmann::json &j, Material &m)
     getToOptional(j, "transparency", m.transparency);
     getToOptional(j, "perfect_mirror", m.perfect_mirror);
     getToOptional(j, "isDifractive", m.isDifractive);
+    getToOptional(j, "difractivity", m.difractivity);
     getReflectance("reflectance", m.reflectance);
     getReflectance("specular_reflectance", m.specular_reflectance);
     getReflectance("transmittance", m.transmittance);

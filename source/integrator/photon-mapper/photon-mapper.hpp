@@ -16,6 +16,9 @@ public:
 
     void emitPhoton(Ray ray, glm::dvec3 flux, size_t thread);
 
+    static double getFrequencyIOR(double freq, double n2, double difractivity);
+
+    static double getRandWavelength();
     virtual glm::dvec3 sampleRay(Ray ray);
     
     glm::dvec3 estimateGlobalRadiance(const Interaction& interaction); // All radiance except caustic
@@ -38,6 +41,8 @@ private:
     size_t k_nearest_photons;
 
     glm::dvec3 frequencyToRGB(double freq);
-    double sampleFrequency(double flux);
-    double getFrequencyIOR(double freq, double ior);
+    double sampleFrequency(glm::dvec3 flux);
+
+    double getHue(glm::dvec3 rgb);
+    double getWaveLength(glm::dvec3 rgb);
 };
