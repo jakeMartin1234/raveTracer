@@ -228,29 +228,29 @@ glm::dvec3 Interaction::waveLengthToRGB() const
     if (waveLength > 725) {
         return glm::dvec3(1.0, 0, 0);
     } else if (waveLength > 700) {
-        return glm::dvec3(255, 47, 0);
+        return glm::dvec3(1.0, 0.2088, 0);
     } else if (waveLength > 675) {
-        return glm::dvec3(255, 94, 0);
+        return glm::dvec3(1.0, 0.3686, 0);
     } else if (waveLength > 650) {
-        return glm::dvec3(255, 145, 0);
+        return glm::dvec3(1.0, 0.5686, 0);
     } else if (waveLength > 625) {
-        return glm::dvec3(255, 183, 0);
+        return glm::dvec3(1.0, 0.7176, 0);
     } else if (waveLength > 600) {
-        return glm::dvec3(255, 221, 0);
+        return glm::dvec3(1.0, 0.8666, 0);
     } else if (waveLength > 575) {
-        return glm::dvec3(217, 255, 0);
+        return glm::dvec3(0.85, 1.0, 0);
     } else if (waveLength > 550) {
-        return glm::dvec3(29, 173, 24);
+        return glm::dvec3(0.1137, 0.537, 0.0941);
     } else if (waveLength > 525) {
-        return glm::dvec3(5, 153, 64);
+        return glm::dvec3(0.0196, 0.6, 0.25);
     } else  if (waveLength > 500) {
-        return glm::dvec3(5, 153, 91);
+        return glm::dvec3(0.196, 0.6, 0.3568);
     } else if (waveLength > 475) {
-        return glm::dvec3(5, 153, 118);
+        return glm::dvec3(0.196, 0.6, 0.4627);
     } else if (waveLength > 450) {
-        return glm::dvec3(5, 94, 153);
+        return glm::dvec3(0.196, 0.3686, 0.6);
     } else if (waveLength > 415) {
-        return glm::dvec3(0, 0, 1.0);
+        return glm::dvec3(0.39, 0.2745, 0.78);
     } else {
         return glm::dvec3(0, 0, 1.0);
     }
