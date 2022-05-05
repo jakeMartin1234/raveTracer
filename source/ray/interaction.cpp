@@ -220,10 +220,37 @@ double Interaction::sampleWavelength() {
 glm::dvec3 Interaction::waveLengthToRGB() const
 {
     //std::cout << "    waveLengthRGB:::" + std::to_string(waveLength);
-    if (waveLength > 670) {
+//    if (waveLength > 520) {
+//        return glm::dvec3(1.0, 0, 0);
+//    } else {
+//        return glm::dvec3(0, 0, 1.0);
+//    }
+    if (waveLength > 725) {
         return glm::dvec3(1.0, 0, 0);
-    } else if (waveLength > 480) {
-        return glm::dvec3(0, 1.0, 0);
+    } else if (waveLength > 700) {
+        return glm::dvec3(255, 47, 0);
+    } else if (waveLength > 675) {
+        return glm::dvec3(255, 94, 0);
+    } else if (waveLength > 650) {
+        return glm::dvec3(255, 145, 0);
+    } else if (waveLength > 625) {
+        return glm::dvec3(255, 183, 0);
+    } else if (waveLength > 600) {
+        return glm::dvec3(255, 221, 0);
+    } else if (waveLength > 575) {
+        return glm::dvec3(217, 255, 0);
+    } else if (waveLength > 550) {
+        return glm::dvec3(29, 173, 24);
+    } else if (waveLength > 525) {
+        return glm::dvec3(5, 153, 64);
+    } else  if (waveLength > 500) {
+        return glm::dvec3(5, 153, 91);
+    } else if (waveLength > 475) {
+        return glm::dvec3(5, 153, 118);
+    } else if (waveLength > 450) {
+        return glm::dvec3(5, 94, 153);
+    } else if (waveLength > 415) {
+        return glm::dvec3(0, 0, 1.0);
     } else {
         return glm::dvec3(0, 0, 1.0);
     }
