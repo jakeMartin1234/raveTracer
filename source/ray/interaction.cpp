@@ -122,8 +122,9 @@ glm::dvec3 Interaction::BSDF(const glm::dvec3& wo, const glm::dvec3& wi, double 
     double pdf_s, pdf_d;
     glm::dvec3 brdf_s;
     if (type == DIFRACT) {
-        glm::dvec3 newReflectance = waveLengthToRGB();
-        brdf_s = material->specularReflectionCustom(wi, wo, pdf_s, newReflectance);
+//        glm::dvec3 newReflectance = waveLengthToRGB();
+//        brdf_s = material->specularReflectionCustom(wi, wo, pdf_s, newReflectance);
+        brdf_s = material->specularReflection(wi, wo, pdf_s);
     } else {
         brdf_s = material->specularReflection(wi, wo, pdf_s);
     }
@@ -137,6 +138,7 @@ glm::dvec3 Interaction::BSDF(const glm::dvec3& wo, const glm::dvec3& wi, double 
         if (type == DIFRACT) {
             glm::dvec3 newTransmittance = waveLengthToRGB();
             btdf = material->specularTransmissionCustom(wi, wo, n1, n2, pdf_t, inside, flux, newTransmittance);
+//            btdf = material->specularTransmission(wi, wo, n1, n2, pdf_t, inside, flux);
         } else {
             btdf = material->specularTransmission(wi, wo, n1, n2, pdf_t, inside, flux);
         }
@@ -187,7 +189,7 @@ void Interaction::selectType()
         }
         else if (R + (1.0 - R) * T > p)
         {
-            if (material->isDifractive) {
+            if (material->isDifractive && !ray.dispersed) {
                 type = DIFRACT;
             } else {
                 type = REFRACT;
@@ -212,19 +214,12 @@ glm::dvec3 Interaction::specularNormal() const
 }
 
 double Interaction::sampleWavelength() {
-    //TODO: fill in function
 
     return 380 + (700 - 380) * ((double) rand() / (RAND_MAX));
 }
 
 glm::dvec3 Interaction::waveLengthToRGB() const
 {
-    //std::cout << "    waveLengthRGB:::" + std::to_string(waveLength);
-//    if (waveLength > 520) {
-//        return glm::dvec3(1.0, 0, 0);
-//    } else {
-//        return glm::dvec3(0, 0, 1.0);
-//    }
     if (waveLength > 725) {
         return glm::dvec3(1.0, 0, 0);
     } else if (waveLength > 700) {
@@ -244,14 +239,15 @@ glm::dvec3 Interaction::waveLengthToRGB() const
     } else if (waveLength > 525) {
         return glm::dvec3(0.0196, 0.6, 0.25);
     } else  if (waveLength > 500) {
-        return glm::dvec3(0.196, 0.6, 0.3568);
+        return glm::dvec3(0.196, 0.6, 0.43);
     } else if (waveLength > 475) {
-        return glm::dvec3(0.196, 0.6, 0.4627);
+        return glm::dvec3(0.196, 0.6, 0.74);
     } else if (waveLength > 450) {
-        return glm::dvec3(0.196, 0.3686, 0.6);
+        return glm::dvec3(0.133, 0.45, 0.84);
     } else if (waveLength > 415) {
-        return glm::dvec3(0.39, 0.2745, 0.78);
+        return glm::dvec3(0.39, 0.25, 1.0);
     } else {
         return glm::dvec3(0, 0, 1.0);
     }
+
 }

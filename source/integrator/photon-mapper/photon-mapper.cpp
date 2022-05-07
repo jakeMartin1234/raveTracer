@@ -62,7 +62,12 @@ PhotonMapper::PhotonMapper(const nlohmann::json& j) : Integrator(j)
     for(size_t i = 0; i < scene.emissives.size(); i++)
     {
         auto light = scene.emissives[i];
-        glm::dvec3 light_flux = light->material->emittance * light->area();
+        glm::dvec3 light_flux;
+        if (light->material->isLaser) {
+            light_flux = light->material->laserEmittance * light->area();
+        } else {
+            light_flux = light->material->emittance * light->area();
+        }
         double photon_emissions_share = glm::compAdd(light_flux) / total_add_flux;
         size_t num_light_emissions = static_cast<size_t>(photon_emissions * photon_emissions_share);
         glm::dvec3 photon_flux = light_flux / static_cast<double>(num_light_emissions);
@@ -102,8 +107,12 @@ PhotonMapper::PhotonMapper(const nlohmann::json& j) : Integrator(j)
                         auto u = Sampler::get<Dim::PM_LIGHT, 4>();
                         glm::dvec3 pos = (*light)(u[0], u[1]);
                         glm::dvec3 normal = light->normal(pos);
-                        glm::dvec3 dir = CoordinateSystem::from(Sampling::cosWeightedHemi(u[2], u[3]), normal);
-
+                        glm::dvec3 dir;
+                        if (light->material->isLaser) {
+                            dir = light->material->laserDirection;
+                        } else {
+                            dir = CoordinateSystem::from(Sampling::cosWeightedHemi(u[2], u[3]), normal);
+                        }
                         pos += normal * C::EPSILON;
 
                         emitPhoton(Ray(pos, dir, scene.ior), work.photon_flux, thread);
@@ -241,8 +250,9 @@ void PhotonMapper::emitPhoton(Ray ray, glm::dvec3 flux, size_t thread)
         // vvv alot happens in this function, good function to call new dispersion functions in vvv
         Interaction interaction(intersection, ray, refraction_history.externalIOR(ray));
 
-
-
+        if (interaction.material->isDifractive == true) {
+            ray.dispersed = true;
+        }
 
 
 

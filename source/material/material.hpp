@@ -23,6 +23,9 @@ public:
         specular_reflectance = glm::dvec3(1.0);
         emittance = glm::dvec3(0.0);
         transmittance = glm::dvec3(1.0);
+        isLaser = false;
+        laserDirection = glm::dvec3(1.0, 0.0, 0.0);
+        laserEmittance = glm::dvec3(10.0, 10.0, 10.0);
 
         computeProperties();
     }
@@ -43,11 +46,11 @@ public:
 
     void computeProperties();
 
-    glm::dvec3 reflectance, specular_reflectance, transmittance, emittance;
+    glm::dvec3 reflectance, specular_reflectance, transmittance, emittance, laserDirection, laserEmittance;
     double roughness, specular_roughness, ior, transparency, difractivity;
     std::shared_ptr<ComplexIOR> complex_ior;
 
-    bool rough, rough_specular, opaque, emissive, dirac_delta, isDifractive;
+    bool rough, rough_specular, opaque, emissive, dirac_delta, isDifractive, isLaser;
 
     // Represents ior = infinity -> fresnel factor = 1.0 -> all rays specularly reflected
     bool perfect_mirror;

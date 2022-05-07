@@ -189,9 +189,18 @@ void from_json(const nlohmann::json &j, Material &m)
     getToOptional(j, "perfect_mirror", m.perfect_mirror);
     getToOptional(j, "isDifractive", m.isDifractive);
     getToOptional(j, "difractivity", m.difractivity);
+    getToOptional(j, "isLaser", m.isLaser);
+    getToOptional(j, "dirX", m.laserDirection.x);
+    getToOptional(j, "dirY", m.laserDirection.y);
+    getToOptional(j, "dirZ", m.laserDirection.z);
+    getToOptional(j, "laserEmR", m.laserEmittance.x);
+    getToOptional(j, "laserEmG", m.laserEmittance.y);
+    getToOptional(j, "laserEmB", m.laserEmittance.z);
+
     getReflectance("reflectance", m.reflectance);
     getReflectance("specular_reflectance", m.specular_reflectance);
     getReflectance("transmittance", m.transmittance);
+
 
     m.reflectance = sRGB::gammaExpand(m.reflectance);
 

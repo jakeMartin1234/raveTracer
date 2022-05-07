@@ -23,6 +23,7 @@ public:
     double refraction_scale = 1.0;
     bool dirac_delta = false, refraction = false;
     uint16_t depth = 0, diffuse_depth = 0;
+    bool dispersed = false;
 
     int refraction_level = 0;
 };

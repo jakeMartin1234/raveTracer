@@ -76,7 +76,6 @@ Ray::Ray(const Interaction &ia) :
                 /* SPECULAR REFRACTION */
                 direction = inv_eta * ia.ray.direction - (inv_eta * cos_theta + std::sqrt(k)) * specular_normal;
                 double diff = getFrequencyIOR(ia.n2, ia.material->difractivity) * ((ia.waveLength - 380) / 320);
-//                std::cout << "   diff::" + std::to_string(diff) + "  waveLength:" + std::to_string(waveLength);
                 double newIOR = ia.n2 - diff;
                 medium_ior = newIOR;
                 start -= ia.normal * C::EPSILON;

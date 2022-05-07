@@ -1,0 +1,11 @@
+# Blender v2.72 (sub 0) OBJ File: 'cylinder.blend'
+# www.blender.org
+mtllib square.mtl
+o Plane
+v 0.736212 0.047373 -1.178154
+v 0.736212 0.034724 -1.178154
+v 0.747675 0.047373 -1.172808
+v 0.747675 0.034724 -1.172808
+usemtl None
+s off
+f 1 2 4 3
