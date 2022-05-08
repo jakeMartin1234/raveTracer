@@ -77,6 +77,7 @@ Ray::Ray(const Interaction &ia) :
                 direction = inv_eta * ia.ray.direction - (inv_eta * cos_theta + std::sqrt(k)) * specular_normal;
                 double diff = getFrequencyIOR(ia.n2, ia.material->difractivity) * ((ia.waveLength - 380) / 320);
                 double newIOR = ia.n2 - diff;
+//                std::cout << "newIOR:::::" + std::to_string(newIOR);
                 medium_ior = newIOR;
                 start -= ia.normal * C::EPSILON;
                 ia.inside ? refraction_level-- : refraction_level++;

@@ -243,34 +243,36 @@ glm::dvec3 Interaction::waveLengthToRGB() const
 //    }
 //    return glm::dvec3(rPrime, gPrime, bPrime);
 
-//    if (waveLength > 725) {
-//        return glm::dvec3(1.0, 0, 0);
-//    } else if (waveLength > 700) {
-//        return glm::dvec3(1.0, 0.2088, 0);
-//    } else if (waveLength > 675) {
-//        return glm::dvec3(1.0, 0.3686, 0);
-//    } else if (waveLength > 650) {
-//        return glm::dvec3(1.0, 0.5686, 0);
-//    } else if (waveLength > 625) {
-//        return glm::dvec3(1.0, 0.7176, 0);
-//    } else if (waveLength > 600) {
-//        return glm::dvec3(1.0, 0.8666, 0);
-//    } else if (waveLength > 575) {
-//        return glm::dvec3(0.85, 1.0, 0);
-//    } else if (waveLength > 550) {
-//        return glm::dvec3(0.1137, 0.537, 0.0941);
-//    } else if (waveLength > 525) {
-//        return glm::dvec3(0.0196, 0.6, 0.25);
-//    } else  if (waveLength > 500) {
-//        return glm::dvec3(0.196, 0.6, 0.43);
-//    } else if (waveLength > 475) {
-//        return glm::dvec3(0.196, 0.6, 0.74);
-//    } else if (waveLength > 450) {
-//        return glm::dvec3(0.133, 0.45, 0.84);
-//    } else if (waveLength > 415) {
-//        return glm::dvec3(0.39, 0.25, 1.0);
-//    } else {
-//        return glm::dvec3(0, 0, 1.0);
-//    }
+
+    double adjusted = 1080 - waveLength;
+    if (adjusted > 725) {
+        return glm::dvec3(1.0, 0, 0);
+    } else if (adjusted > 700) {
+        return glm::dvec3(1.0, 0.2088, 0);
+    } else if (adjusted > 675) {
+        return glm::dvec3(1.0, 0.3686, 0);
+    } else if (adjusted > 650) {
+        return glm::dvec3(1.0, 0.5686, 0);
+    } else if (adjusted > 625) {
+        return glm::dvec3(1.0, 0.7176, 0);
+    } else if (adjusted > 600) {
+        return glm::dvec3(1.0, 0.8666, 0);
+    } else if (adjusted > 575) {
+        return glm::dvec3(0.85, 1.0, 0);
+    } else if (adjusted > 550) {
+        return glm::dvec3(0.1137, 0.537, 0.0941);
+    } else if (adjusted > 525) {
+        return glm::dvec3(0.0196, 0.6, 0.25);
+    } else  if (adjusted > 500) {
+        return glm::dvec3(0.196, 0.6, 0.43);
+    } else if (adjusted > 475) {
+        return glm::dvec3(0.196, 0.6, 0.74);
+    } else if (adjusted > 450) {
+        return glm::dvec3(0.133, 0.45, 0.84);
+    } else if (adjusted > 415) {
+        return glm::dvec3(0.39, 0.25, 1.0);
+    } else {
+        return glm::dvec3(0, 0, 1.0);
+    }
 
 }
