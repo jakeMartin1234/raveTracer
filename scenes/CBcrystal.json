@@ -1,0 +1,114 @@
+{
+  "num_render_threads": -1,
+  "ior": 1.0,
+
+  "cameras": [
+    {
+      "focal_length": 102.25,
+      "sensor_width": 35,
+      "eye": [ 2, 7, 0 ],
+      "look_at": [ 0, 0, 0 ],
+      "image":  { "width": 1000, "height": 1000, "exposure_compensation": -1.0, "gain_compensation": -0.5, "tonemapper": "Hable" },
+      "sqrtspp": 4,
+      "savename": "CBPrism"
+    }
+  ],
+
+  "photon_map": {
+    "emissions": 2000000,
+    "caustic_factor": 10.0,
+    "k_nearest_photons": 50,
+    "max_photons_per_octree_leaf": 200,
+    "direct_visualization": false
+  },
+
+  "bvh": {
+    "type": "octree",
+    "bins_per_axis": 16
+  },
+
+  "materials": {
+    "default": {
+      "reflectance": 0.8
+    },
+    "leftwall": {
+      "reflectance": 0.8
+    },
+    "rightwall": {
+      "reflectance": 0.8
+    },
+    "crystal": {
+      "transparency": 1.0,
+      "ior": 1.0,
+      "isDifractive": true,
+      "difractivity": 2.0
+    },
+    "Metal": {
+      "perfect_mirror": true
+    },
+    "light": {
+      "reflectance": 1,
+      "emittance": { "illuminant": "F9", "scale": 3000},
+      "isLaser": true,
+      "dirX": 0.0,
+      "dirY": 0.0,
+      "dirZ": 1.0,
+      "laserEmR": 1000000.0,
+      "laserEmG": 1000000.0,
+      "laserEmB": 1000000.0
+    }
+  },
+  "vertices": {
+    "light": [
+      [ 0.575, 0.275, -7 ],
+      [ 0.625, 0.275, -7 ],
+      [ 0.625, 0.325, -7 ],
+      [ 0.575, 0.325, -7 ]
+    ],
+    "crystal": [
+      [ 0.6, 0.8, 0 ],
+      [ 0.9, 0, 0 ],
+      [ -0.3, 0, 0.3 ],
+      [ -0.3, 0, 0 ],
+      [ 0.9, 0, 0.3 ]
+    ]
+  },
+
+  "surfaces": [
+    {
+      "type": "object",
+      "file": "data/water_caustics/backwall.obj"
+    },
+    {
+      "type": "object",
+      "material": "rightwall",
+      "file": "data/water_caustics/rightwall.obj"
+    },
+    {
+      "type": "object",
+      "file": "data/water_caustics/floor.obj"
+    },
+    {
+      "type": "object",
+      "material": "light",
+      "vertex_set": "light",
+      "triangles": [
+        [ 0, 1, 2 ],
+        [ 0, 2, 3 ]
+      ]
+    },
+    {
+      "type": "object",
+      "material": "crystal",
+      "vertex_set": "crystal",
+      "triangles": [
+        [ 0, 2, 1 ],
+        [ 0, 3, 2 ],
+        [ 0, 1, 3 ],
+        [ 2, 4, 1 ],
+        [ 1, 4, 3 ],
+        [ 3, 4, 2 ]
+      ]
+    }
+  ]
+}

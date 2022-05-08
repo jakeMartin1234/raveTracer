@@ -1,0 +1,107 @@
+{
+  "num_render_threads": -1,
+  "ior": 1.0,
+
+  "cameras": [
+    {
+      "focal_length": 102.25,
+      "sensor_width": 35,
+      "eye": [ 2, 3, -8 ],
+      "look_at": [ 0, 1, 0 ],
+      "image":  { "width": 1000, "height": 1000, "exposure_compensation": -1.0, "gain_compensation": -0.5, "tonemapper": "Hable" },
+      "sqrtspp": 4,
+      "savename": "CBPrism"
+    }
+  ],
+
+  "photon_map": {
+    "emissions": 2000000,
+    "caustic_factor": 10.0,
+    "k_nearest_photons": 50,
+    "max_photons_per_octree_leaf": 200,
+    "direct_visualization": false
+  },
+
+  "bvh": {
+    "type": "octree",
+    "bins_per_axis": 16
+  },
+
+  "materials": {
+    "default": {
+      "reflectance": 0.8
+    },
+    "leftwall": {
+      "reflectance": 0.8
+    },
+    "rightwall": {
+      "reflectance": 0.8
+    },
+    "prism": {
+      "transparency": 1.0,
+      "ior": 10.0,
+      "isDifractive": true,
+      "difractivity": 3.0
+    },
+    "Metal": {
+      "perfect_mirror": true
+    },
+    "light": {
+      "reflectance": 1,
+      "emittance": { "illuminant": "F9", "scale": 3000},
+      "isLaser": true,
+      "dirX": 0.0,
+      "dirY": 0.0,
+      "dirZ": 1.0,
+      "laserEmR": 1000000.0,
+      "laserEmG": 1000000.0,
+      "laserEmB": 1000000.0
+    }
+  },
+  "vertices": {
+    "light": [
+      [ 0.575, 0.275, -0.7 ],
+      [ 0.625, 0.275, -0.7 ],
+      [ 0.625, 0.325, -0.7 ],
+      [ 0.575, 0.325, -0.7 ]
+    ],
+    "crystal": [
+      [ 0.8, -5.0, -0.47],
+      [ 0.6, -0.09, -0.36 ],
+      [ 0.7, -0.08, -0.27 ],
+      [ 0.7, -0.04, -0.44 ],
+      [ 0.6, 0.35, -0.25 ]
+    ]
+  },
+
+  "surfaces": [
+    {
+      "type": "object",
+      "file": "data/water_caustics/backwall.obj"
+    },
+    {
+      "type": "object",
+      "material": "rightwall",
+      "file": "data/water_caustics/rightwall.obj"
+    },
+    {
+      "type": "object",
+      "file": "data/water_caustics/floor.obj"
+    },
+    {
+      "type": "object",
+      "material": "light",
+      "vertex_set": "light",
+      "triangles": [
+        [ 0, 1, 2 ],
+        [ 0, 2, 3 ]
+      ]
+    },
+    {
+      "type": "sphere",
+      "position": [ 0.6, 0.3, 0 ],
+      "radius": 0.3,
+      "material": "prism"
+    }
+  ]
+}

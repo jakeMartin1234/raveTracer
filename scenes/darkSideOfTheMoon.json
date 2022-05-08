@@ -1,0 +1,118 @@
+{
+  "num_render_threads": -1,
+  "ior": 1.0,
+
+  "cameras": [
+    {
+      "focal_length": 100,
+      "sensor_width": 35,
+      "eye": [ 0, 8, 0 ],
+      "look_at": [ 0, 0, 0 ],
+      "image":  { "width": 1000, "height": 1000, "exposure_compensation": -1.0, "gain_compensation": -0.5, "tonemapper": "Hable" },
+      "sqrtspp": 4,
+      "savename": "CBPrism"
+    }
+  ],
+
+  "photon_map": {
+    "emissions": 10000000,
+    "caustic_factor": 10.0,
+    "k_nearest_photons": 50,
+    "max_photons_per_octree_leaf": 200,
+    "direct_visualization": false
+  },
+
+  "bvh": {
+    "type": "octree",
+    "bins_per_axis": 16
+  },
+
+  "materials": {
+    "default": {
+      "reflectance": 0.2
+    },
+    "leftwall": {
+      "reflectance": 0.8
+    },
+    "rightwall": {
+      "reflectance": 0.8
+    },
+    "crystal": {
+      "transparency": 1.0,
+      "ior": 1.0,
+      "isDifractive": true,
+      "difractivity": 0.2
+
+    },
+    "Metal": {
+      "perfect_mirror": true
+    },
+    "light": {
+      "reflectance": 1,
+      "emittance": { "illuminant": "F9", "scale": 3000},
+      "isLaser": true,
+      "dirX": 0.2,
+      "dirY": -0.08,
+      "dirZ": 1.0,
+      "laserEmR": 200000.0,
+      "laserEmG": 100000.0,
+      "laserEmB": 100000.0
+    },
+    "light2": {
+      "reflectance": 1,
+      "emittance": { "illuminant": "F9", "scale": 30000 }
+    }
+  },
+  "vertices": {
+    "light": [
+      [ 0.5, 0.001, -1 ],
+      [ 0.55, 0.001, -1 ],
+      [ 0.55, 0.25, -1 ],
+      [ 0.5, 0.25, -1 ]
+    ],
+    "prism": [
+      [ 0.9, 0.0, 0.0 ],
+      [ 0.9, 0.2, 0.0 ],
+      [ 0.4, 0.0, 0.3 ],
+      [ 0.4, 0.2, 0.3 ],
+      [ 0.4, 0.0, -0.3 ],
+      [ 0.4, 0.2, -0.3 ]
+    ]
+  },
+
+  "surfaces": [
+    {
+      "type": "object",
+      "file": "data/water_caustics/floor.obj"
+    },
+    {
+      "type": "object",
+      "material": "light",
+      "vertex_set": "light",
+      "triangles": [
+        [ 0, 1, 2 ],
+        [ 0, 2, 3 ]
+      ]
+    },
+    {
+      "type": "object",
+      "material": "light2",
+      "file": "data/water_caustics/light.obj"
+    },
+    {
+      "type": "object",
+      "material": "crystal",
+      "vertex_set": "prism",
+      "triangles": [
+        [ 0, 2, 4 ],
+        [ 1, 3, 5 ],
+        [ 1, 5, 4 ],
+        [ 1, 4, 0 ],
+        [ 5, 3, 2 ],
+        [ 5, 2, 4 ],
+        [ 3, 1, 0 ],
+        [ 3, 0, 2 ]
+      ]
+    }
+  ]
+}
