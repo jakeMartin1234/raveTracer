@@ -122,9 +122,9 @@ glm::dvec3 Interaction::BSDF(const glm::dvec3& wo, const glm::dvec3& wi, double 
     double pdf_s, pdf_d;
     glm::dvec3 brdf_s;
     if (type == DIFRACT) {
-//        glm::dvec3 newReflectance = waveLengthToRGB();
-//        brdf_s = material->specularReflectionCustom(wi, wo, pdf_s, newReflectance);
-        brdf_s = material->specularReflection(wi, wo, pdf_s);
+        glm::dvec3 newReflectance = waveLengthToRGB();
+        brdf_s = material->specularReflectionCustom(wi, wo, pdf_s, newReflectance);
+//        brdf_s = material->specularReflection(wi, wo, pdf_s);
     } else {
         brdf_s = material->specularReflection(wi, wo, pdf_s);
     }
@@ -220,34 +220,57 @@ double Interaction::sampleWavelength() {
 
 glm::dvec3 Interaction::waveLengthToRGB() const
 {
-    if (waveLength > 725) {
-        return glm::dvec3(1.0, 0, 0);
-    } else if (waveLength > 700) {
-        return glm::dvec3(1.0, 0.2088, 0);
-    } else if (waveLength > 675) {
-        return glm::dvec3(1.0, 0.3686, 0);
-    } else if (waveLength > 650) {
-        return glm::dvec3(1.0, 0.5686, 0);
-    } else if (waveLength > 625) {
-        return glm::dvec3(1.0, 0.7176, 0);
-    } else if (waveLength > 600) {
-        return glm::dvec3(1.0, 0.8666, 0);
-    } else if (waveLength > 575) {
-        return glm::dvec3(0.85, 1.0, 0);
-    } else if (waveLength > 550) {
-        return glm::dvec3(0.1137, 0.537, 0.0941);
-    } else if (waveLength > 525) {
-        return glm::dvec3(0.0196, 0.6, 0.25);
-    } else  if (waveLength > 500) {
-        return glm::dvec3(0.196, 0.6, 0.43);
-    } else if (waveLength > 475) {
-        return glm::dvec3(0.196, 0.6, 0.74);
-    } else if (waveLength > 450) {
-        return glm::dvec3(0.133, 0.45, 0.84);
-    } else if (waveLength > 415) {
-        return glm::dvec3(0.39, 0.25, 1.0);
-    } else {
-        return glm::dvec3(0, 0, 1.0);
-    }
+//    double adjusted = waveLength - 380;
+//    float x = (1 - fabs(fmod(adjusted / 60, 2) - 1.f));
+//    float rPrime, gPrime, bPrime;
+//    if (adjusted < 60) {
+//        rPrime = 1, gPrime = x, bPrime = 0;
+//    }
+//    else if (adjusted < 120) {
+//        rPrime = x, gPrime = 1, bPrime = 0;
+//    }
+//    else if (adjusted < 180) {
+//        rPrime = 0, gPrime = 1, bPrime = x;
+//    }
+//    else if (adjusted < 240) {
+//        rPrime = 0, gPrime = x, bPrime = 1;
+//    }
+//    else if (adjusted < 300) {
+//        rPrime = x, gPrime = 0, bPrime = 1;
+//    }
+//    else {
+//        rPrime = 1, gPrime = 0, bPrime = x;
+//    }
+//    return glm::dvec3(rPrime, gPrime, bPrime);
+
+//    if (waveLength > 725) {
+//        return glm::dvec3(1.0, 0, 0);
+//    } else if (waveLength > 700) {
+//        return glm::dvec3(1.0, 0.2088, 0);
+//    } else if (waveLength > 675) {
+//        return glm::dvec3(1.0, 0.3686, 0);
+//    } else if (waveLength > 650) {
+//        return glm::dvec3(1.0, 0.5686, 0);
+//    } else if (waveLength > 625) {
+//        return glm::dvec3(1.0, 0.7176, 0);
+//    } else if (waveLength > 600) {
+//        return glm::dvec3(1.0, 0.8666, 0);
+//    } else if (waveLength > 575) {
+//        return glm::dvec3(0.85, 1.0, 0);
+//    } else if (waveLength > 550) {
+//        return glm::dvec3(0.1137, 0.537, 0.0941);
+//    } else if (waveLength > 525) {
+//        return glm::dvec3(0.0196, 0.6, 0.25);
+//    } else  if (waveLength > 500) {
+//        return glm::dvec3(0.196, 0.6, 0.43);
+//    } else if (waveLength > 475) {
+//        return glm::dvec3(0.196, 0.6, 0.74);
+//    } else if (waveLength > 450) {
+//        return glm::dvec3(0.133, 0.45, 0.84);
+//    } else if (waveLength > 415) {
+//        return glm::dvec3(0.39, 0.25, 1.0);
+//    } else {
+//        return glm::dvec3(0, 0, 1.0);
+//    }
 
 }
